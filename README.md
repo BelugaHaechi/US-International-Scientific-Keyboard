@@ -4,7 +4,7 @@ __A very powerful custom keyboard for Windows, tailored for efficient and conven
 
 This keyboard is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard that had dead keys inconveniently bound on commonly used keys. 
 
-_Note: This keyboard is_**not a replacement for proper scientific notation** _that can be formatted using rich-text programs like_ $\LaTeX$ _or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting, using Notepad, non-technical writing._
+_Note: This keyboard is_ **not a replacement for proper scientific notation** _that can be formatted using rich-text programs like_ $\LaTeX$ _or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting, using Notepad, non-technical writing._
 
 The keyboard was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). It is based on the __English (United States) QWERTY keyboard__, and some layout designs are consistent with the _United States-International keyboard_. Some ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
