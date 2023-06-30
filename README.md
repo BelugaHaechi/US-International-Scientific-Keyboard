@@ -10,6 +10,7 @@ The keyboard was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4)
 
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
+
 0. (_Recommended_) Be logged in to the Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
 1. Download the folder `KBDUSX3` in this repository to any directory on your computer.
 2. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
