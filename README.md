@@ -2,11 +2,30 @@
 
 __A very powerful custom keyboard for Windows, tailored for efficient and convenient output of international alphabetical languages and scientific notation in plain text.__
 
-This keyboard is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborate with others from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard that had dead keys inconveniently bound on commonly used keys. 
+This keyboard is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard that had dead keys inconveniently bound on commonly used keys. 
 
-_Note: This keyboard is not a replacement for proper scientific notation that can be formatted using rich-text programs like LaTeX, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting, using Notepad, non-technical writing._
+_Note: This keyboard is **not a replacement for proper scientific notation** that can be formatted using rich-text programs like LaTeX or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting, using Notepad, non-technical writing._
 
 The keyboard was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). It is based on the __English (United States) QWERTY keyboard__, and some layout designs are consistent with the _United States-International keyboard_. Some ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
+
+## Quick Start Guide
+Setting up this keyboard on your computer is very simple! 
+0. (_Recommended_) Be logged in to the Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
+1. Download the folder `KBDUSX3` in this repository to any directory on your computer.
+2. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
+3. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
+4. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
+* Open Settings on your computer.
+* Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
+* Select `Add a keyboard`, and select `US-International and Scientific keyboard` in the drop-down menu.
+* (_Recommended_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
+5. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
+
+> Tip: You may wish to retain the `KBDUSX3` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
+
+## Update / Uninstallation Guide
+Uninstallation 
+
 
 ## Content below is Work In Progress, please wait for the official release
 
