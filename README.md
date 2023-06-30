@@ -8,6 +8,9 @@ This keyboard is easy to install, easy to use, and easy to memorize, while havin
 
 The keyboard was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). It is based on the __English (United States) QWERTY keyboard__, and some layout designs are consistent with the _United States-International keyboard_. Some ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
+## Overview of Keyboard Mappings
+(WIP - pictures to be added)
+
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
 
@@ -25,7 +28,14 @@ Setting up this keyboard on your computer is very simple!
 > Tip: You may wish to retain the `KBDUSX3` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
 
 ## Update / Uninstallation Guide
-Uninstallation 
+Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
+1. There is a new version of the keyboard available, and you will need to uninstall the previous version before installing the new one. Yes, minor improvements may be made to the layout upon request, feel free to post your ideas in Issues.
+2. The keyboard layout doesn't work as intended on your device. If so, you may wish to reinstall the layout.
+3. You wish to discard the layout for any reason :( Sad, but you are free to do so.
+
+To uninstall the keyboard layout, simply revisit the `KBDUSX3` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
+
+> Warning: There is a known issue that the keyboard layout will not be compeletely removed. (WIP)
 
 
 ## Content below is Work In Progress, please wait for the official release
