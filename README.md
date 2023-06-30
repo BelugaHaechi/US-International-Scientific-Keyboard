@@ -35,30 +35,28 @@ Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
 
 To uninstall the keyboard layout, simply revisit the `KBDUSX3` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
 
-> **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry - this does not affect normal usage of other keyboard layouts. This is a possible bug in Windows: you may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear anymore for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration 
-
-
-## Content below is Work In Progress, please wait for the official release
+> **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry - this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
 ## Core Design Ideas
-0. __Compatibility.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Ctrl+Alt`) and `Shift+AltGr` (`Ctrl+Alt+Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
+1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Ctrl+Alt`) and `Shift+AltGr` (`Ctrl+Alt+Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
    Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. These mappings with be denoted with a `(USX)` mark, referencing the Windows `KBDUSX.dll` file containing setup information. 
-1. __Logicality.__ Every key mapping should always _make as much sense as possible_ and provide convenience for both multilingual and mathematical input. Every reason for a certain mapping should be explicitly documented, and alternatives should be discussed if any. 
+
+2. __Absolute logicality of key mappings.__ Every key mapping should always _make as much sense as possible_ and provide convenience for both multilingual and mathematical input. Every reason for a certain mapping should be explicitly documented, and alternatives should be discussed if any. 
   - At least one among name, shape, usage, etc. of the character allocated should be related with the key that it is mapped to. 
   - Common characters should be easy to access, while uncommon characters should be set further out of reach, and rare and awkward characters should be avoided. 
-  - Characters of the same type should have similar shift states, when possible. 
-2. __Usage of dead keys.__ Multiple characters that share an obvious characteristic (best shown in its Unicode naming or block) should be considered to be included in a [dead key](https://en.wikipedia.org/wiki/Dead_key). Dead keys will be highlighted with a bold notice "__Dead key.__", and the mappings should be fully provided for reference. 
+  - Characters of the same type should have similar shift states, when possible.
+
+3. __Compact organization by using dead keys.__ Multiple characters that share an obvious characteristic (best shown in its Unicode naming or block) should be considered to be included in a [dead key](https://en.wikipedia.org/wiki/Dead_key). Dead keys will be highlighted with a bold notice "__Dead key.__", and the mappings should be fully provided for reference. 
   - Dead key base characters should be chosen with the same criteria as normal characters. 
   - If the common characteristic is a diacritic, the base assignment should be the combining diacritic for versatility. If it is not, it should be meaningful as a fallback, or another related character (this is the hard part!). 
   - In dead key mappings, the final base character should be a space (U+0020) that maps to: 1) if diacritic, the diacritic itself alone (modifier letter); 2) if else, the most common character among all options. 
   - The dead key should provide access to this class of characters to the maximum extent, except for those that are rarely used. 
-3. __Restricted.__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
+
+4. __Maximum flexibility under system restraints .__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
   - The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key base assignments are within U+0000..U+0FFF. 
   - Customization is not imposed on control keys, numpad, arrow keys, and function keys. 
   - Dead keys are not chained, and all base characters are available in the normal and `Shift` shift states. 
   - Shift states only include normal, `Shift`, `AltGr` (`Ctrl+Alt`), and `Shift+AltGr` (`Ctrl+Alt+Shift`). Excluded states include `Ctrl`, `Ctrl+Shift`, `SGCaps` (`CapsLock`), and so on.
-
-
 
 ## Key Mappings
 ### Numeric row (`\`1234567890-=`)
