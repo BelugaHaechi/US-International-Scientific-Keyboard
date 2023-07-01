@@ -9,12 +9,18 @@ This keyboard is easy to install, easy to use, and easy to memorize, while havin
 The keyboard was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). It is based on the __English (United States) QWERTY keyboard__, and some layout designs are consistent with the _United States-International keyboard_. Some ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
 ## Overview of Keyboard Mappings
-![overview](/assets/keyboard-layout.svg)
+Below is a figure of this keyboard layout, made by [this tool](http://www.keyboard-layout-editor.com/#/) (also [on Github](https://github.com/ijprest/keyboard-layout-editor)). 
+
+The red keycaps indicate that one of the key's shift states is set as a dead key. A [dead key](https://en.wikipedia.org/wiki/Dead_key) is a key that does not return a character at first press, but rather waits for the next key press and uses this input to determine the character it should return. This essentially enables an extra layer under a key, and allows us to map two key presses to one character, which greatly expands the amount of characters that could be mapped on a keyboard.   
+
+Red symbols indicate dead keys, purple symbols indicate dead keys in which the base character (left) is not the same as the default behavior (right), blue symbols indicate that the key maps to a Combining Diacritic Mark and is not a complete character. 
+
+![overview](/assets/keyboard-layout.png)
 
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
 
-0. (_Recommended_) Be logged in to the Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
+0. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
 1. Download the folder `KBDUSX3` in this repository to any directory on your computer.
 2. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
 3. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
@@ -22,7 +28,7 @@ Setting up this keyboard on your computer is very simple!
 	- Open Settings on your computer.
 	- Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
 	- Select `Add a keyboard`, and select `US-International and Scientific keyboard` in the drop-down menu.
-	- (_Recommended_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
+	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
 5. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
 > **Tip:** You may wish to retain the `KBDUSX3` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
