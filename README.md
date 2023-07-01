@@ -12,7 +12,7 @@ This keyboard layout was created using Microsoft Keyboard Layout Creator 1.4 (MS
 The US International Scientific keyboard layout utilizes two important concepts to achieve its unparalleled functionality: **dead keys** and the **AltGr shift state**. These concepts, common in non-English keyboard layouts, are explained below for those unfamiliar with them. 
 
 ### Dead keys
-When a normal key is pressed, a character is returned. However, [**dead keys**](https://en.wikipedia.org/wiki/Dead_key).  do not return a character when initially pressed, but rather waits for the next keypress and uses this input to determine the character it should return. This essentially enables a key to be mapped to multiple characters, for example key `` ` `` (backtick) could be mapped to all characters with an acute accent: à, ù, ì, À, Ù, Ì, and so on. 
+When a normal key is pressed, a character is returned. However, [**dead keys**](https://en.wikipedia.org/wiki/Dead_key) do not return a character when initially pressed, but rather waits for the next keypress and uses this input to determine the character it should return. This essentially enables a key to be mapped to multiple characters, for example key `` ` `` (backtick) could be mapped to all characters with an acute accent: à, ù, ì, À, Ù, Ì, and so on. 
 
 This comes at the cost of requiring two keypresses to access one character, as in the example to type `à` one would need to press `` ` `` then `a`. The character `` ` `` is called the **base character** of the dead key in this case. If the second keypress does not map to a character in the dead key's character set, the base character of the dead key is returned along with the second character. 
 
@@ -28,17 +28,19 @@ In the US International Scientific keyboard layout, the key mappings in the norm
 ## Overview of Keyboard Mappings
 Below is a figure of the US International Scientific keyboard layout, made by [this tool](http://www.keyboard-layout-editor.com/#/) (also [on Github](https://github.com/ijprest/keyboard-layout-editor)). This figure may be greatly helpful as a reference to the functionalities of this keyboard layout. 
 
-_Legend:_
+**Legend**
 
-⚫ Black: Normal keys. When pressed, returns the character shown. 
+⚫ _Black:_ Normal keys. When pressed, returns the character shown. 
 
-🔵 Blue: Normal keys, but exclusively mapped to a Combining Diacritic Mark. 
+🔵 _Blue:_ Normal keys, but exclusively mapped to a Combining Diacritic Mark^[1]. 
 
-🔴 Red: Dead keys. When pressed, waits for a second keypress, then returns a character based on the second keypress. 
+^[1]: A Combining Diacritic Mark
 
-🟣 Purple: Dead keys, but due to restraints its base character does not well represent the set of characters mapped to the dead key. The former character in this representation is the base, the latter is the default case. 
+🔴 _Red:_ Dead keys. When pressed, waits for a second keypress, then returns a character based on the second keypress. 
 
-🟥 Red keycaps: At least one of the key's shift states is set as a dead key. 
+🟣 _Purple:_ Dead keys, but due to restraints its base character does not well represent the set of characters mapped to the dead key. The former character in this representation is the base, the latter is the default case. 
+
+🟥 _Red keycaps:_ At least one of the key's shift states is set as a dead key. 
 
 ![overview](/assets/keyboard-layout.png)
 
