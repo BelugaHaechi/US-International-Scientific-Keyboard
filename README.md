@@ -9,7 +9,7 @@ This keyboard is easy to install, easy to use, and easy to memorize, while havin
 The keyboard was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). It is based on the __English (United States) QWERTY keyboard__, and some layout designs are consistent with the _United States-International keyboard_. Some ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
 ## Overview of Keyboard Mappings
-(WIP - pictures to be added)
+![overview](/assets/keyboard-layout.svg)
 
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
