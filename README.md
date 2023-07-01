@@ -8,12 +8,34 @@ This keyboard is easy to install, easy to use, and easy to memorize, while havin
 
 The keyboard was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). It is based on the __English (United States) QWERTY keyboard__, and some layout designs are consistent with the _United States-International keyboard_. Some ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
+## Must-know Concepts
+The US International Scientific keyboard layout utilizes two important concepts to achieve its unparalleled functionality: **dead keys** and the **AltGr shift state**. These concepts, common in non-English keyboards, are explained below for those unfamiliar with them. 
+
+### Dead keys
+When a normal key is pressed, a character is returned. However, **dead keys** do not return a character when initially pressed, but rather waits for the next keypress and uses this input to determine the character it should return. This essentially enables a key to be mapped to multiple characters, for example key ``` could be mapped to all characters with an acute accent: à, ù, ì, À, Ù, Ì, and so on. 
+
+This comes at the cost of requiring two keypresses to access one character, as in the example to type `à` one would need to press ``` then `a`. If the second keypress does not map to a character in the dead key's character set, the base character of the dead key is returned along with the second character. 
+
+By convention, the set of characters mapped to a dead key should share similar features; also it is conventional to always have the _space key_ mapped to the default case of a dead key. Dead keys are used extensively in many modern keyboards, such as in the Greek Polytonic layout, the US-International layout, the UK Extended layout, and so on. 
+
+### Shift states, and AltGr
+**Shift states** is a term for the layers of a keyboard layout, that could be interchanged by the state of control keys (`Shift`, `Alt`, `Ctrl`). We normally use two shift states: the blank shift state, and the `Shift` shift state. In fact, there are extra shift states arising from the combinations of the 3 control keys. Among the most well known are the `Alt+Ctrl` and `Alt+Ctrl+Shift` shift states, commonly referred to as the **`AltGr` shift states** because they are accessed by holding the `AltGr` (short for Alternative Graphics) key on European keyboards. On keyboards without `AltGr`, hold the **right `Alt` key** to access these shift states; holding down both `Alt` and `Ctrl` keys is also valid. `AltGr` expands our keyboard layout to twice the original size, enabling us to add new functions. 
+
+Shift states with only `Alt` and `Ctrl` are mostly unused in keyboard layouts, because they are generally reserved for hotkeys (keyboard shortcuts). 
+
+In the US International Scientific keyboard, the key mappings in the normal shift states are identical to that in common US QWERTY keyboard layouts. Thus, without `AltGr`, it is just a normal layout; this feature is intended to make the transition to this layout extremely easy. All extra functionalities are carefully designed into the `AltGr` shift states, along with usage of dead keys.  
+
 ## Overview of Keyboard Mappings
 Below is a figure of this keyboard layout, made by [this tool](http://www.keyboard-layout-editor.com/#/) (also [on Github](https://github.com/ijprest/keyboard-layout-editor)). 
 
-The red keycaps indicate that one of the key's shift states is set as a dead key. A [dead key](https://en.wikipedia.org/wiki/Dead_key) is a key that does not return a character at first press, but rather waits for the next key press and uses this input to determine the character it should return. This essentially enables an extra layer under a key, and allows us to map two key presses to one character, which greatly expands the amount of characters that could be mapped on a keyboard.   
+The red keycaps indicate that at least one of the key's shift states is set as a [dead key](https://en.wikipedia.org/wiki/Dead_key). 
 
-Red symbols indicate dead keys, purple symbols indicate dead keys in which the base character (left) is not the same as the default behavior (right), blue symbols indicate that the key maps to a Combining Diacritic Mark and is not a complete character. 
+
+
+_Legend:_
+⚫ Black: Normal keys. When pressed, returns the character shown. 
+🔴 Red: Dead keys. When pressed, waits for a second keypress, then returns a character based on the second keypress. 
+🟣 Purple: Dead keys, but its base character does not well represent the set of characters mapped to the dead key.  (right), blue symbols indicate that the key maps to a Combining Diacritic Mark and is not a complete character. 
 
 ![overview](/assets/keyboard-layout.png)
 
