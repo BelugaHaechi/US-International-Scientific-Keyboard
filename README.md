@@ -32,15 +32,13 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 
 ⚫ _Black:_ Normal keys. When pressed, returns the character shown. 
 
-🔵 _Blue:_ Normal keys, but exclusively mapped to a Combining Diacritic Mark^[1]. 
-
-^[1]: A Combining Diacritic Mark
-
 🔴 _Red:_ Dead keys. When pressed, waits for a second keypress, then returns a character based on the second keypress. 
 
 🟣 _Purple:_ Dead keys, but due to restraints its base character does not well represent the set of characters mapped to the dead key. The former character in this representation is the base, the latter is the default case. 
 
 🟥 _Red keycaps:_ At least one of the key's shift states is set as a dead key. 
+
+🟦 _Blue keycaps:_ The key is used to control the shift states relevant to this layout. 
 
 ![overview](/assets/keyboard-layout.png)
 
