@@ -7,8 +7,8 @@
 	- [Update / Uninstallation Guide](#update--uninstallation-guide)
 	- [Core Design Ideas](#core-design-ideas)
 	- [Key Mappings](#key-mappings)
-		- [Numeric row (`\`1234567890-=\`)](#numeric-row-1234567890-)
-		- [QWERTY row (`QWERTYUIOP[]\`)](#qwerty-row-qwertyuiop)
+		- [Numeric row](#numeric-row)
+		- [QWERTY row](#qwerty-row)
 		- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 # US International Scientific Keyboard Layout
@@ -60,7 +60,7 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 Setting up this keyboard on your computer is very simple! 
 
 1. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
-2. Download the folder `KBDUSX3` in this repository to any directory on your computer.
+2. Download the folder `KBDUSS4a` in this repository to any directory on your computer.
 3. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
 4. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
 5. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
@@ -70,7 +70,7 @@ Setting up this keyboard on your computer is very simple!
 	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
 6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
-> **Tip:** You may wish to retain the `KBDUSX3` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
+> **Tip:** You may wish to retain the `KBDUSS4a` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
 
 ## Update / Uninstallation Guide
 Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
@@ -78,7 +78,7 @@ Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
 2. The keyboard layout doesn't work as intended on your device. If so, you may wish to reinstall the layout.
 3. You wish to discard the layout for any reason :( Sad, but you are free to do so.
 
-To uninstall the keyboard layout, simply revisit the `KBDUSX3` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
+To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
 
 > **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
@@ -97,14 +97,14 @@ To uninstall the keyboard layout, simply revisit the `KBDUSX3` folder, and run `
   - In dead key mappings, the final base character should be a space (U+0020) that maps to: 1) if diacritic, the diacritic itself alone (modifier letter); 2) if else, the most common character among all options. 
   - The dead key should provide access to this class of characters to the maximum extent, except for those that are rarely used. 
 
-4. __Maximum flexibility under system restraints .__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
+4. __Maximum flexibility under system restraints.__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
   - The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key base assignments are within U+0000..U+0FFF. 
   - Customization is not imposed on control keys, numpad, arrow keys, and function keys. 
   - Dead keys are not chained, and all base characters are available in the normal and `Shift` shift states. 
   - Shift states only include normal, `Shift`, `AltGr` (`Ctrl+Alt`), and `Shift+AltGr` (`Ctrl+Alt+Shift`). Excluded states include `Ctrl`, `Ctrl+Shift`, `SGCaps` (`CapsLock`), and so on.
 
 ## Key Mappings
-### Numeric row (`\`1234567890-=`)
+### Numeric row
 	- DeadKeys `~ are identical to USI, for grave and tilde. Except for tilde, there is an extra = congruent
 	- Keys 123 are prime signs, from single to triple; there exists a quadruple prime, but not included
 	- Key ! is inverted ¡
@@ -122,7 +122,7 @@ To uninstall the keyboard layout, simply revisit the `KBDUSX3` folder, and run `
 	- DeadKeys =+ are for subscript and superscript, referencing the Ctrl+"="/"+" hotkeys in MS Office; available Keys are 1234567890-=+() for both, and the rest of the letters are incomplete due to intentions of Unicode, default cases are plus and minus, minus and plus
 
 
-### QWERTY row (`QWERTYUIOP[]\`)
+### QWERTY row
 	- Keys qQ are assigned to division sign (quotient), identical to (congruency)
 	- Keys wW are assigned to varepsilon and n-ary summation (similar to Keys pP); the look like the letters rotated by 90°
 	- Keys eE are assigned to element of (DeadKey?) and there exists (similar to Keys aA)
