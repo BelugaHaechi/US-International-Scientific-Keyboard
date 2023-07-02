@@ -11,17 +11,14 @@ This keyboard layout was created using Microsoft Keyboard Layout Creator 1.4 (MS
 ## Must-know Concepts
 The US International Scientific keyboard layout utilizes two important concepts to achieve its unparalleled functionality: **dead keys** and the **AltGr shift state**. These concepts, common in non-English keyboard layouts, are explained below for those unfamiliar with them. 
 
-<details>
-<summary>**Dead keys**</summary>
+### Dead keys
 When a normal key is pressed, a character is returned. However, [**dead keys**](https://en.wikipedia.org/wiki/Dead_key) do not return a character when initially pressed, but rather waits for the next keypress and uses this input to determine the character it should return. This essentially enables a key to be mapped to multiple characters, for example key `` ` `` (backtick) could be mapped to all characters with an acute accent: à, ù, ì, À, Ù, Ì, and so on. 
 
 This comes at the cost of requiring two keypresses to access one character, as in the example to type `à` one would need to press `` ` `` then `a`. The character `` ` `` is called the **base character** of the dead key in this case. If the second keypress does not map to a character in the dead key's character set, the base character of the dead key is returned along with the second character. 
 
 By convention, the set of characters mapped to a dead key should share similar features, and also with the base character. It is also conventional to always have the _space key_ mapped to the **default case** of a dead key, usually a blank version of the base character. Dead keys are used extensively in many modern keyboard layouts, such as in the Greek Polytonic layout, the US-International layout, the UK Extended layout, and so on. 
-</details>
 
-<details>
-<summary>**Shift states, and AltGr**</summary>
+### Shift states, and AltGr
 **Shift state** is a term for the layers of a keyboard layout, that could be interchanged by the state of control keys (`Shift`, `Alt`, `Ctrl`). We normally use two shift states: the blank shift state, and the `Shift` shift state. In fact, there are extra shift states arising from the combinations of the 3 control keys. Among the most well known are the `Alt+Ctrl` and `Alt+Ctrl+Shift` shift states, commonly referred to as the **AltGr shift states** because they are accessed by holding the `AltGr` (short for Alternative Graphics) key on European keyboards. On keyboards without `AltGr`, hold the **Right `Alt` key** to access these shift states; holding down both `Alt` and `Ctrl` keys is also valid. `AltGr` expands a keyboard layout to twice the original size, enabling the addition of new functions. 
 
 Shift states with only `Alt` or `Ctrl` are mostly unused in keyboard layouts, because these key combinations are reserved for hotkeys (keyboard shortcuts). 
@@ -49,16 +46,16 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
 
-0. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
-1. Download the folder `KBDUSX3` in this repository to any directory on your computer.
-2. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
-3. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
-4. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
+1. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
+2. Download the folder `KBDUSX3` in this repository to any directory on your computer.
+3. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
+4. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
+5. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
 	- Open Settings on your computer.
 	- Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
 	- Select `Add a keyboard`, and select `US-International and Scientific keyboard` in the drop-down menu.
 	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
-5. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
+6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
 > **Tip:** You may wish to retain the `KBDUSX3` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
 
@@ -70,7 +67,7 @@ Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
 
 To uninstall the keyboard layout, simply revisit the `KBDUSX3` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
 
-> **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry - this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
+> **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
 ## Core Design Ideas
 1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Ctrl+Alt`) and `Shift+AltGr` (`Ctrl+Alt+Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
