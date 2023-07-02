@@ -1,3 +1,16 @@
+- [US International Scientific Keyboard Layout](#us-international-scientific-keyboard-layout)
+	- [Must-know Concepts](#must-know-concepts)
+		- [Dead keys](#dead-keys)
+		- [Shift states, and AltGr](#shift-states-and-altgr)
+	- [Overview of Keyboard Mappings](#overview-of-keyboard-mappings)
+	- [Quick Start Guide](#quick-start-guide)
+	- [Update / Uninstallation Guide](#update--uninstallation-guide)
+	- [Core Design Ideas](#core-design-ideas)
+	- [Key Mappings](#key-mappings)
+		- [Numeric row (`\`1234567890-=\`)](#numeric-row-1234567890-)
+		- [QWERTY row (`QWERTYUIOP[]\`)](#qwerty-row-qwertyuiop)
+		- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
+
 # US International Scientific Keyboard Layout
 
 __A very powerful custom keyboard layout for Windows, tailored for efficient and convenient output of international alphabetical languages and scientific notation in plain text.__
