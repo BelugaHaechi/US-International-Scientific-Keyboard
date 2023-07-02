@@ -105,6 +105,12 @@ To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run 
 
 ## Key Mappings
 ### Numeric row
+|Key|Char|Unicode|Character|Description|
+|:-:|:--:|:-----:|--------|-----------|
+|q  |÷   |U+00fc
+
+
+
 	- DeadKeys `~ are identical to USI, for grave and tilde. Except for tilde, there is an extra = congruent
 	- Keys 123 are prime signs, from single to triple; there exists a quadruple prime, but not included
 	- Key ! is inverted ¡
