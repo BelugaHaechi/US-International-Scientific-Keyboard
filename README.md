@@ -13,7 +13,7 @@
 
 # US International Scientific Keyboard Layout
 
-__A very powerful custom keyboard layout for Windows, tailored for efficient and convenient output of international alphabetical languages and scientific notation in plain text.__
+__A very powerful custom keyboard layout for Windows, tailored for efficient and convenient input of international alphabetical languages and scientific notation in plain text.__
 
 This keyboard layout is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard layout that had dead keys inconveniently bound on commonly used keys. 
 
@@ -189,8 +189,8 @@ To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run 
 
 
 - R.I.P Michael Scott Kaplan (*1970/02/27 Creve Coeur — †2015/10/21 Redmond), Microsoft developer and the very creator of MSKLC. He passed away at age 45 from multiple sclerosis, a disease he fought against for 25 years. 
-	- His obiturary: https://obits.cleveland.com/us/obituaries/cleveland/name/michael-kaplan-obituary?id=20110483
-	- A podcast with him: https://www.hanselminutes.com/117/sorting-out-internationalization-with-michael-kaplan
-	- His blog archive (which contains many, many stories): http://archives.miloush.net/michkap/archive/
-	- He was a very talented and responsible person, with good humor and writing... He had a colorful life: conflicts with Microsoft, battles with fatal diseases, affairs with prostitutes, and fun blogs that were brought to the readers by a unique Unicode character. 
-	- Unicode's Memoriam includes his name, at https://www.unicode.org/consortium/memoriam.html. Mr. Kaplan, you shall be remembered.
+	- [His obiturary](https://obits.cleveland.com/us/obituaries/cleveland/name/michael-kaplan-obituary?id=20110483)
+	- [A podcast with him](https://www.hanselminutes.com/117/sorting-out-internationalization-with-michael-kaplan)
+	- [His blog archive](http://archives.miloush.net/michkap/archive/) (which contains many, many stories):
+	- He was a very talented and responsible person, with good humor and writing… He had a colorful life: conflicts with Microsoft, battles with fatal diseases, affairs with prostitutes, and fun blogs that were brought to the readers by a unique Unicode character. 
+	- [Unicode's Memoriam Page](https://www.unicode.org/consortium/memoriam.html) includes his name. Mr. Kaplan, you shall be remembered.
