@@ -8,6 +8,8 @@
 	- [Core Design Ideas](#core-design-ideas)
 	- [Key Mappings](#key-mappings)
 		- [Numeric row](#numeric-row)
+			- [`AltGr` shift state](#altgr-shift-state)
+			- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state)
 		- [QWERTY row](#qwerty-row)
 		- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
@@ -32,7 +34,7 @@ This comes at the cost of requiring two keypresses to access one character, as i
 By convention, the set of characters mapped to a dead key should share similar features, and also with the base character. It is also conventional to always have the _space key_ mapped to the **default case** of a dead key, usually a blank version of the base character. Dead keys are used extensively in many modern keyboard layouts, such as in the Greek Polytonic layout, the US-International layout, the UK Extended layout, and so on. 
 
 ### Shift states, and AltGr
-**Shift state** is a term for the layers of a keyboard layout, that could be interchanged by the state of control keys (`Shift`, `Alt`, `Ctrl`). We normally use two shift states: the blank shift state, and the `Shift` shift state. In fact, there are extra shift states arising from the combinations of the 3 control keys. Among the most well known are the `Alt+Ctrl` and `Alt+Ctrl+Shift` shift states, commonly referred to as the **AltGr shift states** because they are accessed by holding the `AltGr` (short for Alternative Graphics) key on European keyboards. On keyboards without `AltGr`, hold the **Right `Alt` key** to access these shift states; holding down both `Alt` and `Ctrl` keys is also valid. `AltGr` expands a keyboard layout to twice the original size, enabling the addition of new functions. 
+**Shift state** is a term for the layers of a keyboard layout, that could be interchanged by the state of control keys (`Shift`, `Alt`, `Ctrl`). We normally use two shift states: the blank shift state, and the `Shift` shift state. In fact, there are extra shift states arising from the combinations of the 3 control keys. Among the most well known are the `Alt` + `Ctrl` and `Alt` + `Ctrl` + `Shift` shift states, commonly referred to as the **AltGr shift states** because they are accessed by holding the `AltGr` (short for Alternative Graphics) key on European keyboards. On keyboards without `AltGr`, hold the **Right `Alt` key** to access these shift states; holding down both `Alt` and `Ctrl` keys is also valid. `AltGr` expands a keyboard layout to twice the original size, enabling the addition of new functions. 
 
 Shift states with only `Alt` or `Ctrl` are mostly unused in keyboard layouts, because these key combinations are reserved for hotkeys (keyboard shortcuts). 
 
@@ -83,31 +85,51 @@ To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run 
 > **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
 ## Core Design Ideas
-1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Ctrl+Alt`) and `Shift+AltGr` (`Ctrl+Alt+Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
+1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Alt` + `Ctrl`) and `AltGr` + `Shift` (`Ctrl` + `Alt` + `Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
    Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. These mappings with be denoted with a `(USX)` mark, referencing the Windows `KBDUSX.dll` file containing setup information. 
 
-2. __Absolute logicality of key mappings.__ Every key mapping should always _make as much sense as possible_ and provide convenience for both multilingual and mathematical input. Every reason for a certain mapping should be explicitly documented, and alternatives should be discussed if any. 
-  - At least one among name, shape, usage, etc. of the character allocated should be related with the key that it is mapped to. 
-  - Common characters should be easy to access, while uncommon characters should be set further out of reach, and rare and awkward characters should be avoided. 
-  - Characters of the same type should have similar shift states, when possible.
+2. __Consistent logicality of key mappings.__ Every key mapping should always _make as much sense as possible_ and provide convenience for both multilingual and mathematical input. Every reason for a certain mapping should be explicitly documented, and alternatives should be discussed if any. 
+   - At least one among name, shape, usage, etc. of the character allocated should be related with the key that it is mapped to. 
+   - Common characters should be easy to access, while uncommon characters should be set further out of reach, and rare and awkward characters should be avoided. 
+   - Characters of the same type should have similar shift states, when possible.
 
 3. __Compact organization by using dead keys.__ Multiple characters that share an obvious characteristic (best shown in its Unicode naming or block) should be considered to be included in a [dead key](https://en.wikipedia.org/wiki/Dead_key). Dead keys will be highlighted with a bold notice "__Dead key.__", and the mappings should be fully provided for reference. 
-  - Dead key base characters should be chosen with the same criteria as normal characters. 
-  - If the common characteristic is a diacritic, the base assignment should be the combining diacritic for versatility. If it is not, it should be meaningful as a fallback, or another related character (this is the hard part!). 
-  - In dead key mappings, the final base character should be a space (U+0020) that maps to: 1) if diacritic, the diacritic itself alone (modifier letter); 2) if else, the most common character among all options. 
-  - The dead key should provide access to this class of characters to the maximum extent, except for those that are rarely used. 
+   - Dead key base characters should be chosen with the same criteria as normal characters. 
+   - If the common characteristic is a diacritic, the base assignment should be the combining diacritic for versatility. If it is not, it should be meaningful as a fallback, or another related character (this is the hard part!). 
+   - In dead key mappings, the final base character should be a space (U+0020) that maps to: 1) if diacritic, the diacritic itself alone (modifier letter); 2) if else, the most common character among all options. 
+   - The dead key should provide access to this class of characters to the maximum extent, except for those that are rarely used. 
 
 4. __Maximum flexibility under system restraints.__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
-  - The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key base assignments are within U+0000..U+0FFF. 
-  - Customization is not imposed on control keys, numpad, arrow keys, and function keys. 
-  - Dead keys are not chained, and all base characters are available in the normal and `Shift` shift states. 
-  - Shift states only include normal, `Shift`, `AltGr` (`Ctrl+Alt`), and `Shift+AltGr` (`Ctrl+Alt+Shift`). Excluded states include `Ctrl`, `Ctrl+Shift`, `SGCaps` (`CapsLock`), and so on.
+   - The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key base assignments are within U+0000..U+0FFF. 
+   - Customization is not imposed on control keys, numpad, arrow keys, and function keys. 
+   - Dead keys are not chained, and all base characters are available in the normal and `Shift` shift states. 
+   - Shift states only include normal, `Shift`, `AltGr` (`Ctrl+Alt`), and `Shift+AltGr` (`Ctrl+Alt+Shift`). Excluded states include `Ctrl`, `Ctrl+Shift`, `SGCaps` (`CapsLock`), and so on.
 
 ## Key Mappings
 ### Numeric row
+#### `AltGr` shift state
 |Key|Char|Unicode|Character|Description|
-|:-:|:--:|:-----:|--------|-----------|
-|q  |÷   |U+00fc
+|:-:|:--:|:-----:|---------|-----------|
+|`` ` ``|`   |U+0300 |COMBINING GRAVE ACCENT|**Dead key:** Characters with the accent diacritic. Shape similar to U+0060 GRAVE ACCENT (backtick). Retained from USX layout. |
+|`1`|′   |U+2032|PRIME|Math: first (1) derivative. |
+|`2`|″   |U+2033|DOUBLE PRIME|Math: second (2) derivative. |
+|`3`|‴   |U+2034|TRIPLE PRIME|Math: third (3) derivative. |
+|`4`|¤   |U+00A4|CURRENCY SIGN|Retained from USX layout. Possibly because the `Shift` shift state of this key maps to U+0024 DOLLAR SIGN. |
+|`5`|€   |U+20AC|EURO SIGN|Retained from USX layout. Near other currency characters. |
+|`6`|ˇ   |U+030C|COMBINING CARON|**Dead key:** Characters with the caron diacritic. Mirror of U+0302 COMBINING CIRCUMFLEX ACCENT. |
+|`7`|⃗   |U+20D7|COMBINING RIGHT ARROW ABOVE|Physics: vector notation. Shape of 7 similar to right arrow. |
+|`8`|∞   |U+221E|INFINITY|Shape similar to turned 8. |
+|`9`|∝   |U+221D|PROPORTIONAL TO|Near U+221E INFINITY. Shape similar to 9, or 8 with an opening. |
+|`0`|°   |U+030A|COMBINING RING ABOVE|**Dead key:** Characters with a ring above, expanded to circle-related non-math symbols. Shape similar to 0, also the key is positioned at the top of the keyboard (Thus `0` is prioritized over `O`). |
+|`-`|–   |U+2013|EN DASH|Retained from USX layout. Commonly used version of the dash in typesetting. |
+|`=`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key:** Subscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00AA FEMININE ORDINAL INDICATOR is used as the base character in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
+
+#### `AltGr` + `Shift` shift state
+|Key|Char|Unicode|Character|Description|
+|:-:|:--:|:-----:|---------|-----------|
+|`~`|˜   |U+0303 |COMBINING TILDE|Dead key: Characters with the tilde diacritic. Shape similar to U+007E TILDE. Retained from USX layout. |
+
+
 
 
 
@@ -129,6 +151,10 @@ To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run 
 
 
 ### QWERTY row
+|Key|Char|Unicode|Character|Description|
+|:-:|:--:|:-----:|---------|-----------|
+|`q`|÷   |U+00FC |Division Sign|q=Quotient|
+
 	- Keys qQ are assigned to division sign (quotient), identical to (congruency)
 	- Keys wW are assigned to varepsilon and n-ary summation (similar to Keys pP); the look like the letters rotated by 90°
 	- Keys eE are assigned to element of (DeadKey?) and there exists (similar to Keys aA)
