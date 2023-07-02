@@ -11,19 +11,27 @@ This keyboard layout was created using Microsoft Keyboard Layout Creator 1.4 (MS
 ## Must-know Concepts
 The US International Scientific keyboard layout utilizes two important concepts to achieve its unparalleled functionality: **dead keys** and the **AltGr shift state**. These concepts, common in non-English keyboard layouts, are explained below for those unfamiliar with them. 
 
+<details>
+<summary>
 ### Dead keys
+</summary>
 When a normal key is pressed, a character is returned. However, [**dead keys**](https://en.wikipedia.org/wiki/Dead_key) do not return a character when initially pressed, but rather waits for the next keypress and uses this input to determine the character it should return. This essentially enables a key to be mapped to multiple characters, for example key `` ` `` (backtick) could be mapped to all characters with an acute accent: à, ù, ì, À, Ù, Ì, and so on. 
 
 This comes at the cost of requiring two keypresses to access one character, as in the example to type `à` one would need to press `` ` `` then `a`. The character `` ` `` is called the **base character** of the dead key in this case. If the second keypress does not map to a character in the dead key's character set, the base character of the dead key is returned along with the second character. 
 
 By convention, the set of characters mapped to a dead key should share similar features, and also with the base character. It is also conventional to always have the _space key_ mapped to the **default case** of a dead key, usually a blank version of the base character. Dead keys are used extensively in many modern keyboard layouts, such as in the Greek Polytonic layout, the US-International layout, the UK Extended layout, and so on. 
+</details>
 
+<details>
+<summary>
 ### Shift states, and AltGr
+</summary>
 **Shift state** is a term for the layers of a keyboard layout, that could be interchanged by the state of control keys (`Shift`, `Alt`, `Ctrl`). We normally use two shift states: the blank shift state, and the `Shift` shift state. In fact, there are extra shift states arising from the combinations of the 3 control keys. Among the most well known are the `Alt+Ctrl` and `Alt+Ctrl+Shift` shift states, commonly referred to as the **AltGr shift states** because they are accessed by holding the `AltGr` (short for Alternative Graphics) key on European keyboards. On keyboards without `AltGr`, hold the **Right `Alt` key** to access these shift states; holding down both `Alt` and `Ctrl` keys is also valid. `AltGr` expands a keyboard layout to twice the original size, enabling the addition of new functions. 
 
 Shift states with only `Alt` or `Ctrl` are mostly unused in keyboard layouts, because these key combinations are reserved for hotkeys (keyboard shortcuts). 
 
 In the US International Scientific keyboard layout, the key mappings in the normal shift states are identical to that in the common English (United States) QWERTY keyboard layout. Thus, without `AltGr`, it is just a normal layout; this feature is intended to make the transition to this layout extremely easy. All extra functionalities are carefully designed into the AltGr shift states, along with usage of dead keys.  
+</details>
 
 ## Overview of Keyboard Mappings
 Below is a figure of the US International Scientific keyboard layout, made by [this tool](http://www.keyboard-layout-editor.com/#/) (also [on Github](https://github.com/ijprest/keyboard-layout-editor)). This figure may be greatly helpful as a reference to the functionalities of this keyboard layout. 
