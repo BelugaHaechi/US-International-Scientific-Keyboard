@@ -181,14 +181,15 @@ Also, key mappings from the original United States-International keyboard are re
 |`I`||U+0283|LATIN SMALL LETTER ESH|**Dead key: integral math symbols.** The name "integral" begins with the letter "i". Also integrals are large math operators, so they are mapped to capital key "I". **Base character and default case** is U+0283 LATIN SMALL LETTER ESH becuase it is a useful latin letter that resembles an integral, while all integral characters in this set have code points that are invalid for a dead key. |
 |`O`||U+2205|EMPTY SET|Math: set notation. Shape similar to letter "O" and U+03D5 GREEK PHI SYMBOL mapped to the same key. |
 |`P`||U+220F|N-ARY PRODUCT|Math: pi multiplication notation. Resembles Greek capital letter pi, which starts with the letter "p". Mirror image of U+2210 N-ARY COPRODUCT. |
-|`{`||U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages. Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
-|`{`||U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages. Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
+|`{`||U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages (eg. French guillemets). Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
+|`{`||U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages (eg. French guillemets). Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
 |`\|`||U+2191|UPWARDS ARROW|Shape similar to U+007C VERTICAL BAR mapped to this key. Indicates upward motion, which is related to the `Shift` key icon. Mirror image of U+2193 DOWNWARDS ARROW. |
 
 ### ASDF row
 #### `AltGr` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
+|`a`||U+0250|LATIN SMALL LETTER TURNED A|**Dead key: set inclusion math symbols.** Mainly mapped to this key in accordance with key mappings of set membership symbols and U+2203 THERE EXISTS to key `E`. U+2220 ANGLE is also included for its similar shape with these symbols and its name starting with letter "a". **Base character** has a shape similar to a turned "a". **Default case** is U+2282 SUBSET OF, which is representative. | 
 
 #### `AltGr` + `Shift` shift state
 |Key|Char|Unicode|Character|Description|
