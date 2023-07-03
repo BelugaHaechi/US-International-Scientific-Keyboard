@@ -113,61 +113,58 @@ Also, key mappings from the original United States-International keyboard are re
 #### `AltGr` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
-|`` ` ``|`   |U+0300 |COMBINING GRAVE ACCENT|**Dead key:** Characters with the accent diacritic. Shape similar to U+0060 GRAVE ACCENT (backtick). Retained from USX layout. |
+|`` ` ``|`   |U+0300|COMBINING GRAVE ACCENT|**Dead key: Characters with the accent diacritic.** Shape similar to U+0060 GRAVE ACCENT (backtick). Retained from USX layout. |
 |`1`|′   |U+2032|PRIME|Math: first (1) derivative. |
 |`2`|″   |U+2033|DOUBLE PRIME|Math: second (2) derivative. |
 |`3`|‴   |U+2034|TRIPLE PRIME|Math: third (3) derivative. |
 |`4`|¤   |U+00A4|CURRENCY SIGN|Retained from USX layout. Related to the `Shift` shift state mapping mapping of U+0024 DOLLAR SIGN. |
 |`5`|€   |U+20AC|EURO SIGN|Retained from USX layout. Near other currency characters. |
-|`6`|ˇ   |U+030C|COMBINING CARON|**Dead key:** Characters with the caron diacritic. Mirror image of U+0302 COMBINING CIRCUMFLEX ACCENT. |
-|`7`|⃗   |U+20D7|COMBINING RIGHT ARROW ABOVE|Physics: vector notation. Shape of 7 similar to right arrow. |
-|`8`|∞   |U+221E|INFINITY|Math. Shape similar to turned 8. |
-|`9`|∝   |U+221D|PROPORTIONAL TO|Math. Near U+221E INFINITY. Shape similar to 9, or 8 with an opening. |
-|`0`|°   |U+030A|COMBINING RING ABOVE|**Dead key:** Characters with a ring above, expanded to circle-related non-math symbols. Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key `0` is prioritized over `O`). |
+|`6`|ˇ   |U+030C|COMBINING CARON|**Dead key: Characters with the caron diacritic.** Mirror image of U+0302 COMBINING CIRCUMFLEX ACCENT. |
+|`7`|⃗   |U+20D7|COMBINING RIGHT ARROW ABOVE|Physics: vector notation. Shape of 7 similar to right arrow. Near other combining diacritical marks. |
+|`8`|∞   |U+221E|INFINITY|Math. Shape similar to a turned 8. |
+|`9`|∝   |U+221D|PROPORTIONAL TO|Math. Near U+221E INFINITY. Shape similar to a turned 9, or a turned 8 with an opening. |
+|`0`|°   |U+030A|COMBINING RING ABOVE|**Dead key: Characters with a ring above, expanded to related non-math symbols.** Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key `0` is prioritized over `O`). |
 |`-`|–   |U+2013|EN DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Short than U+2014 EM DASH, so mapped to the hyphen which is shorter than the underscore. |
-|`=`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key:** Subscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00AA FEMININE ORDINAL INDICATOR is used as the base character in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
+|`=`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key: Subscript characters.** Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Base character and default case** is U+00AA FEMININE ORDINAL INDICATOR in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### `AltGr` + `Shift` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
-|`~`|˜   |U+0303 |COMBINING TILDE|**Dead key**: Characters with the tilde diacritic, extended to some math equality symbols with an upper tilde. Shape similar to U+007E TILDE. Retained from USX layout. |
+|`~`|˜   |U+0303|COMBINING TILDE|**Dead key: Characters with the tilde diacritic, extended to similar math equality symbols.** Shape similar to U+007E TILDE. Retained from USX layout. |
 |`!`|¡   |U+00A1|INVERTED EXCLAMATION MARK|Punctuation: used to begin exclamations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+0021 EXCLAMATION MARK. |
 |`@`|√   |U+221A|SQUARE ROOT|Math: second (2) root. |
 |`#`|∛   |U+221B|CUBE ROOT|Math: third (3) root. |
 |`$`|£   |U+00A3|POUND SIGN|Retained from USX layout. Near other currency characters. |
 |`%`|‰   |U+2030|PER MILLE SIGN|Shape and usage similar to U+0025 PERCENT SIGN on the same key. |
-|`^`|ˆ   |U+0302|COMBINING CIRCUMFLEX ACCENT|**Dead key:** Characters with the caron diacritic. Shape similar to U+005E CIRCUMFLEX ACCENT on the same key. Retained from USX layout. |
-|`&`|¦   |U+00A6|BROKEN BAR|**Dead key:** Ligatures, extended to related shapes. Usage of U+0026 AMPERSAND related to the  fact that ligatures are joined characters. U+00A6 BROKEN BAR is used as base character because 1) there is no valid and representative character in the set of ligatures, 2) it is an important character also covered in the USX layout, and 3) its shape suggests the idea of joining two objects. |
+|`^`|ˆ   |U+0302|COMBINING CIRCUMFLEX ACCENT|**Dead key: Characters with the caron diacritic.** Shape similar to U+005E CIRCUMFLEX ACCENT on the same key. Retained from USX layout. |
+|`&`|¦   |U+00A6|BROKEN BAR|**Dead key: Ligatures, extended to related punctuation symbols.** Usage of U+0026 AMPERSAND related to the fact that ligatures are joined characters. **Base character** is U+00A6 BROKEN BAR because 1) there is no valid and representative character in the set of ligatures, 2) it is an important character also covered in the USX layout, and 3) its shape suggests the idea of joining two objects. **Default case** is U+200D ZERO WIDTH JOINER, commonly used to compose composite graphemes, especially in emojis. |
 |‍`*`|⋅   |U+22C5|DOT OPERATOR|Math: dot multiplication. Usage similar to the multiplication meaning of U+002A ASTERISK on this key. |
 |`(`|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
 |`)`|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
 |`_`|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating breaks in sentences. Longer than U+2014 EM DASH, so mapped to the underscore which is longer than the hyphen. |
-|`+`|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key:** Superscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00BA MASCULINE ORDINAL INDICATOR is used as the base character in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts. |
+|`+`|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key: Superscript characters.** Conventionally, the hotkey for subscripts is `Ctrl` + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Base character and default case** is U+00BA MASCULINE ORDINAL INDICATOR in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### Notes
-
-
-	- DeadKeys `~ are identical to USI, for grave and tilde. Except for tilde, there is an extra = congruent
-	- Keys 123 are prime signs, from single to triple; there exists a quadruple prime, but not included
-	- Key ! is inverted ¡
-	- Keys @# are square root and cubic root, common math symbols
-	- Keys 4$5 is identical to USI, currency ¤, pound £, Euro €
-	- Key % is per mille
-	- DeadKeys 6^ are CDMs for caron and circumflex, which are symmetries
-	- Key 7 is a CDM for right arrow (vector), since the 7 looks like an right arrow (harpoon), while near Keys 6^& that are already CDMs
-	- DeadKey & base non-breaking space, default to Zero Width Joiner, mapped to ae/oe/ij/nj/dz ligatures, also upside down &
-	- Keys 89 are infinity and proportional to, looks like the numbers rotated by 90°
-	- Key * is the dot operator, for multiplication
-	- DeadKey 0 base combining top ring, default is the degrees sign, mapping Keys CFaAuU respectively to Celsius, Fahrenheit, å, Å, ů, Ů, o to ring operator, - to U+1db1 modifier latin small barred o
-	- Keys () are mathematical angular brackets for quantum physics
-	- Keys -_ are en dash and em dash
-	- DeadKeys =+ are for subscript and superscript, referencing the Ctrl+"="/"+" hotkeys in MS Office; available Keys are 1234567890-=+() for both, and the rest of the letters are incomplete due to intentions of Unicode, default cases are plus and minus, minus and plus
+1. There exists U+2057 QUADRUPLE PRIME and U+221C FOURTH ROOT as candidates for key `4`, but they were not chosen because 1) these characters are rarely used (we live in a 3-dimensional world), and 2) there exists reasonable USX layout options to retain (which were used in this layout).
+2. The superscripts and subscripts provided are limited intentionally by Unicode, in a way that not every letter in the alphabet has one. Most of these mini letters were coded in the first place for IPA phonetics! It is suggested to always use rich text to achieve such styles for normal text, and this keyboard layout provides these choices only to aid in plain text communication. 
 
 
 ### QWERTY row
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
-|`q`|÷   |U+00FC |Division Sign|q=Quotient|
+|`q`|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key `x`), another common math operator. |
+|`w`||U+03F5|GREEK LUNATE EPSILON SYMBOL|Shape similar to a turned "w". Key `e` is reserved for "element of"-related (set membership) symbols. |
+|`e`||U+03F6|GREEK REVERSED LUNATE EPSILON SYMBOL|**Dead key: set membership math symbols.** **Base character** has a shape similar to a reversed "e", and is near its mirror image U+03F5 GREEK LUNATE EPSILON SYMBOL. **Default case** is U+2208 ELEMENT OF, which starts with the letter "e". |
+|`r`|®   |U+00AE|REGISTERED SIGN|Retained from USX layout. Shape of symbol includes the letter "R". |
+|`t`|†   |U+2020|DAGGER|Often used for marking footnotes, also used in math/physics for the conjugate (Hermitian) transpose. Shape similar to letter "t". |
+|`y`|±   |U+00B1|PLUS-MINUS SIGN|**Dead key: math symbols comprised of horizontal and vertical lines, such as logical operators.** Shapes similar to the crossed shape of the letter "y", which also notes that the characters in this set could comprise of lines towards all directions. **Base character and default case** is U+00B1 PLUS-MINUS SIGN because it is most commonly used, and is the only character in this set which has a code point that is valid for a dead key. |
+|`u`||U+222A|UNION|Math: set notation. Shape similar to letter "U". |
+|`i`||U+0131|LATIN SMALL LETTER DOTLESS I|Math: imaginary unit in some fields, eg. engineering. Also used in some languages, eg. Azerbaijani, Turkish. Shape similar to letter "i". |
+|`o`||U+03D5|GREEK PHI SYMBOL|**Dead key: circle-related math symbols.** Shapes include a circle, similar to shape of letter "o". **Base character and default case** is U+03D5 GREEK PHI SYMBOL, a common Greek variable name in math. Note for Greek language, U+03C6 GREEK SMALL LETTER PHI (φ) is used. |
+|`p`||U+2210|N-ARY COPRODUCT|Math: collection operator in abstract algebra. Mirror image of U+220F N-ARY PRODUCT. |
+|`[`||U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. 
+|`]`||U+203A|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK|Punctuation: right single quotation mark in some European languages. Justification similar to U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK. |
+
 
 	- Keys qQ are assigned to division sign (quotient), identical to (congruency)
 	- Keys wW are assigned to varepsilon and n-ary summation (similar to Keys pP); the look like the letters rotated by 90°
