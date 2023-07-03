@@ -1,6 +1,8 @@
 # US International Scientific Keyboard Layout
 __A very powerful custom keyboard layout for Windows, tailored for efficient and convenient input of international alphabetical languages and scientific notation in plain text.__
 
+![overview](/assets/keyboard-layout.png)
+
 - [US International Scientific Keyboard Layout](#us-international-scientific-keyboard-layout)
 	- [Must-know Concepts](#must-know-concepts)
 		- [Dead keys](#dead-keys)
