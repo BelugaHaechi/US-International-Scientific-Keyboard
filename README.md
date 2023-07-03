@@ -14,6 +14,7 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 	- [Numeric row](#numeric-row)
 		- [`AltGr` shift state](#altgr-shift-state)
 		- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state)
+		- [Notes](#notes)
 	- [QWERTY row](#qwerty-row)
 - [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
@@ -94,6 +95,7 @@ Also, key mappings from the original United States-International keyboard are re
    - At least one among name, shape, usage, etc. of the character allocated should be related with the key that it is mapped to. 
    - Common characters should be easy to access, while uncommon characters should be set further out of reach, and rare and awkward characters should be avoided. 
    - Characters of the same type should have similar shift states, when possible.
+   - *Code point precedence rule.* When a pair of related characters may be candidates for the shifted and unshifted states of a same key, unless their shape or usage directly indicates "up or down" notions, the character mapped to a smaller code point should be mapped to the unshifted state. 
 
 3. __Compact organization by using dead keys.__ Multiple characters that share an obvious characteristic (best shown in its Unicode naming or block) should be considered to be included in a [dead key](https://en.wikipedia.org/wiki/Dead_key). Dead keys will be highlighted with a bold notice "__Dead key.__", and the mappings should be fully provided for reference. 
    - Dead key base characters should be chosen with the same criteria as normal characters. 
@@ -123,26 +125,27 @@ Also, key mappings from the original United States-International keyboard are re
 |`8`|∞   |U+221E|INFINITY|Math. Shape similar to turned 8. |
 |`9`|∝   |U+221D|PROPORTIONAL TO|Math. Near U+221E INFINITY. Shape similar to 9, or 8 with an opening. |
 |`0`|°   |U+030A|COMBINING RING ABOVE|**Dead key:** Characters with a ring above, expanded to circle-related non-math symbols. Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key `0` is prioritized over `O`). |
-|`-`|–   |U+2013|EN DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Short than U+2014 EM DASH, so mapped to the hyphen key which is shorter than the underscore key. |
+|`-`|–   |U+2013|EN DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Short than U+2014 EM DASH, so mapped to the hyphen which is shorter than the underscore. |
 |`=`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key:** Subscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00AA FEMININE ORDINAL INDICATOR is used as the base character in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### `AltGr` + `Shift` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
 |`~`|˜   |U+0303 |COMBINING TILDE|**Dead key**: Characters with the tilde diacritic, extended to some math equality symbols with an upper tilde. Shape similar to U+007E TILDE. Retained from USX layout. |
-|`!`|¡   |U+00A1|INVERTED EXCLAMATION MARK|Punctuation: used at the beginning of exclamations in languages such as Spanish. Retained from USX layout, but changed shift state for better accordance with U+0021 EXCLAMATION MARK. |
+|`!`|¡   |U+00A1|INVERTED EXCLAMATION MARK|Punctuation: used to begin exclamations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+0021 EXCLAMATION MARK. |
 |`@`|√   |U+221A|SQUARE ROOT|Math: second (2) root. |
 |`#`|∛   |U+221B|CUBE ROOT|Math: third (3) root. |
 |`$`|£   |U+00A3|POUND SIGN|Retained from USX layout. Near other currency characters. |
 |`%`|‰   |U+2030|PER MILLE SIGN|Shape and usage similar to U+0025 PERCENT SIGN on the same key. |
 |`^`|ˆ   |U+0302|COMBINING CIRCUMFLEX ACCENT|**Dead key:** Characters with the caron diacritic. Shape similar to U+005E CIRCUMFLEX ACCENT on the same key. Retained from USX layout. |
-|`&`|¦   |U+00A6|BROKEN BAR|**Dead key:** Ligatures, extended to related shapes. Usage of U+0026 AMPERSNAD related to the  fact that ligatures are joined characters. U+00A6 BROKEN BAR is used as base character because 1) there is no valid and representative character in the set of ligatures, 2) broken bar is an important character also covered in the USX layout, and 3) its shape suggests the concept of joining two objects. |
+|`&`|¦   |U+00A6|BROKEN BAR|**Dead key:** Ligatures, extended to related shapes. Usage of U+0026 AMPERSAND related to the  fact that ligatures are joined characters. U+00A6 BROKEN BAR is used as base character because 1) there is no valid and representative character in the set of ligatures, 2) it is an important character also covered in the USX layout, and 3) its shape suggests the idea of joining two objects. |
 |‍`*`|⋅   |U+22C5|DOT OPERATOR|Math: dot multiplication. Usage similar to the multiplication meaning of U+002A ASTERISK on this key. |
 |`(`|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
 |`)`|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
-|`_`|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Longer than U+2014 EM DASH, so mapped to the hyphen key which is longer than the underscore key. |
-|`+`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key:** Subscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00AA FEMININE ORDINAL INDICATOR is used as the base character in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
+|`_`|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating breaks in sentences. Longer than U+2014 EM DASH, so mapped to the underscore which is longer than the hyphen. |
+|`+`|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key:** Superscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00BA MASCULINE ORDINAL INDICATOR is used as the base character in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts; also the masculine form is used for superscripts since it has a larger codepoint value. |
 
+#### Notes
 
 
 	- DeadKeys `~ are identical to USI, for grave and tilde. Except for tilde, there is an extra = congruent
