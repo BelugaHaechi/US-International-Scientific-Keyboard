@@ -72,7 +72,7 @@ Setting up this keyboard on your computer is very simple!
 	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
 6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
-> **Tip:** You may wish to retain the `KBDUSS4a` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
+> **Tip:** You may wish to retain the `KBDUSS4a` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
 
 ## Update / Uninstallation Guide
 Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
