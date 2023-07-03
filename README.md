@@ -1,3 +1,6 @@
+# US International Scientific Keyboard Layout
+__A very powerful custom keyboard layout for Windows, tailored for efficient and convenient input of international alphabetical languages and scientific notation in plain text.__
+
 - [US International Scientific Keyboard Layout](#us-international-scientific-keyboard-layout)
 	- [Must-know Concepts](#must-know-concepts)
 		- [Dead keys](#dead-keys)
@@ -12,10 +15,6 @@
 			- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state)
 		- [QWERTY row](#qwerty-row)
 		- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
-
-# US International Scientific Keyboard Layout
-
-__A very powerful custom keyboard layout for Windows, tailored for efficient and convenient input of international alphabetical languages and scientific notation in plain text.__
 
 This keyboard layout is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard layout that had dead keys inconveniently bound on commonly used keys. 
 
