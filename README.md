@@ -150,6 +150,7 @@ Also, key mappings from the original United States-International keyboard are re
 
 
 ### QWERTY row
+#### `AltGr` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
 |`q`|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key `x`), another common math operator. |
@@ -164,6 +165,34 @@ Also, key mappings from the original United States-International keyboard are re
 |`p`||U+2210|N-ARY COPRODUCT|Math: collection operator in abstract algebra. Mirror image of U+220F N-ARY PRODUCT. |
 |`[`||U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. 
 |`]`||U+203A|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK|Punctuation: right single quotation mark in some European languages. Justification similar to U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK. |
+
+#### `AltGr` + `Shift` shift state
+|Key|Char|Unicode|Character|Description|
+|:-:|:--:|:-----:|---------|-----------|
+|`Q`||U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter `q`. This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
+|`W`||U+2211|N-ARY SUMMATION|Math: sigma summation notation. Shape similar to a turned "W". Key `E` is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
+|`E`||U+2203|THERE EXISTS|Math: existential quantifier. Shape similar to a reversed letter "E". |
+|`R`||U+2122|TRADE MARK SIGN|Usage highly related to U+00AE REGISTERED SIGN mapped to the same key. |
+|`T`||U+2021|DOUBLE DAGGER|Often used for marking footnotes, also used in chemistry to denote a transition state. Shape similar to letter "t" and U+2020 DAGGER mapped to the same key. |
+|`Y`||U+00A5|YEN SIGN|Shape similar to letter "Y". Near other currency signs. |
+|`U`||U+2229|INTERSECTION|Math: set notation. Mirror image of U+222A UNION mapped to the same key. |
+|`I`||U+0283|LATIN SMALL LETTER ESH|**Dead key: integral math symbols.** The name "integral" begins with the letter "i". Also integrals are large math operators, so they are mapped to capital key "I". **Base character and default case** is U+0283 LATIN SMALL LETTER ESH becuase it is a useful latin letter that resembles an integral, while all integral characters in this set have code points that are invalid for a dead key. |
+|`O`||U+2205|EMPTY SET|Math: set notation. Shape similar to letter "O" and U+03D5 GREEK PHI SYMBOL mapped to the same key. |
+|`P`||U+220F|N-ARY PRODUCT|Math: pi multiplication notation. Resembles Greek capital letter pi, which starts with the letter "p". Mirror image of U+2210 N-ARY COPRODUCT. |
+|`{`||U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages. Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
+|`{`||U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages. Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
+
+
+### ASDF row
+#### `AltGr` shift state
+|Key|Char|Unicode|Character|Description|
+|:-:|:--:|:-----:|---------|-----------|
+
+#### `AltGr` + `Shift` shift state
+|Key|Char|Unicode|Character|Description|
+|:-:|:--:|:-----:|---------|-----------|
+
+
 
 
 	- Keys qQ are assigned to division sign (quotient), identical to (congruency)
