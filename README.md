@@ -114,22 +114,32 @@ To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run 
 |`1`|′   |U+2032|PRIME|Math: first (1) derivative. |
 |`2`|″   |U+2033|DOUBLE PRIME|Math: second (2) derivative. |
 |`3`|‴   |U+2034|TRIPLE PRIME|Math: third (3) derivative. |
-|`4`|¤   |U+00A4|CURRENCY SIGN|Retained from USX layout. Possibly because the `Shift` shift state of this key maps to U+0024 DOLLAR SIGN. |
+|`4`|¤   |U+00A4|CURRENCY SIGN|Retained from USX layout. Related to the `Shift` shift state mapping mapping of U+0024 DOLLAR SIGN. |
 |`5`|€   |U+20AC|EURO SIGN|Retained from USX layout. Near other currency characters. |
-|`6`|ˇ   |U+030C|COMBINING CARON|**Dead key:** Characters with the caron diacritic. Mirror of U+0302 COMBINING CIRCUMFLEX ACCENT. |
+|`6`|ˇ   |U+030C|COMBINING CARON|**Dead key:** Characters with the caron diacritic. Mirror image of U+0302 COMBINING CIRCUMFLEX ACCENT. |
 |`7`|⃗   |U+20D7|COMBINING RIGHT ARROW ABOVE|Physics: vector notation. Shape of 7 similar to right arrow. |
-|`8`|∞   |U+221E|INFINITY|Shape similar to turned 8. |
-|`9`|∝   |U+221D|PROPORTIONAL TO|Near U+221E INFINITY. Shape similar to 9, or 8 with an opening. |
-|`0`|°   |U+030A|COMBINING RING ABOVE|**Dead key:** Characters with a ring above, expanded to circle-related non-math symbols. Shape similar to 0, also the key is positioned at the top of the keyboard (Thus `0` is prioritized over `O`). |
-|`-`|–   |U+2013|EN DASH|Retained from USX layout. Commonly used version of the dash in typesetting. |
+|`8`|∞   |U+221E|INFINITY|Math. Shape similar to turned 8. |
+|`9`|∝   |U+221D|PROPORTIONAL TO|Math. Near U+221E INFINITY. Shape similar to 9, or 8 with an opening. |
+|`0`|°   |U+030A|COMBINING RING ABOVE|**Dead key:** Characters with a ring above, expanded to circle-related non-math symbols. Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key `0` is prioritized over `O`). |
+|`-`|–   |U+2013|EN DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Short than U+2014 EM DASH, so mapped to the hyphen key which is shorter than the underscore key. |
 |`=`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key:** Subscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00AA FEMININE ORDINAL INDICATOR is used as the base character in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### `AltGr` + `Shift` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
-|`~`|˜   |U+0303 |COMBINING TILDE|Dead key: Characters with the tilde diacritic. Shape similar to U+007E TILDE. Retained from USX layout. |
-
-
+|`~`|˜   |U+0303 |COMBINING TILDE|**Dead key**: Characters with the tilde diacritic, extended to some math equality symbols with an upper tilde. Shape similar to U+007E TILDE. Retained from USX layout. |
+|`!`|¡   |U+00A1|INVERTED EXCLAMATION MARK|Punctuation: used at the beginning of exclamations in languages such as Spanish. Retained from USX layout, but changed shift state for better accordance with U+0021 EXCLAMATION MARK. |
+|`@`|√   |U+221A|SQUARE ROOT|Math: second (2) root. |
+|`#`|∛   |U+221B|CUBE ROOT|Math: third (3) root. |
+|`$`|£   |U+00A3|POUND SIGN|Retained from USX layout. Near other currency characters. |
+|`%`|‰   |U+2030|PER MILLE SIGN|Shape and usage similar to U+0025 PERCENT SIGN on the same key. |
+|`^`|ˆ   |U+0302|COMBINING CIRCUMFLEX ACCENT|**Dead key:** Characters with the caron diacritic. Shape similar to U+005E CIRCUMFLEX ACCENT on the same key. Retained from USX layout. |
+|`&`|¦   |U+00A6|BROKEN BAR|**Dead key:** Ligatures, extended to related shapes. Usage of U+0026 AMPERSNAD related to the  fact that ligatures are joined characters. U+00A6 BROKEN BAR is used as base character because 1) there is no valid and representative character in the set of ligatures, 2) broken bar is an important character also covered in the USX layout, and 3) its shape suggests the concept of joining two objects. |
+|‍`*`|⋅   |U+22C5|DOT OPERATOR|Math: dot multiplication. Usage similar to the multiplication meaning of U+002A ASTERISK on this key. |
+|`(`|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
+|`)`|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
+|`_`|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Longer than U+2014 EM DASH, so mapped to the hyphen key which is longer than the underscore key. |
+|`+`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key:** Subscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00AA FEMININE ORDINAL INDICATOR is used as the base character in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 
 
