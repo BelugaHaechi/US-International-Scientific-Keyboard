@@ -95,7 +95,6 @@ Also, key mappings from the original United States-International keyboard are re
    - At least one among name, shape, usage, etc. of the character allocated should be related with the key that it is mapped to. 
    - Common characters should be easy to access, while uncommon characters should be set further out of reach, and rare and awkward characters should be avoided. 
    - Characters of the same type should have similar shift states, when possible.
-   - *Code point precedence rule.* When a pair of related characters may be candidates for the shifted and unshifted states of a same key, unless their shape or usage directly indicates "up or down" notions, the character mapped to a smaller code point should be mapped to the unshifted state. 
 
 3. __Compact organization by using dead keys.__ Multiple characters that share an obvious characteristic (best shown in its Unicode naming or block) should be considered to be included in a [dead key](https://en.wikipedia.org/wiki/Dead_key). Dead keys will be highlighted with a bold notice "__Dead key.__", and the mappings should be fully provided for reference. 
    - Dead key base characters should be chosen with the same criteria as normal characters. 
@@ -143,7 +142,7 @@ Also, key mappings from the original United States-International keyboard are re
 |`(`|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
 |`)`|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
 |`_`|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating breaks in sentences. Longer than U+2014 EM DASH, so mapped to the underscore which is longer than the hyphen. |
-|`+`|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key:** Superscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00BA MASCULINE ORDINAL INDICATOR is used as the base character in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts; also the masculine form is used for superscripts since it has a larger codepoint value. |
+|`+`|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key:** Superscript characters. Conventionally, the hotkey for subscripts is `Ctrl` + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). U+00BA MASCULINE ORDINAL INDICATOR is used as the base character in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### Notes
 
