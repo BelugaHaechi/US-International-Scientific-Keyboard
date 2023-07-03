@@ -1,7 +1,10 @@
+# US International Scientific Keyboard Layout
+__A very powerful custom keyboard layout for Windows, tailored for efficient and convenient input of international alphabetical languages and scientific notation in plain text.__
+
 - [US International Scientific Keyboard Layout](#us-international-scientific-keyboard-layout)
 	- [Must-know Concepts](#must-know-concepts)
 		- [Dead keys](#dead-keys)
-		- [Shift states, and AltGr](#shift-states-and-altgr)
+		- [Shift states and AltGr](#shift-states-and-altgr)
 	- [Overview of Keyboard Mappings](#overview-of-keyboard-mappings)
 	- [Quick Start Guide](#quick-start-guide)
 	- [Update / Uninstallation Guide](#update--uninstallation-guide)
@@ -11,15 +14,11 @@
 			- [`AltGr` shift state](#altgr-shift-state)
 			- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state)
 		- [QWERTY row](#qwerty-row)
-		- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
-
-# US International Scientific Keyboard Layout
-
-__A very powerful custom keyboard layout for Windows, tailored for efficient and convenient input of international alphabetical languages and scientific notation in plain text.__
+	- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 This keyboard layout is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard layout that had dead keys inconveniently bound on commonly used keys. 
 
-> **Note:** This keyboard layout is **not a replacement for proper scientific notation** that can be formatted using rich-text programs like $\LaTeX$ or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting on Discord, using Notepad, non-technical writing.
+> **Note:** This keyboard layout is **not a replacement for proper scientific notation** that can be formatted using rich-text programs like $\LaTeX$, UnicodeMath, or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting on Discord, using Notepad, non-technical writing.
 
 This keyboard layout was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). The layout is based on the common __English (United States) QWERTY keyboard layout__, and some designs are consistent with the _United States-International keyboard layout_. Other ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
@@ -33,7 +32,7 @@ This comes at the cost of requiring two keypresses to access one character, as i
 
 By convention, the set of characters mapped to a dead key should share similar features, and also with the base character. It is also conventional to always have the _space key_ mapped to the **default case** of a dead key, usually a blank version of the base character. Dead keys are used extensively in many modern keyboard layouts, such as in the Greek Polytonic layout, the US-International layout, the UK Extended layout, and so on. 
 
-### Shift states, and AltGr
+### Shift states and AltGr
 **Shift state** is a term for the layers of a keyboard layout, that could be interchanged by the state of control keys (`Shift`, `Alt`, `Ctrl`). We normally use two shift states: the blank shift state, and the `Shift` shift state. In fact, there are extra shift states arising from the combinations of the 3 control keys. Among the most well known are the `Alt` + `Ctrl` and `Alt` + `Ctrl` + `Shift` shift states, commonly referred to as the **AltGr shift states** because they are accessed by holding the `AltGr` (short for Alternative Graphics) key on European keyboards. On keyboards without `AltGr`, hold the **Right `Alt` key** to access these shift states; holding down both `Alt` and `Ctrl` keys is also valid. `AltGr` expands a keyboard layout to twice the original size, enabling the addition of new functions. 
 
 Shift states with only `Alt` or `Ctrl` are mostly unused in keyboard layouts, because these key combinations are reserved for hotkeys (keyboard shortcuts). 
@@ -62,7 +61,8 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 Setting up this keyboard on your computer is very simple! 
 
 1. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
-2. Download the folder `KBDUSS4a` in this repository to any directory on your computer.
+2. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
+   > **Note:** The releases will be named `KBDUSS` + a two-digit version code. We will use `KBUSS**` to represent this below.
 3. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
 4. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
 5. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
@@ -72,7 +72,7 @@ Setting up this keyboard on your computer is very simple!
 	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
 6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
-> **Tip:** You may wish to retain the `KBDUSS4a` folder, because it could be used to repair/uninstall the keyboard layout on your computer. Don't worry if you accidentally deleted it anyways, as you could download it again from this repository anytime. 
+> **Tip:** You may wish to retain the `KBDUSS**` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
 
 ## Update / Uninstallation Guide
 Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
@@ -80,13 +80,13 @@ Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
 2. The keyboard layout doesn't work as intended on your device. If so, you may wish to reinstall the layout.
 3. You wish to discard the layout for any reason :( Sad, but you are free to do so.
 
-To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
+To uninstall the keyboard layout, simply revisit the `KBDUSS**` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
 
 > **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
 ## Core Design Ideas
 1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Alt` + `Ctrl`) and `AltGr` + `Shift` (`Ctrl` + `Alt` + `Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
-   Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. These mappings with be denoted with a `(USX)` mark, referencing the Windows `KBDUSX.dll` file containing setup information. 
+Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. These mappings with be denoted with a `(USX)` mark, referencing the Windows `KBDUSX.dll` file containing setup information. 
 
 2. __Consistent logicality of key mappings.__ Every key mapping should always _make as much sense as possible_ and provide convenience for both multilingual and mathematical input. Every reason for a certain mapping should be explicitly documented, and alternatives should be discussed if any. 
    - At least one among name, shape, usage, etc. of the character allocated should be related with the key that it is mapped to. 
@@ -220,7 +220,7 @@ To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run 
 	- Keys 56 are for U+03F0 (ϰ) and U+03F1 (ϱ), they are put here since they seem less common and less related than to the others, but coincidently have consecutive Unicode datapoints :)
 
 
-### Bugs found in MSKLC - but it's a program that's almost older than myself!
+## Bugs found in MSKLC - but it's a program that's almost older than myself!
 1. For some reason, when I tried to rename the description of a custom keyboard based on United States-International, the 1st line in the .klc file changed, but the DESCRIPTION section at the bottom of the file remained "United States-International - Custom", which was unchangeable. 
 2. Sometimes there is a newline between the DESCRIPTION section and the LANAGUAGE section, and sometimes not
 3. [Major issue] Deadkeys that have a base of greater than U+1000 will fail to work when their .dll is created, and they seem to be defined errorenously, since when the corresponding keys are pressed, Windows system gives off an alarm noise, instead of the normal no response when a key combination that is not defined is called. When the built custom keyboard is then loaded into MSKLC, the deadkeys are blank and no codepoint designation can be seen. 
