@@ -165,6 +165,8 @@ Also, key mappings from the original United States-International keyboard are re
 |`p`||U+2210|N-ARY COPRODUCT|Math: collection operator in abstract algebra. Mirror image of U+220F N-ARY PRODUCT. |
 |`[`||U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. 
 |`]`||U+203A|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK|Punctuation: right single quotation mark in some European languages. Justification similar to U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK. |
+|`\`||U+2193|DOWNWARDS ARROW|Meaning related to U+005C REVERSE SOLIDUS (backslash) that indicates a falling notion. Mirror image of U+2191 UPWARDS ARROW. |
+
 
 #### `AltGr` + `Shift` shift state
 |Key|Char|Unicode|Character|Description|
@@ -181,7 +183,7 @@ Also, key mappings from the original United States-International keyboard are re
 |`P`||U+220F|N-ARY PRODUCT|Math: pi multiplication notation. Resembles Greek capital letter pi, which starts with the letter "p". Mirror image of U+2210 N-ARY COPRODUCT. |
 |`{`||U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages. Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
 |`{`||U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages. Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
-
+|`|`||U+2191|UPWARDS ARROW|Shape similar to U+007C VERTICAL BAR mapped to this key. Indicates upward motion, which is related to the `Shift` key icon. Mirror image of U+2193 DOWNWARDS ARROW. |
 
 ### ASDF row
 #### `AltGr` shift state
