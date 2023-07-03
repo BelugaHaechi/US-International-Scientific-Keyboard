@@ -14,7 +14,7 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 			- [`AltGr` shift state](#altgr-shift-state)
 			- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state)
 		- [QWERTY row](#qwerty-row)
-		- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
+	- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 This keyboard layout is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard layout that had dead keys inconveniently bound on commonly used keys. 
 
@@ -220,7 +220,7 @@ Also, key mappings from the original United States-International keyboard are re
 	- Keys 56 are for U+03F0 (ϰ) and U+03F1 (ϱ), they are put here since they seem less common and less related than to the others, but coincidently have consecutive Unicode datapoints :)
 
 
-### Bugs found in MSKLC - but it's a program that's almost older than myself!
+## Bugs found in MSKLC - but it's a program that's almost older than myself!
 1. For some reason, when I tried to rename the description of a custom keyboard based on United States-International, the 1st line in the .klc file changed, but the DESCRIPTION section at the bottom of the file remained "United States-International - Custom", which was unchangeable. 
 2. Sometimes there is a newline between the DESCRIPTION section and the LANAGUAGE section, and sometimes not
 3. [Major issue] Deadkeys that have a base of greater than U+1000 will fail to work when their .dll is created, and they seem to be defined errorenously, since when the corresponding keys are pressed, Windows system gives off an alarm noise, instead of the normal no response when a key combination that is not defined is called. When the built custom keyboard is then loaded into MSKLC, the deadkeys are blank and no codepoint designation can be seen. 
