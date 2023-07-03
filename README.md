@@ -4,7 +4,7 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 - [US International Scientific Keyboard Layout](#us-international-scientific-keyboard-layout)
 	- [Must-know Concepts](#must-know-concepts)
 		- [Dead keys](#dead-keys)
-		- [Shift states, and AltGr](#shift-states-and-altgr)
+		- [Shift states and AltGr](#shift-states-and-altgr)
 	- [Overview of Keyboard Mappings](#overview-of-keyboard-mappings)
 	- [Quick Start Guide](#quick-start-guide)
 	- [Update / Uninstallation Guide](#update--uninstallation-guide)
@@ -32,7 +32,7 @@ This comes at the cost of requiring two keypresses to access one character, as i
 
 By convention, the set of characters mapped to a dead key should share similar features, and also with the base character. It is also conventional to always have the _space key_ mapped to the **default case** of a dead key, usually a blank version of the base character. Dead keys are used extensively in many modern keyboard layouts, such as in the Greek Polytonic layout, the US-International layout, the UK Extended layout, and so on. 
 
-### Shift states, and AltGr
+### Shift states and AltGr
 **Shift state** is a term for the layers of a keyboard layout, that could be interchanged by the state of control keys (`Shift`, `Alt`, `Ctrl`). We normally use two shift states: the blank shift state, and the `Shift` shift state. In fact, there are extra shift states arising from the combinations of the 3 control keys. Among the most well known are the `Alt` + `Ctrl` and `Alt` + `Ctrl` + `Shift` shift states, commonly referred to as the **AltGr shift states** because they are accessed by holding the `AltGr` (short for Alternative Graphics) key on European keyboards. On keyboards without `AltGr`, hold the **Right `Alt` key** to access these shift states; holding down both `Alt` and `Ctrl` keys is also valid. `AltGr` expands a keyboard layout to twice the original size, enabling the addition of new functions. 
 
 Shift states with only `Alt` or `Ctrl` are mostly unused in keyboard layouts, because these key combinations are reserved for hotkeys (keyboard shortcuts). 
