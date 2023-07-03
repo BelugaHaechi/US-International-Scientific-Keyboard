@@ -61,7 +61,8 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 Setting up this keyboard on your computer is very simple! 
 
 1. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
-2. Download the folder `KBDUSS4a` in this repository to any directory on your computer.
+2. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
+   > **Note:** The releases will be named `KBDUSS` + a two-digit version code. We will use `KBUSS**` to represent this below.
 3. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
 4. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
 5. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
@@ -71,7 +72,7 @@ Setting up this keyboard on your computer is very simple!
 	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
 6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
-> **Tip:** You may wish to retain the `KBDUSS4a` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
+> **Tip:** You may wish to retain the `KBDUSS**` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
 
 ## Update / Uninstallation Guide
 Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
@@ -79,7 +80,7 @@ Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
 2. The keyboard layout doesn't work as intended on your device. If so, you may wish to reinstall the layout.
 3. You wish to discard the layout for any reason :( Sad, but you are free to do so.
 
-To uninstall the keyboard layout, simply revisit the `KBDUSS4a` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
+To uninstall the keyboard layout, simply revisit the `KBDUSS**` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
 
 > **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
