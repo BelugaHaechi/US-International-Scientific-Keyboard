@@ -3,20 +3,20 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 
 ![overview](/assets/keyboard-layout.png)
 
-- [US International Scientific Keyboard Layout](#us-international-scientific-keyboard-layout)
-	- [Must-know Concepts](#must-know-concepts)
-		- [Dead keys](#dead-keys)
-		- [Shift states and AltGr](#shift-states-and-altgr)
-	- [Overview of Keyboard Mappings](#overview-of-keyboard-mappings)
-	- [Quick Start Guide](#quick-start-guide)
-	- [Update / Uninstallation Guide](#update--uninstallation-guide)
-	- [Core Design Ideas](#core-design-ideas)
-	- [Key Mappings](#key-mappings)
-		- [Numeric row](#numeric-row)
-			- [`AltGr` shift state](#altgr-shift-state)
-			- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state)
-		- [QWERTY row](#qwerty-row)
-	- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
+- [Must-know Concepts](#must-know-concepts)
+	- [Dead keys](#dead-keys)
+	- [Shift states and AltGr](#shift-states-and-altgr)
+- [Overview of Keyboard Mappings](#overview-of-keyboard-mappings)
+- [Quick Start Guide](#quick-start-guide)
+- [Update / Uninstallation Guide](#update--uninstallation-guide)
+- [Core Design Ideas](#core-design-ideas)
+- [Key Mappings](#key-mappings)
+	- [Numeric row](#numeric-row)
+		- [`AltGr` shift state](#altgr-shift-state)
+		- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state)
+	- [QWERTY row](#qwerty-row)
+- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
+
 
 This keyboard layout is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard layout that had dead keys inconveniently bound on commonly used keys. 
 
