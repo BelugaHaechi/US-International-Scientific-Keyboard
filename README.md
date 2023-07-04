@@ -3,12 +3,12 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 
 ![overview](/assets/keyboard-layout.png)
 
+- [Quick Start Guide](#quick-start-guide)
+- [Update / Uninstallation Guide](#update--uninstallation-guide)
 - [Must-know Concepts](#must-know-concepts)
 	- [Dead keys](#dead-keys)
 	- [Shift states and AltGr](#shift-states-and-altgr)
 - [Overview of Keyboard Mappings](#overview-of-keyboard-mappings)
-- [Quick Start Guide](#quick-start-guide)
-- [Update / Uninstallation Guide](#update--uninstallation-guide)
 - [Core Design Ideas](#core-design-ideas)
 - [Key Mappings](#key-mappings)
 	- [Numeric row](#numeric-row)
@@ -27,11 +27,39 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 - [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 
+
 This keyboard layout is easy to install, easy to use, and easy to memorize, while having extensive capabilities covering common Latin letters, diacritics, mathematical symbols, additional punctuation, and some mathematical font letters. It is recommended for those who often work in __STEM__ fields on a __Windows__ system, and have collaborations with co-workers from __diverse language backgrounds__. It is also intended as a better alternative to the United States-International keyboard layout that had dead keys inconveniently bound on commonly used keys. 
 
 > **Note:** This keyboard layout is **not a replacement for proper scientific notation** that can be formatted using rich-text programs like $\LaTeX$, UnicodeMath, or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting on Discord, using Notepad, non-technical writing.
 
 This keyboard layout was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). The layout is based on the common __English (United States) QWERTY keyboard layout__, and some designs are consistent with the _United States-International keyboard layout_. Other ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
+
+## Quick Start Guide
+Setting up this keyboard on your computer is very simple! 
+
+1. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
+2. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
+   > **Note:** Releases are named as `KBDUSS` + major version number + minor version letter. We will use `KBDUSS**` to represent this below. This naming system is in conformity with system files in `C:\Windows\System32\KBD*.dll`. 
+3. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
+4. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
+5. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
+	- Open Settings on your computer.
+	- Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
+	- Select `Add a keyboard`, and select `US-International and Scientific keyboard` in the drop-down menu.
+	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
+6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
+
+> **Tip:** You may wish to retain the `KBDUSS**` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
+
+## Update / Uninstallation Guide
+Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
+1. There is a new version of the keyboard available, and you will need to uninstall the previous version before installing the new one. Yes, minor improvements may be made to the layout upon request, feel free to post your ideas in Issues.
+2. The keyboard layout doesn't work as intended on your device. If so, you may wish to reinstall the layout.
+3. You wish to discard the layout for any reason :( Sad, but you are free to do so.
+
+To uninstall the keyboard layout, simply revisit the `KBDUSS**` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
+
+> **Known issue:** Possibly due to a Windows system bug, on uninstallation the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be still able to find the name of the layout in the keyboard layout list in computer settings, but if you try to add this layout to your input methods, it cannot appear in the input methods list for actual use. In other words, only a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
 ## Must-know Concepts
 The US International Scientific keyboard layout utilizes two important concepts to achieve its unparalleled functionality: **dead keys** and the **AltGr shift state**. These concepts, common in non-English keyboard layouts, are explained below for those unfamiliar with them. 
@@ -67,33 +95,6 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 🟦 _Blue keycaps:_ The key is used to control the shift states relevant to this layout. 
 
 ![overview](/assets/keyboard-layout.png)
-
-## Quick Start Guide
-Setting up this keyboard on your computer is very simple! 
-
-1. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
-2. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
-   > **Note:** The releases will be named `KBDUSS` + a two-digit version code. We will use `KBUSS**` to represent this below.
-3. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
-4. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
-5. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
-	- Open Settings on your computer.
-	- Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
-	- Select `Add a keyboard`, and select `US-International and Scientific keyboard` in the drop-down menu.
-	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
-6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
-
-> **Tip:** You may wish to retain the `KBDUSS**` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
-
-## Update / Uninstallation Guide
-Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
-1. There is a new version of the keyboard available, and you will need to uninstall the previous version before installing the new one. Yes, minor improvements may be made to the layout upon request, feel free to post your ideas in Issues.
-2. The keyboard layout doesn't work as intended on your device. If so, you may wish to reinstall the layout.
-3. You wish to discard the layout for any reason :( Sad, but you are free to do so.
-
-To uninstall the keyboard layout, simply revisit the `KBDUSS**` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
-
-> **Warning:** There is a known issue that the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be able to still find the name of the layout in the keyboard layout list of your computer in Settings, but if you add the layout, it will not appear in layout selection for actual use. In other words, a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
 
 ## Core Design Ideas
 1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Alt` + `Ctrl`) and `AltGr` + `Shift` (`Ctrl` + `Alt` + `Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
