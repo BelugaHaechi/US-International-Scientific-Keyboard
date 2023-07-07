@@ -24,6 +24,8 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 	- [ZXCV row](#zxcv-row)
 		- [`AltGr` shift state](#altgr-shift-state-3)
 		- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state-3)
+	- [Space bar](#space-bar)
+- [Legacy](#legacy)
 - [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 
@@ -246,8 +248,24 @@ Also, key mappings from the original United States-International keyboard are re
 #### `AltGr` + `Shift` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
+|`Z`|Ƶ   |U+01B5|LATIN CAPITAL LETTER Z WITH STROKE|**Dead key: letters with the mathematical double-struck font.** Due to Windows limitations, only a few such letters are available. **Base character** is U+01B5 LATIN CAPITAL LETTER Z WITH STROKE only as a representation of the special font, while all double-struck letters are not valid as dead key base characters; this character is by intent not mapped to a secondary keypress because it is only a placeholder and not a double-struck letter. **Default character** is U+2124 DOUBLE-STRUCK CAPITAL Z (ℤ), which is commonly used in math for the set of integers. |
+|`X`|≈   |U+2248|ALMOST EQUAL TO|Math. Denotes approximation, which has the sound of letter "x". Has the same shift state as U+2261 IDENTICAL TO, both equality-related symbols. |
+|`C`|¢   |U+00A2|CENT SIGN|Shape similar to letter "c". Similarly in a shifted shift state as the dollar sign. Retained from USX layout. |
+|`V`|∧   |U+2227|LOGICAL AND|Math: logical operator, conjunction. Mirror image of U+2228 LOGICAL OR. |
+|`B`|˘   |U+0306|COMBINING BREVE|**Dead key: characters with the breve diacritic.** The name "breve" starts with the letter "b". |
+|`N`|⊻   |U+22BB|XOR|Math: logical operator, exclusive disjunction. Expresses an alternative version of OR, so mapped to the same key as U+00AC NOT SIGN; but this does not mean that this is a negated version of OR (XOR is not NOR). Near other logical operators. |
+|`M`|µ   |U+00B5|MICRO SIGN|**Dead key: letters with the mathematical script font.** Due to Windows limitations, only a few such letters are available. **Base character** is U+00B5 MICRO SIGN, whose name starts with letter "m". Itself is a deprecated symbol identical to Greek small letter mu (μ), and the latter should always be used. Here it is a placeholder, while all script letters are not valid as dead key base characters; this character is by intent not mapped to a secondary keypress because it is only a placeholder and not a script letter. **Default character** is U+2133 SCRIPT CAPITAL M (ℳ), which is the symbol for the M-matrix in physics, and the pre-WWII German Mark. |
+|`<`|<   |U+003C|LESS-THAN SIGN|**Dead key: variants of the less-than sign in math.** **Base character** is the plain less-than sign because all of its variants are not valid as dead key base characters. **Default case** is U+2264 LESS-THAN OR EQUAL TO as the most common and simple variant. |
+|`>`|>   |U+003E|GREATER-THAN SIGN|**Dead key: variants of the greater-than sign in math.** **Base character** is the plain greater-than sign because all of its variants are not valid as dead key base characters. **Default case** is U+2265 GREATER-THAN OR EQUAL TO as the most common and simple variant. |
+|`?`|¿   |U+00BF|INVERTED QUESTION MARK|Punctuation: used to begin interrogations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+003F QUESTION MARK. |
 
+### Space bar
+- **`AltGr` shift state:** U+00A0 NO-BREAK SPACE. Special whitespace in typesetting that prevents an automatic line break at its position. 
+- **`AltGr` + `Shift` shift state:** U+200B ZERO WIDTH SPACE. Special whitespace that has no width, which could serve as implicit word boundaries in type
 
+## Legacy
+(To be removed when project is finished)
+- awa
 	- Keys qQ are assigned to division sign (quotient), identical to (congruency)
 	- Keys wW are assigned to varepsilon and n-ary summation (similar to Keys pP); the look like the letters rotated by 90°
 	- Keys eE are assigned to element of (DeadKey?) and there exists (similar to Keys aA)
