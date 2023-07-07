@@ -231,6 +231,16 @@ Also, key mappings from the original United States-International keyboard are re
 #### `AltGr` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
+|`z`|≠   |U+2260|NOT EQUAL TO|Math. Shape similar to letter "z". Has the same shift state as the equals sign ("="). |
+|`x`|×   |U+00D7|MULTIPLICATION SIGN|Math. Shape similar to letter "x". Has same shift state as U+00F7 DIVISION SIGN (mapped to key `x`), another common math operator. |
+|`c`|©   |U+00A9|COPYRIGHT SIGN|Shape includes letter "c". Retained from USX layout. |
+|`v`|∨   |U+2228|LOGICAL OR|Math: logical operator. Shape similar to letter "v". |
+|`b`|ˉ   |U+0304|COMBINING MACRON|**Dead keys: characters with the macron diacritic, extended to overline diacritics.** The shapes of these diacritics are usually called "bars" (especially in physics), which starts with letter "b". This key was originally intended for only U+0305 COMBINING OVERLINE for use in math and physics (denoting averages), then extended. |
+|`n`|¬   |U+00AC|NOT SIGN|Math: logical operator. The name "not" starts with letter "n". |
+|`m`|↦   |U+21A6|RIGHTWARDS ARROW FROM BAR|Math: function notation. Commonly called the maplet, which starts with letter "m". |
+|`,`|¸   |U+0327|COMBINING CEDILLA|**Dead key: characters with the cedilla diacritic.** Shape of cedilla similar to the comma. |
+|`.`|·   |U+00B7|MIDDLE DOT|**Dead key: punctuation with multiple dots.** Shape similar to the period. Not to be confused with U+22C5 DOT OPERATOR (⋅), which should be used exclusively for dot multiplication in math. In accordance with $\LaTeX$, includes the family of `\cdot`, `\cdots`, `\vdots`, etc. Mainly used to abbreviate the elements of a matrix. |
+|`/`|̸   |U+0338|COMBINING LONG SOLIDUS OVERLAY|**Dead key: characters with a stroke.** Shape similar to the solidus. Standard combining character for "crossing out" other characters in Unicode. **Default case** is U+2044 FRACTION SLASH, which has a similar shape with the solidus, and also represents the usage of the solidus as the division operator. |
 
 
 #### `AltGr` + `Shift` shift state
