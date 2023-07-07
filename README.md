@@ -124,7 +124,7 @@ Also, key mappings from the original United States-International keyboard are re
 #### `AltGr` shift state
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
-|`` ` ``|`   |U+0300|COMBINING GRAVE ACCENT|**Dead key: characters with the accent diacritic.** Shape similar to U+0060 GRAVE ACCENT (backtick). Retained from USX layout. |
+|`` ` ``|`   |U+0300|COMBINING GRAVE ACCENT|**Dead key: characters with the grave accent diacritic.** Shape similar to U+0060 GRAVE ACCENT (backtick). Retained from USX layout. |
 |`1`|′   |U+2032|PRIME|Math: first (1) derivative. |
 |`2`|″   |U+2033|DOUBLE PRIME|Math: second (2) derivative. |
 |`3`|‴   |U+2034|TRIPLE PRIME|Math: third (3) derivative. |
@@ -211,7 +211,7 @@ Also, key mappings from the original United States-International keyboard are re
 |`k`|↔   |U+2194|LEFT RIGHT ARROW|Letter "K" positioned between letters "J" and "L" mapped to the left and right arrows. Shape of letter "K" also points to two directions. |
 |`l`|→   |U+2192|RIGHTWARDS ARROW|Shape of letter "L" points to the left, similar to a mirror image of letter "J". Justification similar to U+2190 LEFTWARDS ARROW. |
 |`;`|∴   |U+2234|THEREFORE|Math: indicates logical consequence in proofs, especially for geometry. Shape has multiple dots, similar to the colon and semicolon. In pair with U+2235 BECAUSE, but normally used after it, thus mapped to the non-shifted shift state. |
-|`'`|´   |U+0301|COMBINING ACUTE ACCENT|**Dead key: characters with the acute diacritic.** Shape of apostrophe similar to acute accent. Retained from USX layout. |
+|`'`|´   |U+0301|COMBINING ACUTE ACCENT|**Dead key: characters with the acute accent diacritic.** Shape of apostrophe similar to acute accent. Retained from USX layout. |
 
 
 #### `AltGr` + `Shift` shift state
