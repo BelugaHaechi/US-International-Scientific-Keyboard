@@ -25,10 +25,11 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 		- [`AltGr` shift state](#altgr-shift-state-3)
 		- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state-3)
 	- [Space bar](#space-bar)
-- [Dead key secondary mappings](#dead-key-secondary-mappings)
+- [Dead Key Secondary Mappings](#dead-key-secondary-mappings)
 	- [Modified Latin letters](#modified-latin-letters)
 	- [Mathematical alphanumeric symbols](#mathematical-alphanumeric-symbols)
 	- [Mathematical operators](#mathematical-operators)
+- [Comparison to Other Layouts](#comparison-to-other-layouts)
 - [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 
@@ -38,6 +39,8 @@ This keyboard layout is easy to install, easy to use, and easy to memorize, whil
 > **Note:** This keyboard layout is **not a replacement for proper scientific notation** that can be formatted using rich-text programs like $\LaTeX$, UnicodeMath, or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting on Discord, using Notepad, non-technical writing.
 
 This keyboard layout was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). The layout is based on the common __English (United States) QWERTY keyboard layout__, and some designs are consistent with the _United States-International keyboard layout_. Other ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
+
+A detailed comparison chart of this keyboard layout with other layouts can be found in [this section](#comparison-to-other-layouts). 
 
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
@@ -101,6 +104,10 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 
 ![overview](/assets/keyboard-layout.png)
 
+For details on the meaning and justification of each key-character mapping, please see [this section](#key-mappings). 
+
+For details on the secondary mappings of dead keys, please jump to [this section](#dead-key-secondary-mappings). 
+
 ## Core Design Ideas
 1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Alt` + `Ctrl`) and `AltGr` + `Shift` (`Ctrl` + `Alt` + `Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
 Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. These mappings with be denoted with a `(USX)` mark, referencing the Windows `KBDUSX.dll` file containing setup information. 
@@ -118,7 +125,7 @@ Also, key mappings from the original United States-International keyboard are re
 
 4. __Maximum flexibility under system restraints.__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
    - Mathematical Greek letters are fully supported as in §2.2 of [Unicode® Technical Report #25: Unicode Support For Mathematics](https://www.unicode.org/reports/tr25/).
-   - The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key base assignments are within U+0000..U+0FFF. 
+   - **The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key base assignments are within U+0000..U+0FFF.** Currently most characters are within U+0000..U+2FFF. 
    - Customization is not imposed on control keys, numpad, arrow keys, and function keys. 
    - Dead keys are not chained, and all base characters are available in the normal and `Shift` shift states. 
    - Shift states only include normal, `Shift`, `AltGr` (`Ctrl+Alt`), and `Shift+AltGr` (`Ctrl+Alt+Shift`). Excluded states include `Ctrl`, `Ctrl+Shift`, `SGCaps` (`CapsLock`), and so on.
@@ -268,7 +275,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 - **`AltGr` shift state:** U+00A0 NO-BREAK SPACE. Special whitespace in typesetting that prevents an automatic line break at its position. 
 - **`AltGr` + `Shift` shift state:** U+200B ZERO WIDTH SPACE. Special whitespace that has no width, which could serve as implicit word boundaries in typesetting. Not to be confused with U+200D ZERO WIDTH JOINER available at key `&`, that is for joining and composing graphemes. 
 
-## Dead key secondary mappings
+## Dead Key Secondary Mappings
 For convenience and ease of memory, the 26 dead keys in the US International Scientific keyboard layout are listed below in groups sharing similar design logic, instead of original order. 
 
 ### Modified Latin letters
@@ -503,6 +510,41 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Characters|⋯⋰⋮⋱ …|
 |Default case|U+00B7 MIDDLE DOT (·)|
 |Notes|Ellipsis is mapped to key `.` representing the extra dots. This is more convenient than key `_` which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR. |
+
+## Comparison to Other Layouts
+|Aspect|<i style="color:#6699cc">US Intl. Sci.</i>|US|US Intl|Other projects|
+|------|-|-|-|-|
+|Basic Latin and ASCII|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
+|Latin-1 Supplement letters (àéçôïñðœßøþ...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Most|
+|Latin-1 punctuation and symbols (¡¢£¤§...)|![!](assets/limited.svg)26/29|![-](assets/minus.svg)None|![!](assets/limited.svg)26/29|![!](assets/limited.svg)Most|
+|Multiplication and division operators (×÷)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Some|
+|Vulgar fractions (¼½¾)|![√](assets/check.svg)Any*|![-](assets/minus.svg)|![!](assets/limited.svg)¼½¾|![-](assets/minus.svg)|
+|French special letters (éàç...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
+|German special letters (ßöü)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
+|Spanish/Portugese special letters (ñãõ)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
+|East European special letters (ščžşçąų...)|![√](assets/check.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|![!](assets/limited.svg)|
+|North European special letters (åþð)|![√](assets/check.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|![-](assets/minus.svg)|
+|Ligatures|![√](assets/check.svg)ĳǳ|![-](assets/minus.svg)|![!](assets/limited.svg)œæ|![!](assets/limited.svg)|
+|Greek letters|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Greek letter variants in math|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Hebrew letters in math|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Equality operators (≤≥≈≡)|![√](assets/check.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|![!](assets/limited.svg)|
+|Integrals|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Derivatives / Change (′″‴∂∆∇)|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Set notation operators|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Circled operators|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Relational operators|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Subscripts and superscripts|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Letters in mathematical font|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Arrows|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Special whitespaces|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Support for physics|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Support for chemistry|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
+|Control characters|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Cyrillic letters|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Arabic characters|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Logosyllabic characters|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
+|Other non-alphabetical languages|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
 
 ## Bugs found in MSKLC - but it's a program that's almost older than myself!
 1. For some reason, when I tried to rename the description of a custom keyboard based on United States-International, the 1st line in the .klc file changed, but the DESCRIPTION section at the bottom of the file remained "United States-International - Custom", which was unchangeable. 
