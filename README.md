@@ -1,5 +1,5 @@
 # US International Scientific Keyboard Layout
-__A very powerful custom keyboard layout for Windows, tailored for efficient and convenient input of international Latin languages and scientific notation in plain text.__
+__A very powerful keyboard layout for Windows, tailored for efficient and convenient input of international Latin languages and scientific notation in plain text.__
 
 ![overview](/assets/keyboard-layout.png)
 
