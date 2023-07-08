@@ -9,10 +9,6 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 	- [Dead keys](#dead-keys)
 	- [Shift states and AltGr](#shift-states-and-altgr)
 - [Overview of Key Mappings](#overview-of-key-mappings)
-	- [Dead key secondary mappings](#dead-key-secondary-mappings)
-		- [Modified Latin letters](#modified-latin-letters)
-		- [Mathematical alphanumeric symbols](#mathematical-alphanumeric-symbols)
-		- [Mathematical operators](#mathematical-operators)
 - [Core Design Ideas](#core-design-ideas)
 - [Key Mappings](#key-mappings)
 	- [Numeric row](#numeric-row)
@@ -29,7 +25,10 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 		- [`AltGr` shift state](#altgr-shift-state-3)
 		- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state-3)
 	- [Space bar](#space-bar)
-- [Legacy](#legacy)
+	- [Dead key secondary mappings](#dead-key-secondary-mappings)
+		- [Modified Latin letters](#modified-latin-letters)
+		- [Mathematical alphanumeric symbols](#mathematical-alphanumeric-symbols)
+		- [Mathematical operators](#mathematical-operators)
 - [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 
@@ -102,170 +101,6 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 
 ![overview](/assets/keyboard-layout.png)
 
-### Dead key secondary mappings
-For convenience and ease of memory, the 26 dead keys in the US International Scientific keyboard layout are listed below in groups sharing similar design logic, instead of original order. 
-
-#### Modified Latin letters
-|Category|Grave accents|
-|:------:|---|
-|Dead key|`AltGr` + `` ` ``|
-|Base character|U+0300 COMBINING GRAVE ACCENT (◌̀)|
-|Secondary keys|`aeiouyw AEIOUYW`|
-|Characters|àèìòùỳẁ ÀÈÌÒÙỲẀ|
-|Default case|U+0060 GRAVE ACCENT (`)|
-
-|Category|Tilde diacritic + math symbols|
-|:------:|---|
-|Dead key|`AltGr` + `~`|
-|Base character|U+0303 COMBINING TILDE (◌̃)|
-|Secondary keys|`aeiouynv AEIOUYNV -=`|
-|Characters|ãẽĩõũỹñṽ ÃẼĨÕŨỸÑṼ ≃≅|
-|Default case|U+00DC SMALL TILDE (˜)|
-|Notes|Two common mathematical equality operators with related shapes are included, respectively U+2243 ASYMPTOTICALLY EQUAL TO, U+2245 APPROXIMATELY EQUAL TO. 
-
-|Category|Caron diacritic|
-|:------:|---|
-|Dead key|`AltGr` + `6`|
-|Base character|U+030C COMBINING CARON (◌̌)|
-|Secondary keys|`aeiou cdgjklnrstz AEIOU CDGKLNRSTZ`|
-|Characters|ǎěǐǒǔ čďǧǐǰǩľňřšťž ǍĚǏǑǓ ČĎǦǏǨĽŇŘŠŤŽ|
-|Default case|U+02C7 CARON (ˇ)|
-|Notes|For unknown reasons, Unicode does not include capital letter "J" with caron, although its lowercase form is encoded. Certain letters may have a different display for the caron, such as an apostrophe at the upper right corner. |
-
-|Category|Circumflex accents|
-|:------:|---|
-|Dead key|`AltGr` + `^`|
-|Base character|U+0302 COMBINING CIRCUMFLEX ACCENT (◌̂)|
-|Secondary keys|`aeiouy cghjsw AEIOUY CGHJSW`|
-|Characters|âêîôûŷ ĉĝĥĵŝŵ ÂÊÎÔÛŶ ĈĜĤĴŜŴ|
-|Default case|U+02C6 MODIFIER LETTER CIRCUMFLEX ACCENT (ˆ)|
-
-|Category|Ring above diacritic + circle symbols|
-|:------:|---|
-|Dead key|`AltGr` + `0`|
-|Base character|U+030A COMBINING RING ABOVE (◌̊)|
-|Secondary keys|`au AU CF oO.b -`|
-|Characters|åů ÅŮ ℃℉ ○◯◌● ᶱ|
-|Default case|U+00B0 DEGREE SIGN (°)|
-|Notes|Includes related symbols: degree Celsius/Fahrenheit, white/large/dotted/black circles, and U+1DB1 MODIFIER LETTER SMALL BARRED O (ᶱ) as an acceptable *approximation* for the barred circle notation of standard state in chemistry. 
-
-|Category|Acute accent|
-|:------:|---|
-|Dead key|`AltGr` + `'`|
-|Base character|U+0301 COMBINING ACUTE ACCENT (◌́)|
-|Secondary keys|`aeiouy cgklmnprswz AEIOUY CGKLMNPRSWZ`|
-|Characters|áéíóúý ćǵḱĺḿńṕŕśẃź ÁÉÍÓÚÝ ĆǴḰĹḾŃṔŔŚẂŹ|
-|Default case|U+00B4 ACUTE ACCENT (´)|
-
-|Category|Diaeresis diacritic + dot diacritics|
-|:------:|---|
-|Dead key|`AltGr` + `"`|
-|Base character|U+0308 COMBINING DIAERESIS (◌̈)|
-|Secondary keys|`aeiouy htw AEIOUY HW 1234`|
-|Characters|äëïöüÿ ḧẗẅ ÄËÏÖÜ ḦẄ ◌̇◌̈ ⃛ ⃜|
-|Default case|U+00A8 DIAERESIS (¨)|
-|Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. |
-
-|Category|Macron diacritic + bar diacritics|
-|:------:|---|
-|Dead key|`AltGr` + `b`|
-|Base character|U+0304 COMBINING MACRON (◌̄)|
-|Secondary keys|`aeioug AEIOUG -=_`|
-|Characters|āēīōūḡ ĀĒĪŌŪḠ ◌̅◌̿¯|
-|Default case|U+02C9 MODIFIER LETTER MACRON (ˉ)|
-|Notes|Includes related combining diacritical marks: U+0305 COMBINING OVERLINE (denotes averages in math), U+033F COMBINING DOUBLE OVERLINE. Includes U+00AF MACRON, a longer variant of the modifier letter from legacy. 
-
-|Category|Breve diacritic|
-|:------:|---|
-|Dead key|`AltGr` + `B`|
-|Base character|U+0306 COMBINING BREVE (◌̆)|
-|Secondary keys|`aeioug AEIOUG`|
-|Characters|ăĕĭŏŭğ ĂĔĬŎŬĞ|
-|Default case|U+02D8 BREVE (˘)|
-
-|Category|Cedilla and ogonek diacritics|
-|:------:|---|
-|Dead key|`AltGr` + `,`|
-|Base character|U+0327 COMBINING CEDILLA (◌̧)|
-|Secondary keys|`aeiou cdghklnrst AEIOU CDGHKLNRST \\|`|
-|Characters|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŖŅŞŢ ◌̨ ˛|
-|Default case|U+00B8 CEDILLA (¸)|
-|Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to `\` and `\|` since the ogonek and cedilla are approximately mirror images. |
-
-|Category|Stroked letters + fraction slash|
-|:------:|---|
-|Dead key|`AltGr` + `\`|
-|Base character|U+0338 COMBINING LONG SOLIDUS OVERLAY (◌̸)|
-|Secondary keys|`bdghilotz DGHILOTZ`|
-|Characters|ƀđǥħɨłøŧƶ ĐǤĦƗŁØŦƵ|
-|Default case|U+2044 FRACTION SLASH (⁄)|
-|Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). For unknown reasons, Unicode does not include capital letter "B" with stroke, although its lowercase form is encoded. |
-
-|Category|Ligatures + characters|
-|:------:|---|
-|Dead key|`AltGr` + `&`|
-|Base character|U+00A6 BROKEN BAR (¦)|
-|Secondary keys|`ao ilnd AO ILND tT eE &\|`|
-|Characters|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ þÞ ðᴆ ⅋¦|
-|Default case|U+200D ZERO WIDTH JOINER (‍)|
-|Notes|The default case U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related characters U+214B TURNED AMPERSAND (⅋, used in linear logic) and U+00A6 BROKEN BAR (¦, for [legacy](https://en.wikipedia.org/wiki/Vertical_bar#Solid_vertical_bar_vs_broken_bar)). |
-
-#### Mathematical alphanumeric symbols
-|Category|Subscripts|
-|:------:|---|
-|Dead key|`AltGr` + `=`|
-|Base character|U+00AA FEMININE ORDINAL INDICATOR (ª)|
-|Secondary keys|`0123456789+-=() aehijklmnoprstuvx`|
-|Characters|₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ|
-|Default case|U+00AA FEMININE ORDINAL INDICATOR (ª)|
-|Notes|Not all subscript lowercase letters are available in Unicode. |
-
-|Category|Superscripts|
-|:------:|---|
-|Dead key|`AltGr` + `+`|
-|Base character|U+00BA MASCULINE ORDINAL INDICATOR (º)|
-|Secondary keys|`0123456789+-=()`<br>`abcdefghijklmnoprstuvwxyz`<br>`ABCDEFGHIJKLMNOPQRTUVW`|
-|Characters|⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾<br>ᵃᵇᵈᵉᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸ<br>ᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁᵂ|
-|Default case|U+00BA MASCULINE ORDINAL INDICATOR (º)|
-|Notes|All superscript lowercase letters except "q" (U+107A5, non-BMP characters are not supported) are available on this keyboard. For superscript capital letters, "S", "X", "Y", and "Z" are missing. |
-
-|Category|Greek letters with variants + first 4 Hebrew letters|
-|:------:|---|
-|Dead key|`AltGr` + `g`|
-|Base character|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
-|Secondary keys|`qwertyuiop`<br>`asdfghjkl`<br>`zxcvbnm`<br>`QWERTYUIOP`<br>`ASDFGHJKL`<br>`ZXCVBNM`<br>`123456`|
-|Characters|ϑςερτυθιοπ<br>ασδφγηξκλ<br>ζχψωβνμ<br>ϴϖΕΡΤΥΘΙΟΠ<br>ΑΣΔΦΓΗΞΚΛ<br>ΖΧΨΩΒΝΜ<br>ℵℶℷℸϰϱ|
-|Default case|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
-|Notes|These letters are included in the Basic Set of Alphanumeric Characters for mathematical notation (see §2.2 of [UTR25](http://www.unicode.org/reports/tr25/tr25-15.pdf)). For convenience and consistency, the mappings are mostly identical to the standard Greek keyboard layout. Greek diacritics were removed. Key `w` is retained as the lowercase final sigma. Keys `QqW` are mapped respectively to U+03F4 (ϴ ↔ Θ), U+03D1 (ϑ ↔ θ), and U+03D6 (ϖ ↔ π), based on their similar shapes. Keys `1234` are the first 4 capital Herbrew letters Alef, Bet, Gimel, and Dalet. Keys `56` are mapped respectively to U+03F0 (ϰ ↔ κ) and U+03F1 (ϱ ↔ ρ) due to the lack of space, yet coincidently the shapes are relatable (ϰ looks like a distorted turned 5, ϱ looks like a flipped 6), and their Unicode datapoints are consecutive! |
-
-|Category|Black-letter (Fraktur) font letters|
-|:------:|---|
-|Dead key|`AltGr` + `H`|
-|Base character|U+0126 LATIN CAPITAL LETTER H WITH STROKE (Ħ)|
-|Secondary keys|`CHIRZ`|
-|Characters|ℭℌℑℜℨ|
-|Default case|U+210C BLACK-LETTER CAPITAL H (ℌ)|
-|Notes|Black-letter capital H is representative for this font family as the symbol for Hilbert space. | 
-
-|Category|Double-struck font letters + italics|
-|:------:|---|
-|Dead key|`AltGr` + `Z`|
-|Base character|U+01B5 LATIN CAPITAL LETTER Z WITH STROKE (Ƶ)|
-|Secondary keys|`CDHNPQRZ Ddeij`|
-|Characters|ℂℍℕℙℚℝℤ ⅅⅆⅇⅈⅉ|
-|Default case|U+2124 DOUBLE-STRUCK CAPITAL Z (ℤ)|
-|Notes|Includes 5 extra double-struck italic letters defined in Unicode. Double-struck capital Z is representative for this font family as the symbol for the set of integers. |
-
-|Category|Script font letters|
-|:------:|---|
-|Dead key|`AltGr` + `M`|
-|Base character|U+00B5 MICRO SIGN (µ)|
-|Secondary keys|`eglo BEFHILMPR`|
-|Characters|ℯℊℓℴ ℬℰℱℋℐℒℳ℘ℛ|
-|Default case|U+2133 SCRIPT CAPITAL M (ℳ)|
-|Notes|Script capital M is representative for this font family as the symbol for the M-matrix in physics. The base character U+00B5 MICRO SIGN (µ) is supported in many legacy environments, but U+03BC μ is the preferred Unicode character. |
-
-#### Mathematical operators
 ## Core Design Ideas
 1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Alt` + `Ctrl`) and `AltGr` + `Shift` (`Ctrl` + `Alt` + `Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
 Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. These mappings with be denoted with a `(USX)` mark, referencing the Windows `KBDUSX.dll` file containing setup information. 
@@ -282,6 +117,7 @@ Also, key mappings from the original United States-International keyboard are re
    - The dead key should provide access to this class of characters to the maximum extent, except for those that are rarely used. 
 
 4. __Maximum flexibility under system restraints.__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
+   - Mathematical Greek letters are fully supported as in §2.2 of [Unicode® Technical Report #25: Unicode Support For Mathematics](https://www.unicode.org/reports/tr25/).
    - The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key base assignments are within U+0000..U+0FFF. 
    - Customization is not imposed on control keys, numpad, arrow keys, and function keys. 
    - Dead keys are not chained, and all base characters are available in the normal and `Shift` shift states. 
@@ -432,63 +268,241 @@ Below is a detailed documentation on the complete set of key mappings for the US
 - **`AltGr` shift state:** U+00A0 NO-BREAK SPACE. Special whitespace in typesetting that prevents an automatic line break at its position. 
 - **`AltGr` + `Shift` shift state:** U+200B ZERO WIDTH SPACE. Special whitespace that has no width, which could serve as implicit word boundaries in typesetting. Not to be confused with U+200D ZERO WIDTH JOINER available at key `&`, that is for joining and composing graphemes. 
 
-## Legacy
-(To be removed when project is finished)
-- awa
-	- Keys qQ are assigned to division sign (quotient), identical to (congruency)
-	- Keys wW are assigned to varepsilon and n-ary summation (similar to Keys pP); the look like the letters rotated by 90°
-	- Keys eE are assigned to element of (DeadKey?) and there exists (similar to Keys aA)
-	- Keys rR are assigned to registered sign (from USI) and trade mark sign (related)
-	- Keys tT are assigned to dagger and double dagger
-	- DeadKey y is for tacks and relations (default up tack, for the more common perpendicular), since y looks like 3 lines extending randomly from a center, showing the vesatile nature of this key; has udrl mapped to up, down, left, right tacks, and amtfATF mapped to assertion, models, true, forces, and their negations excpet for models
-	- Key Y is assigned to yen sign
-	- Keys uU are assigned to cup (union) and cap (intersection)
-	- Keys iI are assigned to mathematical double struck number 1; and integration, 1-4 for multiples, 5-7 for 1-3D contours, 8 for clockwise, 90 for (anti)clockwise contour (since they are under the parentheses symbols)
-	- Keys oO are assigned to deadkey for circle operations (default ring operator), +-x/.o*=_ mapped to U+2295..U+229D; and empty set
-	- Keys pP are assigned to varphi and n-ary product (similar to Keys wW), since the spelling of the Greek letters begin with p
-	- Keys []{} are assigned to single/double French guillemets, usage similar to single/double quotation marks 
-	- Keys \| are assigned to double bar and broken bar (latter identical to USI)
+### Dead key secondary mappings
+For convenience and ease of memory, the 26 dead keys in the US International Scientific keyboard layout are listed below in groups sharing similar design logic, instead of original order. 
 
-- Allocations for ASDFGHJKL;'
-	- Keys aA are assigned to deadkey for subset of (default), /|\[]{} mapped to not sub, super, not super, sub or equal, super or equal, neither sub nor equal, neither super nor equal; and for all (similar to Keys eE)
-	- Keys sS are assigned to German ss and section sign (identical to USI, alliteration lol)
-	- Keys dD are assigned to partial differential and increment delta
-	- Keys fF are assigned to digammas, ϝ (U+03DD) and Ϝ (U+03DC)
-	- Keys gG are assigned to Greek letters deadkey (default gamma), since Greek starts with g; and nabla ∇ (U+2207), since it is next to ∆ (U+2206), and also means "gradient"
-	- Keys hH are assigned to reduced Planck constant and Hilbert space
-	- Keys jJkKlL are assigned to left/both/right single/double arrows, commonly used in math; design from the JKL hotkeys in Youtube that toggles playback
-	- Keys ;: are assigned to therefore and because, used in math proofs, since they have many dots
-	- DeadKeys '" are identical to USI, except that cC maps to the acute versions and not çÇ anymore, this is re-implemented in DeadKey /
+#### Modified Latin letters
+|Category|Grave accents|
+|:------:|---|
+|Dead key|`AltGr` + `` ` ``|
+|Base character|U+0300 COMBINING GRAVE ACCENT (◌̀)|
+|Secondary keys|`aeiouyw AEIOUYW`|
+|Characters|àèìòùỳẁ ÀÈÌÒÙỲẀ|
+|Default case|U+0060 GRAVE ACCENT (`)|
 
+|Category|Tilde diacritic + math equality symbols|
+|:------:|---|
+|Dead key|`AltGr` + `~`|
+|Base character|U+0303 COMBINING TILDE (◌̃)|
+|Secondary keys|`aeiouynv AEIOUYNV -=`|
+|Characters|ãẽĩõũỹñṽ ÃẼĨÕŨỸÑṼ ≃≅|
+|Default case|U+00DC SMALL TILDE (˜)|
+|Notes|Two common mathematical equality operators with related shapes are included, respectively U+2243 ASYMPTOTICALLY EQUAL TO, U+2245 APPROXIMATELY EQUAL TO. 
 
-- Allocations for ZXCVBNM,./
-	- Keys zZ are assigned to ? and deadkey for double-struck font (integer set)
-	- Keys xX are assigned to almost equal to and times multiplication; note that this way all multiplication symbols require Shift, while equals, identical to, almost equal to, and unequal to do not
-	- Keys cC are assigned to copyright sign and cent sign, identical to USI
-	- Keys vV are assigned to vee (logical or) and wedge (logical and)
-	- Keys bB are assigned to (deadkey for bold font)
-	- Keys nN are assigned to unequal to and not sign, since the not sign is more versatile in meaning NOT
-	- Keys mM are assigned to micro sign (compatibility, same as USI), and 
-	- Keys ,. are assigned to pilcrow sign, indicating a paragraph sign, like a brief stop in the passage; and deadkey for ellipses, -/|\_. mapped to midline, up right, vertical, down right, normal (default), and middle dot
-	- DeadKeys <> are assigned to further less than/greater than inequalities (default ~ or equal to); mapping </+>=~ (example given for less than) to much ~ , not ~, neither ~ nor equal to, neither ~ nor ~, ~ over equal to, ~ or equivalent to
-	- Keys /? are assigned to deadkey for stroked letters (default combining long soldius overlay), including nonstandard behaviour of mapping cC to çÇ; and inverted question mark ¿
+|Category|Caron diacritic|
+|:------:|---|
+|Dead key|`AltGr` + `6`|
+|Base character|U+030C COMBINING CARON (◌̌)|
+|Secondary keys|`aeiou cdgjklnrstz AEIOU CDGKLNRSTZ`|
+|Characters|ǎěǐǒǔ čďǧǐǰǩľňřšťž ǍĚǏǑǓ ČĎǦǏǨĽŇŘŠŤŽ|
+|Default case|U+02C7 CARON (ˇ)|
+|Notes|For unknown reasons, Unicode does not include capital letter "J" with caron, although its lowercase form is encoded. Certain letters may have a different display for the caron, such as an apostrophe at the upper right corner. |
 
+|Category|Circumflex accents|
+|:------:|---|
+|Dead key|`AltGr` + `^`|
+|Base character|U+0302 COMBINING CIRCUMFLEX ACCENT (◌̂)|
+|Secondary keys|`aeiouy cghjsw AEIOUY CGHJSW`|
+|Characters|âêîôûŷ ĉĝĥĵŝŵ ÂÊÎÔÛŶ ĈĜĤĴŜŴ|
+|Default case|U+02C6 MODIFIER LETTER CIRCUMFLEX ACCENT (ˆ)|
 
-ÇçĢģĶķĻļŅņŖŗŞşŢţḐḑḨḩ
+|Category|Ring above diacritic + circle symbols|
+|:------:|---|
+|Dead key|`AltGr` + `0`|
+|Base character|U+030A COMBINING RING ABOVE (◌̊)|
+|Secondary keys|`au AU CF oO.b -`|
+|Characters|åů ÅŮ ℃℉ ○◯◌● ᶱ|
+|Default case|U+00B0 DEGREE SIGN (°)|
+|Notes|Includes related symbols: degree Celsius/Fahrenheit, white/large/dotted/black circles, and U+1DB1 MODIFIER LETTER SMALL BARRED O (ᶱ) as an acceptable *approximation* for the barred circle notation of standard state in chemistry. 
 
+|Category|Acute accent|
+|:------:|---|
+|Dead key|`AltGr` + `'`|
+|Base character|U+0301 COMBINING ACUTE ACCENT (◌́)|
+|Secondary keys|`aeiouy cgklmnprswz AEIOUY CGKLMNPRSWZ`|
+|Characters|áéíóúý ćǵḱĺḿńṕŕśẃź ÁÉÍÓÚÝ ĆǴḰĹḾŃṔŔŚẂŹ|
+|Default case|U+00B4 ACUTE ACCENT (´)|
 
+|Category|Diaeresis diacritic + dot diacritics|
+|:------:|---|
+|Dead key|`AltGr` + `"`|
+|Base character|U+0308 COMBINING DIAERESIS (◌̈)|
+|Secondary keys|`aeiouy htw AEIOUY HW 1234`|
+|Characters|äëïöüÿ ḧẗẅ ÄËÏÖÜ ḦẄ ◌̇◌̈ ⃛ ⃜|
+|Default case|U+00A8 DIAERESIS (¨)|
+|Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. |
 
-- Mathematical Greek letters are fully supported as in https://www.unicode.org/reports/tr25/
-	- uppercase Greek letters Α - Ω (U+0391..U+03A9), plus the nabla ∇ (U+2207), digamma Ϝ (U+03DC), and the variant of theta Θ given by U+03F4 (ϴ)
-	- lowercase Greek letters α - ω (U+03B1..U+03C9), plus the partial differential sign ∂ (U+2202), digamma ϝ (U+03DD), and the six glyph variants of ε, θ, κ, φ, ρ, and π, given by U+03F5 (ϵ), U+03D1 (ϑ), U+03F0 (ϰ), U+03D5 (ϕ), U+03F1 (ϱ), and U+03D6 (ϖ).
-	- the normal Greek letters are accessed via DeadKey g, layout identical to the Greek keyboard; the diacritics are removed, while Key w is retained as the final small sigma. Exceptions are Keys QqW, respectively U+03F4 (ϴ), U+03D1 (ϑ), and U+03D6 (ϖ), due to the similar shapes
-	- Keys dD are ∂ (U+2202) and ∆ (U+2206)
-	- Key G is ∇ (U+2207), since it is next to ∆ (U+2206), and also means "gradient"
-	- Keys fF are the two digammas
-	- Keys wp are U+03F5 (ϵ) and U+03D5 (ϕ)
-	- Keys 1234 are the first four capital Herbrew letters, used in math
-	- Keys 56 are for U+03F0 (ϰ) and U+03F1 (ϱ), they are put here since they seem less common and less related than to the others, but coincidently have consecutive Unicode datapoints :)
+|Category|Macron diacritic + bar diacritics|
+|:------:|---|
+|Dead key|`AltGr` + `b`|
+|Base character|U+0304 COMBINING MACRON (◌̄)|
+|Secondary keys|`aeioug AEIOUG -=_`|
+|Characters|āēīōūḡ ĀĒĪŌŪḠ ◌̅◌̿¯|
+|Default case|U+02C9 MODIFIER LETTER MACRON (ˉ)|
+|Notes|Includes related combining diacritical marks: U+0305 COMBINING OVERLINE (denotes averages in math), U+033F COMBINING DOUBLE OVERLINE. Includes U+00AF MACRON, a longer variant of the modifier letter from legacy. 
 
+|Category|Breve diacritic|
+|:------:|---|
+|Dead key|`AltGr` + `B`|
+|Base character|U+0306 COMBINING BREVE (◌̆)|
+|Secondary keys|`aeioug AEIOUG`|
+|Characters|ăĕĭŏŭğ ĂĔĬŎŬĞ|
+|Default case|U+02D8 BREVE (˘)|
+
+|Category|Cedilla and ogonek diacritics|
+|:------:|---|
+|Dead key|`AltGr` + `,`|
+|Base character|U+0327 COMBINING CEDILLA (◌̧)|
+|Secondary keys|`aeiou cdghklnrst AEIOU CDGHKLNRST \\|`|
+|Characters|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŖŅŞŢ ◌̨ ˛|
+|Default case|U+00B8 CEDILLA (¸)|
+|Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to `\` and `\|` since the ogonek and cedilla are approximately mirror images. |
+
+|Category|Stroked letters + fraction slash|
+|:------:|---|
+|Dead key|`AltGr` + `\`|
+|Base character|U+0338 COMBINING LONG SOLIDUS OVERLAY (◌̸)|
+|Secondary keys|`bdghilotz DGHILOTZ`|
+|Characters|ƀđǥħɨłøŧƶ ĐǤĦƗŁØŦƵ|
+|Default case|U+2044 FRACTION SLASH (⁄)|
+|Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). For unknown reasons, Unicode does not include capital letter "B" with stroke, although its lowercase form is encoded. |
+
+|Category|Ligatures + North European letters|
+|:------:|---|
+|Dead key|`AltGr` + `&`|
+|Base character|U+00A6 BROKEN BAR (¦)|
+|Secondary keys|`ao ilnd AO ILND tT eE &\|`|
+|Characters|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ þÞ ðᴆ ⅋¦|
+|Default case|U+200D ZERO WIDTH JOINER (‍)|
+|Notes|The default case U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related characters U+214B TURNED AMPERSAND (⅋, used in linear logic) and U+00A6 BROKEN BAR (¦, for [legacy](https://en.wikipedia.org/wiki/Vertical_bar#Solid_vertical_bar_vs_broken_bar)). |
+
+#### Mathematical alphanumeric symbols
+|Category|Subscripts|
+|:------:|---|
+|Dead key|`AltGr` + `=`|
+|Base character|U+00AA FEMININE ORDINAL INDICATOR (ª)|
+|Secondary keys|`0123456789+-=() aehijklmnoprstuvx`|
+|Characters|₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ|
+|Default case|U+00AA FEMININE ORDINAL INDICATOR (ª)|
+|Notes|Not all subscript lowercase letters are available in Unicode. |
+
+|Category|Superscripts|
+|:------:|---|
+|Dead key|`AltGr` + `+`|
+|Base character|U+00BA MASCULINE ORDINAL INDICATOR (º)|
+|Secondary keys|`0123456789+-=()`<br>`abcdefghijklmnoprstuvwxyz`<br>`ABCDEFGHIJKLMNOPQRTUVW`|
+|Characters|⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾<br>ᵃᵇᵈᵉᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸ<br>ᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁᵂ|
+|Default case|U+00BA MASCULINE ORDINAL INDICATOR (º)|
+|Notes|All superscript lowercase letters except "q" (U+107A5, non-BMP characters are not supported) are available on this keyboard. For superscript capital letters, "S", "X", "Y", and "Z" are missing. |
+
+|Category|Greek letters with variants + first 4 Hebrew letters|
+|:------:|---|
+|Dead key|`AltGr` + `g`|
+|Base character|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
+|Secondary keys|`qwertyuiop`<br>`asdfghjkl`<br>`zxcvbnm`<br>`QWERTYUIOP`<br>`ASDFGHJKL`<br>`ZXCVBNM`<br>`123456`|
+|Characters|ϑςερτυθιοπ<br>ασδφγηξκλ<br>ζχψωβνμ<br>ϴϖΕΡΤΥΘΙΟΠ<br>ΑΣΔΦΓΗΞΚΛ<br>ΖΧΨΩΒΝΜ<br>ℵℶℷℸϰϱ|
+|Default case|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
+|Notes|These letters are included in the Basic Set of Alphanumeric Characters for mathematical notation (see §2.2 of [UTR25](http://www.unicode.org/reports/tr25/)). For convenience and consistency, the mappings are mostly identical to the standard Greek keyboard layout. Greek diacritics were removed. Key `w` is retained as the lowercase final sigma. Keys `QqW` are mapped respectively to U+03F4 (ϴ ↔ Θ), U+03D1 (ϑ ↔ θ), and U+03D6 (ϖ ↔ π), based on their similar shapes. Keys `1234` are the first 4 capital Herbrew letters Alef, Bet, Gimel, and Dalet. Keys `56` are mapped respectively to U+03F0 (ϰ ↔ κ) and U+03F1 (ϱ ↔ ρ) due to the lack of space, yet coincidently the shapes are relatable (ϰ looks like a distorted turned 5, ϱ looks like a flipped 6), and their Unicode datapoints are consecutive! |
+
+|Category|Black-letter (Fraktur) font letters|
+|:------:|---|
+|Dead key|`AltGr` + `H`|
+|Base character|U+0126 LATIN CAPITAL LETTER H WITH STROKE (Ħ)|
+|Secondary keys|`CHIRZ`|
+|Characters|ℭℌℑℜℨ|
+|Default case|U+210C BLACK-LETTER CAPITAL H (ℌ)|
+|Notes|Black-letter capital H is representative for this font family as the symbol for Hilbert space. | 
+
+|Category|Double-struck font letters + italics|
+|:------:|---|
+|Dead key|`AltGr` + `Z`|
+|Base character|U+01B5 LATIN CAPITAL LETTER Z WITH STROKE (Ƶ)|
+|Secondary keys|`CDHNPQRZ Ddeij`|
+|Characters|ℂℍℕℙℚℝℤ ⅅⅆⅇⅈⅉ|
+|Default case|U+2124 DOUBLE-STRUCK CAPITAL Z (ℤ)|
+|Notes|Includes 5 extra double-struck italic letters defined in Unicode. Double-struck capital Z is representative for this font family as the symbol for the set of integers. |
+
+|Category|Script font letters|
+|:------:|---|
+|Dead key|`AltGr` + `M`|
+|Base character|U+00B5 MICRO SIGN (µ)|
+|Secondary keys|`eglo BEFHILMPR`|
+|Characters|ℯℊℓℴ ℬℰℱℋℐℒℳ℘ℛ|
+|Default case|U+2133 SCRIPT CAPITAL M (ℳ)|
+|Notes|Script capital M is representative for this font family as the symbol for the M-matrix in physics. The base character U+00B5 MICRO SIGN (µ) is supported in many legacy environments, but U+03BC μ is the preferred Unicode character. |
+
+#### Mathematical operators
+|Category|Set membership operators + nonexistential quantifier|
+|:------:|---|
+|Dead key|`AltGr` + `e`|
+|Base character|U+03F6 GREEK REVERSED LUNATE EPSILON SYMBOL (϶)|
+|Secondary keys|`/\|\ eE`|
+|Characters|∉∋∌ ϶∄|
+|Default case|U+2208 ELEMENT OF (∈)|
+|Notes|Since ∈ and ∋ are mirror images, the latter is mapped to key `\|` indicating the plane of symmetry; other mappings follow this logic. Includes U+2204 THERE DOES NOT EXIST (∄) since key `E` is mapped to U+2203 THERE EXISTS (∃). 
+
+|Category|Set inclusion operators + angle symbol|
+|:------:|---|
+|Dead key|`AltGr` + `a`|
+|Base character|U+0250 LATIN SMALL LETTER TURNED A (ɐ)|
+|Secondary keys|`/[{\|}]\ CaA`|
+|Characters|⊄⊆⊈⊃⊉⊇⊅ ∁ɐ∠|
+|Default case|U+2282 SUBSET OF (⊂)|
+|Notes|Logic similar to set membership operators. Includes notation for complimentary sets and angles (since the key is `a`). |
+
+|Category|Logic relation operators + tack-like symbols|
+|:------:|---|
+|Dead key|`AltGr` + `y`|
+|Base character|U+00B1 PLUS-MINUS SIGN (±)|
+|Secondary keys|`amtfATF udrl p +-`|
+|Characters|⊦⊧⊨⊩⊬⊭⊮ ⊥⊤⊢⊣ ⟂ ±∓|
+|Default case|U+00B1 PLUS-MINUS SIGN (±)|
+|Notes|The mappings are based on the initial letter of each character's name: assertion, models, true, forces; up, down, right, left; perpendicular. Negations are mapped to capital letters (shifted state). Includes plus-minus and minus-plus signs. |
+
+|Category|Integral operators|
+|:------:|---|
+|Dead key|`AltGr` + `I`|
+|Base character|U+0283 LATIN SMALL LETTER ESH (ʃ)|
+|Secondary keys|`1234567890`|
+|Characters|∫∬∭⨌∮∯∰∱∲∳|
+|Default case|U+0283 LATIN SMALL LETTER ESH (ʃ)|
+|Notes|Mapping based on integral dimensions. |
+
+|Category|Circle-related operators + QED|
+|:------:|---|
+|Dead key|`AltGr` + `o`|
+|Base character|U+03D5 GREEK PHI SYMBOL (ϕ)|
+|Secondary keys|`+-x/.oO*=_ q`|
+|Characters|⊕⊖⊗⊘⊙∘⊚⊛⊜⊝ ∎|
+|Default case|U+03D5 GREEK PHI SYMBOL (ϕ)|
+|Notes|Includes the QED (end-of-proof) symbol mapped to key `q`. |
+
+|Category|Less-than operator variants + left ceiling/floor|
+|:------:|---|
+|Dead key|`AltGr` + `<`|
+|Base character|U+003C LESS-THAN SIGN (<)|
+|Secondary keys|`/-+~=<> [{`|
+|Characters|≮≤≰≲≦≪≶ ⌊⌈|
+|Default case|U+2264 LESS-THAN OR EQUAL TO (≤)|
+|Notes|Includes left ceiling/floor brackets. |
+
+|Category|Greater-than operator variants + right ceiling/floor|
+|:------:|---|
+|Dead key|`AltGr` + `>`|
+|Base character|U+003E GREATER-THAN SIGN (>)|
+|Secondary keys|`/-+~=>< [{`|
+|Characters|≯≥≱≳≧≫≷ ⌋⌉|
+|Default case|U+2265 GREATER-THAN OR EQUAL TO (≥)|
+|Notes|Includes right ceiling/floor brackets. |
+
+|Category|Matrix abbreviators + dot-related punctuation|
+|:------:|---|
+|Dead key|`AltGr` + `.`|
+|Base character|U+00B7 MIDDLE DOT (·)|
+|Secondary keys|`-/\|\ .`|
+|Characters|⋯⋰⋮⋱ …|
+|Default case|U+00B7 MIDDLE DOT (·)|
+|Notes|Ellipsis is mapped to key `.` representing the extra dots. This is more convenient than key `_` which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR. |
 
 ## Bugs found in MSKLC - but it's a program that's almost older than myself!
 1. For some reason, when I tried to rename the description of a custom keyboard based on United States-International, the 1st line in the .klc file changed, but the DESCRIPTION section at the bottom of the file remained "United States-International - Custom", which was unchangeable. 
