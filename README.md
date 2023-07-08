@@ -201,16 +201,69 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Default case|U+2044 FRACTION SLASH (⁄)|
 |Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). For unknown reasons, Unicode does not include capital letter "B" with stroke, although its lowercase form is encoded. |
 
-|Category|Ligatures + obscure characters|
+|Category|Ligatures + characters|
 |:------:|---|
 |Dead key|`AltGr` + `&`|
 |Base character|U+00A6 BROKEN BAR (¦)|
 |Secondary keys|`ao ilnd AO ILND tT eE &\|`|
 |Characters|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ þÞ ðᴆ ⅋¦|
 |Default case|U+200D ZERO WIDTH JOINER (‍)|
-|Notes|The default case U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related obscure characters U+214B TURNED AMPERSAND (⅋) and U+00A6 BROKEN BAR (¦). |
+|Notes|The default case U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related characters U+214B TURNED AMPERSAND (⅋, used in linear logic) and U+00A6 BROKEN BAR (¦, for [legacy](https://en.wikipedia.org/wiki/Vertical_bar#Solid_vertical_bar_vs_broken_bar)). |
 
 #### Mathematical alphanumeric symbols
+|Category|Subscripts|
+|:------:|---|
+|Dead key|`AltGr` + `=`|
+|Base character|U+00AA FEMININE ORDINAL INDICATOR (ª)|
+|Secondary keys|`0123456789+-=() aehijklmnoprstuvx`|
+|Characters|₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ|
+|Default case|U+00AA FEMININE ORDINAL INDICATOR (ª)|
+|Notes|Not all subscript lowercase letters are available in Unicode. |
+
+|Category|Superscripts|
+|:------:|---|
+|Dead key|`AltGr` + `+`|
+|Base character|U+00BA MASCULINE ORDINAL INDICATOR (º)|
+|Secondary keys|`0123456789+-=()`<br>`abcdefghijklmnoprstuvwxyz`<br>`ABCDEFGHIJKLMNOPQRTUVW`|
+|Characters|⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾<br>ᵃᵇᵈᵉᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸ<br>ᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁᵂ|
+|Default case|U+00BA MASCULINE ORDINAL INDICATOR (º)|
+|Notes|All superscript lowercase letters except "q" (U+107A5, non-BMP characters are not supported) are available on this keyboard. For superscript capital letters, "S", "X", "Y", and "Z" are missing. |
+
+|Category|Greek letters with variants + first 4 Hebrew letters|
+|:------:|---|
+|Dead key|`AltGr` + `g`|
+|Base character|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
+|Secondary keys|`qwertyuiop`<br>`asdfghjkl`<br>`zxcvbnm`<br>`QWERTYUIOP`<br>`ASDFGHJKL`<br>`ZXCVBNM`<br>`123456`|
+|Characters|ϑςερτυθιοπ<br>ασδφγηξκλ<br>ζχψωβνμ<br>ϴϖΕΡΤΥΘΙΟΠ<br>ΑΣΔΦΓΗΞΚΛ<br>ΖΧΨΩΒΝΜ<br>ℵℶℷℸϰϱ|
+|Default case|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
+|Notes|These letters are included in the Basic Set of Alphanumeric Characters for mathematical notation (see §2.2 of [UTR25](http://www.unicode.org/reports/tr25/tr25-15.pdf)). For convenience and consistency, the mappings are mostly identical to the standard Greek keyboard layout. Greek diacritics were removed. Key `w` is retained as the lowercase final sigma. Keys `QqW` are mapped respectively to U+03F4 (ϴ ↔ Θ), U+03D1 (ϑ ↔ θ), and U+03D6 (ϖ ↔ π), based on their similar shapes. Keys `1234` are the first 4 capital Herbrew letters Alef, Bet, Gimel, and Dalet. Keys `56` are mapped respectively to U+03F0 (ϰ ↔ κ) and U+03F1 (ϱ ↔ ρ) due to the lack of space, yet coincidently the shapes are relatable (ϰ looks like a distorted turned 5, ϱ looks like a flipped 6), and their Unicode datapoints are consecutive! |
+
+|Category|Black-letter (Fraktur) font letters|
+|:------:|---|
+|Dead key|`AltGr` + `H`|
+|Base character|U+0126 LATIN CAPITAL LETTER H WITH STROKE (Ħ)|
+|Secondary keys|`CHIRZ`|
+|Characters|ℭℌℑℜℨ|
+|Default case|U+210C BLACK-LETTER CAPITAL H (ℌ)|
+|Notes|Black-letter capital H is representative for this font family as the symbol for Hilbert space. | 
+
+|Category|Double-struck font letters + italics|
+|:------:|---|
+|Dead key|`AltGr` + `Z`|
+|Base character|U+01B5 LATIN CAPITAL LETTER Z WITH STROKE (Ƶ)|
+|Secondary keys|`CDHNPQRZ Ddeij`|
+|Characters|ℂℍℕℙℚℝℤ ⅅⅆⅇⅈⅉ|
+|Default case|U+2124 DOUBLE-STRUCK CAPITAL Z (ℤ)|
+|Notes|Includes 5 extra double-struck italic letters defined in Unicode. Double-struck capital Z is representative for this font family as the symbol for the set of integers. |
+
+|Category|Script font letters|
+|:------:|---|
+|Dead key|`AltGr` + `M`|
+|Base character|U+00B5 MICRO SIGN (µ)|
+|Secondary keys|`eglo BEFHILMPR`|
+|Characters|ℯℊℓℴ ℬℰℱℋℐℒℳ℘ℛ|
+|Default case|U+2133 SCRIPT CAPITAL M (ℳ)|
+|Notes|Script capital M is representative for this font family as the symbol for the M-matrix in physics. The base character U+00B5 MICRO SIGN (µ) is supported in many legacy environments, but U+03BC μ is the preferred Unicode character. |
 
 #### Mathematical operators
 ## Core Design Ideas
