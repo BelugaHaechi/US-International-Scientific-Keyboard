@@ -25,10 +25,10 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 		- [`AltGr` shift state](#altgr-shift-state-3)
 		- [`AltGr` + `Shift` shift state](#altgr--shift-shift-state-3)
 	- [Space bar](#space-bar)
-	- [Dead key secondary mappings](#dead-key-secondary-mappings)
-		- [Modified Latin letters](#modified-latin-letters)
-		- [Mathematical alphanumeric symbols](#mathematical-alphanumeric-symbols)
-		- [Mathematical operators](#mathematical-operators)
+- [Dead key secondary mappings](#dead-key-secondary-mappings)
+	- [Modified Latin letters](#modified-latin-letters)
+	- [Mathematical alphanumeric symbols](#mathematical-alphanumeric-symbols)
+	- [Mathematical operators](#mathematical-operators)
 - [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
 
 
@@ -268,10 +268,10 @@ Below is a detailed documentation on the complete set of key mappings for the US
 - **`AltGr` shift state:** U+00A0 NO-BREAK SPACE. Special whitespace in typesetting that prevents an automatic line break at its position. 
 - **`AltGr` + `Shift` shift state:** U+200B ZERO WIDTH SPACE. Special whitespace that has no width, which could serve as implicit word boundaries in typesetting. Not to be confused with U+200D ZERO WIDTH JOINER available at key `&`, that is for joining and composing graphemes. 
 
-### Dead key secondary mappings
+## Dead key secondary mappings
 For convenience and ease of memory, the 26 dead keys in the US International Scientific keyboard layout are listed below in groups sharing similar design logic, instead of original order. 
 
-#### Modified Latin letters
+### Modified Latin letters
 |Category|Grave accents|
 |:------:|---|
 |Dead key|`AltGr` + `` ` ``|
@@ -376,7 +376,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Default case|U+200D ZERO WIDTH JOINER (‍)|
 |Notes|The default case U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related characters U+214B TURNED AMPERSAND (⅋, used in linear logic) and U+00A6 BROKEN BAR (¦, for [legacy](https://en.wikipedia.org/wiki/Vertical_bar#Solid_vertical_bar_vs_broken_bar)). |
 
-#### Mathematical alphanumeric symbols
+### Mathematical alphanumeric symbols
 |Category|Subscripts|
 |:------:|---|
 |Dead key|`AltGr` + `=`|
@@ -431,7 +431,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Default case|U+2133 SCRIPT CAPITAL M (ℳ)|
 |Notes|Script capital M is representative for this font family as the symbol for the M-matrix in physics. The base character U+00B5 MICRO SIGN (µ) is supported in many legacy environments, but U+03BC μ is the preferred Unicode character. |
 
-#### Mathematical operators
+### Mathematical operators
 |Category|Set membership operators + nonexistential quantifier|
 |:------:|---|
 |Dead key|`AltGr` + `e`|
