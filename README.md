@@ -516,7 +516,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |------|-|-|-|-|
 |Basic Latin and ASCII|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
 |Latin-1 Supplement letters (àéçôïñðœßøþ...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Most|
-|Latin-1 punctuation and symbols (¡¢£¤§...)|![!](assets/limited.svg)26/29|![-](assets/minus.svg)None|![!](assets/limited.svg)26/29|![!](assets/limited.svg)Most|
+|Latin-1 punctuation and symbols (¡¢£¤§...)|![!](assets/limited.svg)27/29|![-](assets/minus.svg)None|![!](assets/limited.svg)22/29|![!](assets/limited.svg)Most|
 |Multiplication and division operators (×÷)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Some|
 |Vulgar fractions (¼½¾)|![√](assets/check.svg)Any*|![-](assets/minus.svg)|![!](assets/limited.svg)¼½¾|![-](assets/minus.svg)|
 |French special letters (éàç...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
