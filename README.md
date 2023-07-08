@@ -30,7 +30,7 @@ __A very powerful keyboard layout for Windows, tailored for efficient and conven
 	- [Mathematical alphanumeric symbols](#mathematical-alphanumeric-symbols)
 	- [Mathematical operators](#mathematical-operators)
 - [Comparison to Other Layouts](#comparison-to-other-layouts)
-- [Bugs found in MSKLC - but it's a program that's almost older than myself!](#bugs-found-in-msklc---but-its-a-program-thats-almost-older-than-myself)
+- [Notes on MSKLC 1.4](#notes-on-msklc-14)
 
 
 
@@ -546,19 +546,23 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Logosyllabic characters|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
 |Other non-alphabetical languages|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
 
-## Bugs found in MSKLC - but it's a program that's almost older than myself!
-1. For some reason, when I tried to rename the description of a custom keyboard based on United States-International, the 1st line in the .klc file changed, but the DESCRIPTION section at the bottom of the file remained "United States-International - Custom", which was unchangeable. 
-2. Sometimes there is a newline between the DESCRIPTION section and the LANAGUAGE section, and sometimes not
-3. [Major issue] Deadkeys that have a base of greater than U+1000 will fail to work when their .dll is created, and they seem to be defined errorenously, since when the corresponding keys are pressed, Windows system gives off an alarm noise, instead of the normal no response when a key combination that is not defined is called. When the built custom keyboard is then loaded into MSKLC, the deadkeys are blank and no codepoint designation can be seen. 
+## Notes on MSKLC 1.4
+This project is made possible by the software [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134). Sadly, several bugs or limitations exist in this software that had prevented this project from being more powerful and extensive. 
+
+1. Errors when renaming layouts. In certain cases (details unclear), editing the layout description text on a custom version of an imported layout will not take effect. Sometimes there is a newline between the DESCRIPTION section and the LANGUAGE section, and sometimes not, which may affect the behavior of descriptions. 
+2. Dead key base limit at U+0FFF. Dead keys that have a base of greater than U+1000 will not work when the `.dll` is created. When triggered, the Windows system gives off an alarm noise, instead of no response for an undefined key combination. When the built custom keyboard layout is then loaded into MSKLC, the deadkeys are blank and no codepoint designation can be seen. 
 	- Tested base codepoints: mutiple codepoints greater than U+2100 (in the math symbols section), U+2000, U+1ffd, U+1800, U+1000, [U+0fda, U+0f00, U+0e01, U+0a01, U+0800, U+0308] (in brackets = success)
-	- The original author seemed to be aware of this problem since 2008, but it is still not resolved. This is probably due to an internal Microsoft restriction (which has no reason at all :/)
-4. [Major issue] For normal keys, there is also an upper limit restriction found at roughly U+10000, which means that only the codepoints in the BMP (U+0000 - U+ffff) can be accessed. For example, an attempt to include U+1d7d9 failed. 
+	- The original author seemed to be aware of this problem since 2008, but it is still not resolved. This is probably due to an internal Microsoft restriction :/
+3. Character limit at U+FFFF. For normal keys, there is also an upper limit restriction found at roughly U+10000, which means that only the codepoints in the BMP (U+0000..U+FFFF) can be accessed. The behavior of this issue is the same for dead keys. 
+   - For example, an attempt to include U+1D7D9 failed. 
+   - This prevents inclusion of most letters with mathematical fonts. 
 
+However, these issues have no hope of being fixed in the short term, since the software is not completely open-source, and its original creator has passed away…
 
+R.I.P Michael Scott Kaplan (*1970/02/27 Creve Coeur — †2015/10/21 Redmond), Microsoft developer and the very creator of MSKLC. He passed away at age 45 from multiple sclerosis, a disease he fought against for 25 years. He was a very talented and responsible person, with good humor and writing… He had a colorful life: conflicts with Microsoft, battles with fatal diseases, affairs with prostitutes, and fun blogs that were brought to the readers by a unique Unicode character. 
+- [His blog archive](http://archives.miloush.net/michkap/archive/) (which contains many, many stories);
+- [His obiturary](https://obits.cleveland.com/us/obituaries/cleveland/name/michael-kaplan-obituary?id=20110483);
+- [A podcast with him](https://www.hanselminutes.com/117/sorting-out-internationalization-with-michael-kaplan);
+- [Unicode's Memoriam Page](https://www.unicode.org/consortium/memoriam.html) includes his name. 
 
-- R.I.P Michael Scott Kaplan (*1970/02/27 Creve Coeur — †2015/10/21 Redmond), Microsoft developer and the very creator of MSKLC. He passed away at age 45 from multiple sclerosis, a disease he fought against for 25 years. 
-	- [His obiturary](https://obits.cleveland.com/us/obituaries/cleveland/name/michael-kaplan-obituary?id=20110483)
-	- [A podcast with him](https://www.hanselminutes.com/117/sorting-out-internationalization-with-michael-kaplan)
-	- [His blog archive](http://archives.miloush.net/michkap/archive/) (which contains many, many stories):
-	- He was a very talented and responsible person, with good humor and writing… He had a colorful life: conflicts with Microsoft, battles with fatal diseases, affairs with prostitutes, and fun blogs that were brought to the readers by a unique Unicode character. 
-	- [Unicode's Memoriam Page](https://www.unicode.org/consortium/memoriam.html) includes his name. Mr. Kaplan, you shall be remembered.
+*In memoriam of Mr. Michael S. Kaplan.*
