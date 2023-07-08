@@ -354,7 +354,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Dead key|`AltGr` + `,`|
 |Base character|U+0327 COMBINING CEDILLA (◌̧)|
 |Secondary keys|`aeiou cdghklnrst AEIOU CDGHKLNRST \\|`|
-|Characters|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŖŅŞŢ ◌̨ ˛|
+|Characters|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŅRŞŢ ◌̨ ˛|
 |Default case|U+00B8 CEDILLA (¸)|
 |Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to `\` and `\|` since the ogonek and cedilla are approximately mirror images. |
 
@@ -391,7 +391,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Dead key|`AltGr` + `+`|
 |Base character|U+00BA MASCULINE ORDINAL INDICATOR (º)|
 |Secondary keys|`0123456789+-=()`<br>`abcdefghijklmnoprstuvwxyz`<br>`ABCDEFGHIJKLMNOPQRTUVW`|
-|Characters|⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾<br>ᵃᵇᵈᵉᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸ<br>ᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁᵂ|
+|Characters|⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾<br>ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻ<br>ᴬᴮꟲᴰᴱꟳᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾꟴᴿᵀᵁⱽᵂ|
 |Default case|U+00BA MASCULINE ORDINAL INDICATOR (º)|
 |Notes|All superscript lowercase letters except "q" (U+107A5, non-BMP characters are not supported) are available on this keyboard. For superscript capital letters, "S", "X", "Y", and "Z" are missing. |
 
