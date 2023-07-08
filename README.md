@@ -9,6 +9,10 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 	- [Dead keys](#dead-keys)
 	- [Shift states and AltGr](#shift-states-and-altgr)
 - [Overview of Key Mappings](#overview-of-key-mappings)
+	- [Dead key secondary mappings](#dead-key-secondary-mappings)
+		- [Modified Latin letters](#modified-latin-letters)
+		- [Mathematical alphanumeric symbols](#mathematical-alphanumeric-symbols)
+		- [Mathematical operators](#mathematical-operators)
 - [Core Design Ideas](#core-design-ideas)
 - [Key Mappings](#key-mappings)
 	- [Numeric row](#numeric-row)
@@ -98,6 +102,117 @@ Below is a figure of the US International Scientific keyboard layout, made by [t
 
 ![overview](/assets/keyboard-layout.png)
 
+### Dead key secondary mappings
+For convenience and ease of memory, the 26 dead keys in the US International Scientific keyboard layout are listed below in groups sharing similar design logic, instead of original order. 
+
+#### Modified Latin letters
+|Category|Grave accents|
+|:------:|---|
+|Dead key|`AltGr` + `` ` ``|
+|Base character|U+0300 COMBINING GRAVE ACCENT (◌̀)|
+|Secondary keys|`aeiouyw AEIOUYW`|
+|Characters|àèìòùỳẁ ÀÈÌÒÙỲẀ|
+|Default case|U+0060 GRAVE ACCENT (`)|
+
+|Category|Tilde diacritic + math symbols|
+|:------:|---|
+|Dead key|`AltGr` + `~`|
+|Base character|U+0303 COMBINING TILDE (◌̃)|
+|Secondary keys|`aeiouynv AEIOUYNV -=`|
+|Characters|ãẽĩõũỹñṽ ÃẼĨÕŨỸÑṼ ≃≅|
+|Default case|U+00DC SMALL TILDE (˜)|
+|Notes|Two common mathematical equality operators with related shapes are included, respectively U+2243 ASYMPTOTICALLY EQUAL TO, U+2245 APPROXIMATELY EQUAL TO. 
+
+|Category|Caron diacritic|
+|:------:|---|
+|Dead key|`AltGr` + `6`|
+|Base character|U+030C COMBINING CARON (◌̌)|
+|Secondary keys|`aeiou cdgjklnrstz AEIOU CDGKLNRSTZ`|
+|Characters|ǎěǐǒǔ čďǧǐǰǩľňřšťž ǍĚǏǑǓ ČĎǦǏǨĽŇŘŠŤŽ|
+|Default case|U+02C7 CARON (ˇ)|
+|Notes|For unknown reasons, Unicode does not include capital letter "J" with caron, although its lowercase form is encoded. Certain letters may have a different display for the caron, such as an apostrophe at the upper right corner. |
+
+|Category|Circumflex accents|
+|:------:|---|
+|Dead key|`AltGr` + `^`|
+|Base character|U+0302 COMBINING CIRCUMFLEX ACCENT (◌̂)|
+|Secondary keys|`aeiouy cghjsw AEIOUY CGHJSW`|
+|Characters|âêîôûŷ ĉĝĥĵŝŵ ÂÊÎÔÛŶ ĈĜĤĴŜŴ|
+|Default case|U+02C6 MODIFIER LETTER CIRCUMFLEX ACCENT (ˆ)|
+
+|Category|Ring above diacritic + circle symbols|
+|:------:|---|
+|Dead key|`AltGr` + `0`|
+|Base character|U+030A COMBINING RING ABOVE (◌̊)|
+|Secondary keys|`au AU CF oO.b -`|
+|Characters|åů ÅŮ ℃℉ ○◯◌● ᶱ|
+|Default case|U+00B0 DEGREE SIGN (°)|
+|Notes|Includes related symbols: degree Celsius/Fahrenheit, white/large/dotted/black circles, and U+1DB1 MODIFIER LETTER SMALL BARRED O (ᶱ) as an acceptable *approximation* for the barred circle notation of standard state in chemistry. 
+
+|Category|Acute accent|
+|:------:|---|
+|Dead key|`AltGr` + `'`|
+|Base character|U+0301 COMBINING ACUTE ACCENT (◌́)|
+|Secondary keys|`aeiouy cgklmnprswz AEIOUY CGKLMNPRSWZ`|
+|Characters|áéíóúý ćǵḱĺḿńṕŕśẃź ÁÉÍÓÚÝ ĆǴḰĹḾŃṔŔŚẂŹ|
+|Default case|U+00B4 ACUTE ACCENT (´)|
+
+|Category|Diaeresis diacritic + dot diacritics|
+|:------:|---|
+|Dead key|`AltGr` + `"`|
+|Base character|U+0308 COMBINING DIAERESIS (◌̈)|
+|Secondary keys|`aeiouy htw AEIOUY HW 1234`|
+|Characters|äëïöüÿ ḧẗẅ ÄËÏÖÜ ḦẄ ◌̇◌̈ ⃛ ⃜|
+|Default case|U+00A8 DIAERESIS (¨)|
+|Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. |
+
+|Category|Macron diacritic + bar diacritics|
+|:------:|---|
+|Dead key|`AltGr` + `b`|
+|Base character|U+0304 COMBINING MACRON (◌̄)|
+|Secondary keys|`aeioug AEIOUG -=_`|
+|Characters|āēīōūḡ ĀĒĪŌŪḠ ◌̅◌̿¯|
+|Default case|U+02C9 MODIFIER LETTER MACRON (ˉ)|
+|Notes|Includes related combining diacritical marks: U+0305 COMBINING OVERLINE (denotes averages in math), U+033F COMBINING DOUBLE OVERLINE. Includes U+00AF MACRON, a longer variant of the modifier letter from legacy. 
+
+|Category|Breve diacritic|
+|:------:|---|
+|Dead key|`AltGr` + `B`|
+|Base character|U+0306 COMBINING BREVE (◌̆)|
+|Secondary keys|`aeioug AEIOUG`|
+|Characters|ăĕĭŏŭğ ĂĔĬŎŬĞ|
+|Default case|U+02D8 BREVE (˘)|
+
+|Category|Cedilla and ogonek diacritics|
+|:------:|---|
+|Dead key|`AltGr` + `,`|
+|Base character|U+0327 COMBINING CEDILLA (◌̧)|
+|Secondary keys|`aeiou cdghklnrst AEIOU CDGHKLNRST \\|`|
+|Characters|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŖŅŞŢ ◌̨ ˛|
+|Default case|U+00B8 CEDILLA (¸)|
+|Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to `\` and `\|` since the ogonek and cedilla are approximately mirror images. |
+
+|Category|Stroked letters + fraction slash|
+|:------:|---|
+|Dead key|`AltGr` + `\`|
+|Base character|U+0338 COMBINING LONG SOLIDUS OVERLAY (◌̸)|
+|Secondary keys|`bdghilotz DGHILOTZ`|
+|Characters|ƀđǥħɨłøŧƶ ĐǤĦƗŁØŦƵ|
+|Default case|U+2044 FRACTION SLASH (⁄)|
+|Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). For unknown reasons, Unicode does not include capital letter "B" with stroke, although its lowercase form is encoded. |
+
+|Category|Ligatures + obscure characters|
+|:------:|---|
+|Dead key|`AltGr` + `&`|
+|Base character|U+00A6 BROKEN BAR (¦)|
+|Secondary keys|`ao ilnd AO ILND tT eE &\|`|
+|Characters|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ þÞ ðᴆ ⅋¦|
+|Default case|U+200D ZERO WIDTH JOINER (‍)|
+|Notes|The default case U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related obscure characters U+214B TURNED AMPERSAND (⅋) and U+00A6 BROKEN BAR (¦). |
+
+#### Mathematical alphanumeric symbols
+
+#### Mathematical operators
 ## Core Design Ideas
 1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the `AltGr` (`Alt` + `Ctrl`) and `AltGr` + `Shift` (`Ctrl` + `Alt` + `Shift`) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
 Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. These mappings with be denoted with a `(USX)` mark, referencing the Windows `KBDUSX.dll` file containing setup information. 
