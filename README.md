@@ -8,7 +8,7 @@ __A very powerful custom keyboard layout for Windows, tailored for efficient and
 - [Must-know Concepts](#must-know-concepts)
 	- [Dead keys](#dead-keys)
 	- [Shift states and AltGr](#shift-states-and-altgr)
-- [Overview of Keyboard Mappings](#overview-of-keyboard-mappings)
+- [Overview of Key Mappings](#overview-of-key-mappings)
 - [Core Design Ideas](#core-design-ideas)
 - [Key Mappings](#key-mappings)
 	- [Numeric row](#numeric-row)
@@ -81,7 +81,7 @@ Shift states with only `Alt` or `Ctrl` are mostly unused in keyboard layouts, be
 In the US International Scientific keyboard layout, the key mappings in the normal shift states are identical to that in the common English (United States) QWERTY keyboard layout. Thus, without `AltGr`, it is just a normal layout; this feature is intended to make the transition to this layout extremely easy. All extra functionalities are carefully designed into the AltGr shift states, along with usage of dead keys.  
 </details>
 
-## Overview of Keyboard Mappings
+## Overview of Key Mappings
 Below is a figure of the US International Scientific keyboard layout, made by [this tool](http://www.keyboard-layout-editor.com/#/) (also [on Github](https://github.com/ijprest/keyboard-layout-editor)). This figure may be greatly helpful as a reference to the functionalities of this keyboard layout. 
 
 **Legend**
