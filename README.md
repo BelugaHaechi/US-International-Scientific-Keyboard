@@ -120,6 +120,7 @@ Also, key mappings from the original United States-International keyboard are re
    - Shift states only include normal, `Shift`, `AltGr` (`Ctrl+Alt`), and `Shift+AltGr` (`Ctrl+Alt+Shift`). Excluded states include `Ctrl`, `Ctrl+Shift`, `SGCaps` (`CapsLock`), and so on.
 
 ## Key Mappings
+Below is a detailed documentation on the complete set of key mappings for the US International Scientific keyboard layout, including specific descriptions of the characters selected and the corresponding justifications. 
 ### Numeric row
 #### `AltGr` shift state
 |Key|Char|Unicode|Character|Description|
