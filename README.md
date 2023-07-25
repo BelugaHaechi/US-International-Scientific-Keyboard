@@ -180,14 +180,14 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |`q`|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key `x`), another common math operator. |
 |`w`|ϵ   |U+03F5|GREEK LUNATE EPSILON SYMBOL|Shape similar to a turned "w". Key `e` is reserved for "element of"-related (set membership) symbols. |
 |`e`|϶   |U+03F6|GREEK REVERSED LUNATE EPSILON SYMBOL|**Dead key: set membership math symbols.** **Base character** has a shape similar to a reversed "e", and is near its mirror image U+03F5 GREEK LUNATE EPSILON SYMBOL. **Default case** is U+2208 ELEMENT OF, which starts with the letter "e". |
-|`r`|®   |U+00AE|REGISTERED SIGN|Retained from USX layout. Shape of symbol includes the letter "R". |
+|`r`|®   |U+00AE|REGISTERED SIGN|Retained from USX layout. Shape includes letter "R". Shift state same as ℗ and ©. |
 |`t`|†   |U+2020|DAGGER|Often used for marking footnotes, also used in math/physics for the conjugate (Hermitian) transpose. Shape similar to letter "t". |
 |`y`|±   |U+00B1|PLUS-MINUS SIGN|**Dead key: math symbols comprised of horizontal and vertical lines, such as logical operators.** Shapes similar to the crossed shape of the letter "y", which also notes that the characters in this set could comprise of lines towards all directions. **Base character and default case** is U+00B1 PLUS-MINUS SIGN because it is most commonly used, and is the only character in this set which has a code point that is valid for a dead key. |
 |`u`|∪   |U+222A|UNION|Math: set notation. Shape similar to letter "U". |
 |`i`|ı   |U+0131|LATIN SMALL LETTER DOTLESS I|Math: imaginary unit in some fields, eg. engineering. Also used in some languages, eg. Azerbaijani, Turkish. Shape similar to letter "i". |
 |`o`|ϕ   |U+03D5|GREEK PHI SYMBOL|**Dead key: circle-related math symbols.** Shapes include a circle, similar to shape of letter "o". **Base character and default case** is U+03D5 GREEK PHI SYMBOL, a common Greek variable name in math. Note for Greek language, U+03C6 GREEK SMALL LETTER PHI (φ) is used. |
-|`p`|∐   |U+2210|N-ARY COPRODUCT|Math: collection operator in abstract algebra. Mirror image of U+220F N-ARY PRODUCT. |
-|`[`|‹   |U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. 
+|`p`|℗   |U+2117|SOUND RECORDING COPYRIGHT|Also known as published phonorecord sign. Shape includes letter "P". Shift state same as ® and ©. |
+|`[`|‹   |U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. |
 |`]`|›   |U+203A|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK|Punctuation: right single quotation mark in some European languages. Justification similar to U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK. |
 |`\`|↓   |U+2193|DOWNWARDS ARROW|Meaning related to U+005C REVERSE SOLIDUS (backslash) that indicates a falling notion. Mirror image of U+2191 UPWARDS ARROW. |
 
@@ -196,7 +196,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
 |`Q`|≡   |U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter `q`. This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
-|`W`|∑   |U+2211|N-ARY SUMMATION|Math: sigma summation notation. Shape similar to a turned "W". Key `E` is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
+|`W`|   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Base character and default case** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key `I` mapped to U+0283 LATIN SMALL LETTER ESH. Key `E` is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
 |`E`|∃   |U+2203|THERE EXISTS|Math: existential quantifier. Shape similar to a reversed letter "E". |
 |`R`|™   |U+2122|TRADE MARK SIGN|Usage highly related to U+00AE REGISTERED SIGN mapped to the same key. |
 |`T`|‡   |U+2021|DOUBLE DAGGER|Often used for marking footnotes, also used in chemistry to denote a transition state. Shape similar to letter "t" and U+2020 DAGGER mapped to the same key. |
@@ -204,7 +204,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |`U`|∩   |U+2229|INTERSECTION|Math: set notation. Mirror image of U+222A UNION mapped to the same key. |
 |`I`|ʃ   |U+0283|LATIN SMALL LETTER ESH|**Dead key: integral math symbols.** The name "integral" begins with the letter "i". Also integrals are large math operators, so they are mapped to capital key "I". **Base character and default case** is U+0283 LATIN SMALL LETTER ESH becuase it is a useful latin letter that resembles an integral, while all integral characters in this set have code points that are invalid for a dead key. |
 |`O`|∅   |U+2205|EMPTY SET|Math: set notation. Shape similar to letter "O" and U+03D5 GREEK PHI SYMBOL mapped to the same key. |
-|`P`|∏   |U+220F|N-ARY PRODUCT|Math: pi multiplication notation. Resembles Greek capital letter pi, which starts with the letter "p". Mirror image of U+2210 N-ARY COPRODUCT. |
+|`P`|¶   |U+00B6|PILCROW SIGN|Typography: denotes a paragraph. Name starts with letter "p". Shape similar to reversed letter "P". Has same shift state as U+00A7 SECTION SIGN. |
 |`{`|«   |U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages (eg. French guillemets). Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
 |`}`|»   |U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages (eg. French guillemets). Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
 |`\|`|↑   |U+2191|UPWARDS ARROW|Shape similar to U+007C VERTICAL BAR mapped to this key. Indicates upward motion, which is related to the `Shift` key icon. Mirror image of U+2193 DOWNWARDS ARROW. |
@@ -230,7 +230,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |Key|Char|Unicode|Character|Description|
 |:-:|:--:|:-----:|---------|-----------|
 |`A`|∀   |U+2200|FOR ALL|Math: universal quantifier. Shape similar to a turned letter "A". |
-|`S`|§   |U+00A7|SECTION SIGN|Shape includes two letter "S"s. Retained from USX layout. |
+|`S`|§   |U+00A7|SECTION SIGN|Typography: denotes a section. Shape includes two letter "S"s. Retained from USX layout. Has same shift state as U+00B6 PILCROW SIGN. |
 |`D`|∆   |U+2206|INCREMENT|Math: indicates the difference of the value of a variable resulting from change. Shape similar to Greek capital letter delta. Related to U+2202 PARTIAL DIFFERENTIAL mapped to the same key. |
 |`F`|Ϝ   |U+03DC|GREEK LETTER DIGAMMA|Math: variable name. Shape similar to letter "F". Required to be included in UTR25. |
 |`G`|∇   |U+2207|NABLA|Physics: differential operator. Describes gradient, which starts with letter "g". Similar to an inverted Greek capital delta, that also shares the same shift state with this character. Near other Greek letters. |
@@ -247,13 +247,13 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |:-:|:--:|:-----:|---------|-----------|
 |`z`|≠   |U+2260|NOT EQUAL TO|Math. Shape similar to letter "z". Has the same shift state as the equals sign ("="). |
 |`x`|×   |U+00D7|MULTIPLICATION SIGN|Math. Shape similar to letter "x". Has same shift state as U+00F7 DIVISION SIGN (mapped to key `x`), another common math operator. |
-|`c`|©   |U+00A9|COPYRIGHT SIGN|Shape includes letter "c". Retained from USX layout. |
+|`c`|©   |U+00A9|COPYRIGHT SIGN|Shape includes letter "c". Retained from USX layout. Shift state same as ® and ℗. |
 |`v`|∨   |U+2228|LOGICAL OR|Math: logical operator. Shape similar to letter "v". |
 |`b`|ˉ   |U+0304|COMBINING MACRON|**Dead keys: characters with the macron diacritic, extended to overline diacritics.** The shapes of these diacritics are usually called "bars" (especially in physics), which starts with letter "b". This key was originally intended for only U+0305 COMBINING OVERLINE for use in math and physics (denoting averages), then extended. |
 |`n`|¬   |U+00AC|NOT SIGN|Math: logical operator. The name "not" starts with letter "n". |
 |`m`|↦   |U+21A6|RIGHTWARDS ARROW FROM BAR|Math: function notation. Commonly called the maplet, which starts with letter "m". |
 |`,`|¸   |U+0327|COMBINING CEDILLA|**Dead key: characters with the cedilla or ogonek diacritic.** Shape of cedilla similar to the comma, while shape of ogonek similar to a reversed comma. The two diacritics are mutually exclusive on a letter, thus they are mapped to the same key. |
-|`.`|·   |U+00B7|MIDDLE DOT|**Dead key: punctuation with multiple dots.** Shape similar to the period. Not to be confused with U+22C5 DOT OPERATOR (⋅), which should be used exclusively for dot multiplication in math. In accordance with $\LaTeX$, includes the family of `\cdot`, `\cdots`, `\vdots`, etc. Mainly used to abbreviate the elements of a matrix. |
+|`.`|̣   |U+0323|COMBINING DOT BELOW|**Dead key: characters with the underdot diacritic, extended to punctuation with multiple dots.** Shape similar to the period. In accordance with $\LaTeX$, includes the family of matrix abbreviators `\cdot`, `\cdots`, `\vdots`, etc. **Default case** is the punctuation U+00B7 MIDDLE DOT (·), as there is no modifier letter for the below dot diacritic. Not to be confused with U+22C5 DOT OPERATOR (⋅), which should be used exclusively for dot multiplication in math. |
 |`/`|̸   |U+0338|COMBINING LONG SOLIDUS OVERLAY|**Dead key: characters with a stroke.** Shape similar to the solidus. Standard combining character for "crossing out" other characters in Unicode. **Default case** is U+2044 FRACTION SLASH, which has a similar shape with the solidus, and also represents the usage of the solidus as the division operator. |
 
 
@@ -365,12 +365,21 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Default case|U+00B8 CEDILLA (¸)|
 |Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to `\` and `\|` since the ogonek and cedilla are approximately mirror images. |
 
+|Category|Underdot diacritic + dot-related punctuation|
+|:------:|---|
+|Dead key|`AltGr` + `.`|
+|Base character|U+0323 COMBINING DOT BELOW (◌̣)|
+|Secondary keys|`abdehiklmnorstuvwyz ABDEHIKLMNORSTUVWYZ -/\|\ ."`|
+|Characters|ạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒ ⋯⋰⋮⋱ …◌̤|
+|Default case|U+00B7 MIDDLE DOT (·)|
+|Notes|Ellipsis is mapped to key `.` representing the extra dots. This is more convenient than key `_` which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR. |
+
 |Category|Stroked letters + fraction slash|
 |:------:|---|
 |Dead key|`AltGr` + `\`|
 |Base character|U+0338 COMBINING LONG SOLIDUS OVERLAY (◌̸)|
-|Secondary keys|`bdghilotz DGHILOTZ`|
-|Characters|ƀđǥħɨłøŧƶ ĐǤĦƗŁØŦƵ|
+|Secondary keys|`bcdeghijloprtyz ABCDEGHIJLOPRTYZ`|
+|Characters|ƀȼđɇǥħɨɉłøᵽɍŧɏƶ ȺɃȻĐɆǤĦƗɈŁØⱣɌŦɎƵ|
 |Default case|U+2044 FRACTION SLASH (⁄)|
 |Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). For unknown reasons, Unicode does not include capital letter "B" with stroke, although its lowercase form is encoded. |
 
@@ -466,6 +475,15 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Default case|U+00B1 PLUS-MINUS SIGN (±)|
 |Notes|The mappings are based on the initial letter of each character's name: assertion, models, true, forces; up, down, right, left; perpendicular. Negations are mapped to capital letters (shifted state). Includes plus-minus and minus-plus signs. |
 
+|Category|N-ary operators|
+|:------:|---|
+|Dead key|`AltGr` + `W`|
+|Base character|U+01A9 LATIN CAPITAL LETTER ESH (Ʃ)|
+|Secondary keys|`sSpPuUvV .+x`|
+|Characters|∑⅀∏∐⋃⋂⋁⋀ ⨀⨁⨂|
+|Default case|U+01A9 LATIN CAPITAL LETTER ESH (Ʃ)|
+|Notes|S stands for "sum" and "sigma", P stands for "product" and "pi". Capital letter mappings represent variants. Default case is a resembling letter, only use if other symbols do not display. |
+
 |Category|Integral operators|
 |:------:|---|
 |Dead key|`AltGr` + `I`|
@@ -473,7 +491,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Secondary keys|`1234567890`|
 |Characters|∫∬∭⨌∮∯∰∱∲∳|
 |Default case|U+0283 LATIN SMALL LETTER ESH (ʃ)|
-|Notes|Mapping based on integral dimensions. |
+|Notes|Mapping based on integral dimensions. Default case is a resembling letter, only use if other symbols do not display.|
 
 |Category|Circle-related operators + QED|
 |:------:|---|
@@ -501,15 +519,6 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Characters|≯≥≱≳≧≫≷ ⌋⌉|
 |Default case|U+2265 GREATER-THAN OR EQUAL TO (≥)|
 |Notes|Includes right ceiling/floor brackets. |
-
-|Category|Matrix abbreviators + dot-related punctuation|
-|:------:|---|
-|Dead key|`AltGr` + `.`|
-|Base character|U+00B7 MIDDLE DOT (·)|
-|Secondary keys|`-/\|\ .`|
-|Characters|⋯⋰⋮⋱ …|
-|Default case|U+00B7 MIDDLE DOT (·)|
-|Notes|Ellipsis is mapped to key `.` representing the extra dots. This is more convenient than key `_` which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR. |
 
 ## Comparison to Other Layouts
 |Aspect|<i style="color:#6699cc">US Intl. Sci.</i>|US|US Intl|Other projects|
