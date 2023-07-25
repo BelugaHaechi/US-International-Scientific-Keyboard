@@ -140,7 +140,7 @@ Also, key mappings from the original United States-International keyboard are re
 Below is a detailed documentation on the complete set of key mappings for the US International Scientific keyboard layout, including specific descriptions of the characters selected and the corresponding justifications. 
 ### Numeric row
 #### `AltGr` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`` ` ``|`   |U+0300|COMBINING GRAVE ACCENT|**Dead key: characters with the grave accent diacritic.** Shape similar to U+0060 GRAVE ACCENT (backtick). Retained from USX layout. |
 |`1`|′   |U+2032|PRIME|Math: first (1) derivative. |
@@ -157,7 +157,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |`=`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key: subscript characters.** Conventionally, the hotkey for subscripts is `Ctrl` + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00AA FEMININE ORDINAL INDICATOR in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### `AltGr` + `Shift` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`~`|˜   |U+0303|COMBINING TILDE|**Dead key: characters with the tilde diacritic, extended to similar math equality symbols.** Shape similar to U+007E TILDE. Retained from USX layout. |
 |`!`|¡   |U+00A1|INVERTED EXCLAMATION MARK|Punctuation: used to begin exclamations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+0021 EXCLAMATION MARK. |
@@ -181,7 +181,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 
 ### QWERTY row
 #### `AltGr` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`q`|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key `x`), another common math operator. |
 |`w`|ϵ   |U+03F5|GREEK LUNATE EPSILON SYMBOL|Shape similar to a turned "w". Key `e` is reserved for "element of"-related (set membership) symbols. |
@@ -199,7 +199,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 
 
 #### `AltGr` + `Shift` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`Q`|≡   |U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter `q`. This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
 |`W`|   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Root character and default character** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key `I` mapped to U+0283 LATIN SMALL LETTER ESH. Key `E` is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
@@ -217,7 +217,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 
 ### ASDF row
 #### `AltGr` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`a`|ɐ   |U+0250|LATIN SMALL LETTER TURNED A|**Dead key: set inclusion math symbols.** Mainly mapped to this key in accordance with key mappings of set membership symbols and U+2203 THERE EXISTS to key `E`. U+2220 ANGLE is also included for its similar shape with these symbols and its name starting with letter "a". **Root character** has a shape similar to a turned "a". **Default character** is U+2282 SUBSET OF, which is representative. |
 |`s`|ß   |U+00DF|LATIN SMALL LETTER SHARP S|Common letter in German language. Shape and usage similar to letter "s". Retained from USX layout. |
@@ -233,7 +233,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 
 
 #### `AltGr` + `Shift` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`A`|∀   |U+2200|FOR ALL|Math: universal quantifier. Shape similar to a turned letter "A". |
 |`S`|§   |U+00A7|SECTION SIGN|Typography: denotes a section. Shape includes two letter "S"s. Retained from USX layout. Has same shift state as U+00B6 PILCROW SIGN. |
@@ -249,7 +249,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 
 ### ZXCV row
 #### `AltGr` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`z`|≠   |U+2260|NOT EQUAL TO|Math. Shape similar to letter "z". Has the same shift state as the equals sign ("="). |
 |`x`|×   |U+00D7|MULTIPLICATION SIGN|Math. Shape similar to letter "x". Has same shift state as U+00F7 DIVISION SIGN (mapped to key `x`), another common math operator. |
@@ -264,7 +264,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 
 
 #### `AltGr` + `Shift` shift state
-|Key|Char|Unicode|Character name|Description|
+|Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |`Z`|Ƶ   |U+01B5|LATIN CAPITAL LETTER Z WITH STROKE|**Dead key: letters with the mathematical double-struck font.** Due to Windows limitations, only a few such letters are available. **Root character** is U+01B5 LATIN CAPITAL LETTER Z WITH STROKE only as a representation of the special font, while all double-struck letters are not valid as dead key root characters; this character is by intent not mapped to a Base characterstroke because it is only a placeholder and not a double-struck letter. **Default character** is U+2124 DOUBLE-STRUCK CAPITAL Z (ℤ), which is commonly used in math for the set of integers. |
 |`X`|≈   |U+2248|ALMOST EQUAL TO|Math. Denotes approximation, which has the sound of letter "x". Has the same shift state as U+2261 IDENTICAL TO, both equality-related symbols. |
@@ -424,7 +424,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`qwertyuiop`<br>`asdfghjkl`<br>`zxcvbnm`<br>`QWERTYUIOP`<br>`ASDFGHJKL`<br>`ZXCVBNM`<br>`123456`|
 |Composites|ϑςερτυθιοπ<br>ασδφγηξκλ<br>ζχψωβνμ<br>ϴϖΕΡΤΥΘΙΟΠ<br>ΑΣΔΦΓΗΞΚΛ<br>ΖΧΨΩΒΝΜ<br>ℵℶℷℸϰϱ|
 |Default|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
-|Notes|These letters are included in the Basic Set of Alphanumeric Characters for mathematical notation (see §2.2 of [UTR25](http://www.unicode.org/reports/tr25/)). For convenience and consistency, the mappings are mostly identical to the standard Greek keyboard layout. Greek diacritics were removed. Key `w` is retained as the lowercase final sigma. Keys `QqW` are mapped respectively to U+03F4 (ϴ ↔ Θ), U+03D1 (ϑ ↔ θ), and U+03D6 (ϖ ↔ π), based on their similar shapes. Keys `1234` are the first 4 capital Herbrew letters Alef, Bet, Gimel, and Dalet. Keys `56` are mapped respectively to U+03F0 (ϰ ↔ κ) and U+03F1 (ϱ ↔ ρ) due to the lack of space, yet coincidently the shapes are relatable (ϰ looks like a distorted turned 5, ϱ looks like a flipped 6), and their Unicode datapoints are consecutive! |
+|Notes|These letters are included in the Basic Set of Alphanumeric Characters for mathematical notation (see §2.2 of [UTR25](http://www.unicode.org/reports/tr25/)). For convenience and consistency, the mappings are mostly identical to the standard Greek keyboard layout. Greek diacritics were removed. Key `w` is retained as the lowercase final sigma. Keys `QqW` are mapped respectively to U+03F4 (ϴ ↔ Θ), U+03D1 (ϑ ↔ θ), and U+03D6 (ϖ ↔ π), based on their similar shapes. Keys `1234` are the first 4 capital Herbrew letters Alef, Bet, Gimel, and Dalet. Keys `56` are mapped respectively to U+03F0 (ϰ ↔ κ) and U+03F1 (ϱ ↔ ρ) due to the lack of space, yet coincidently the shapes are relatable (ϰ looks like a distorted turned 5, ϱ looks like a flipped 6), and their Unicode datapoints are consecutive! |
 
 |Category|Black-letter (Fraktur) font letters|
 |:------:|---|
