@@ -143,35 +143,35 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |<kbd>\`</kbd>|`   |U+0300|COMBINING GRAVE ACCENT|**Dead key: characters with the grave accent diacritic.** Shape similar to U+0060 GRAVE ACCENT (backtick). Retained from USX layout. |
-|<kbd>1`|′   |U+2032|PRIME|Math: first (1) derivative. |
-|<kbd>2`|″   |U+2033|DOUBLE PRIME|Math: second (2) derivative. |
-|<kbd>3`|‴   |U+2034|TRIPLE PRIME|Math: third (3) derivative. |
-|<kbd>4`|¤   |U+00A4|CURRENCY SIGN|Retained from USX layout. Related to the Shift shift state mapping of U+0024 DOLLAR SIGN. |
-|<kbd>5`|€   |U+20AC|EURO SIGN|Retained from USX layout. Near other currency characters. |
-|<kbd>6`|ˇ   |U+030C|COMBINING CARON|**Dead key: characters with the caron diacritic.** Mirror image of U+0302 COMBINING CIRCUMFLEX ACCENT. |
-|<kbd>7`|⃗   |U+20D7|COMBINING RIGHT ARROW ABOVE|Physics: vector notation. Shape of 7 similar to right arrow. Near other combining diacritical marks. |
-|<kbd>8`|∞   |U+221E|INFINITY|Math. Shape similar to a turned 8. |
-|<kbd>9`|∝   |U+221D|PROPORTIONAL TO|Math. Near U+221E INFINITY. Shape similar to a turned 9, or a turned 8 with an opening. |
-|<kbd>0`|°   |U+030A|COMBINING RING ABOVE|**Dead key: characters with a ring above, expanded to related non-math symbols.** Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key `0` is prioritized over `O`). |
-|<kbd>-`|–   |U+2013|EN DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Shorter than U+2014 EM DASH, so mapped to the hyphen which is shorter than the underscore. |
-|<kbd>=`|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key: subscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00AA FEMININE ORDINAL INDICATOR in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
+|<kbd>1</kbd>|′   |U+2032|PRIME|Math: first (1) derivative. |
+|<kbd>2</kbd>|″   |U+2033|DOUBLE PRIME|Math: second (2) derivative. |
+|<kbd>3</kbd>|‴   |U+2034|TRIPLE PRIME|Math: third (3) derivative. |
+|<kbd>4</kbd>|¤   |U+00A4|CURRENCY SIGN|Retained from USX layout. Related to the Shift shift state mapping of U+0024 DOLLAR SIGN. |
+|<kbd>5</kbd>|€   |U+20AC|EURO SIGN|Retained from USX layout. Near other currency characters. |
+|<kbd>6</kbd>|ˇ   |U+030C|COMBINING CARON|**Dead key: characters with the caron diacritic.** Mirror image of U+0302 COMBINING CIRCUMFLEX ACCENT. |
+|<kbd>7</kbd>|⃗   |U+20D7|COMBINING RIGHT ARROW ABOVE|Physics: vector notation. Shape of 7 similar to right arrow. Near other combining diacritical marks. |
+|<kbd>8</kbd>|∞   |U+221E|INFINITY|Math. Shape similar to a turned 8. |
+|<kbd>9</kbd>|∝   |U+221D|PROPORTIONAL TO|Math. Near U+221E INFINITY. Shape similar to a turned 9, or a turned 8 with an opening. |
+|<kbd>0</kbd>|°   |U+030A|COMBINING RING ABOVE|**Dead key: characters with a ring above, expanded to related non-math symbols.** Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key `0` is prioritized over `O`). |
+|<kbd>-</kbd>|–   |U+2013|EN DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Shorter than U+2014 EM DASH, so mapped to the hyphen which is shorter than the underscore. |
+|<kbd>=</kbd>|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key: subscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00AA FEMININE ORDINAL INDICATOR in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### AltGr + Shift shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>~`|˜   |U+0303|COMBINING TILDE|**Dead key: characters with the tilde diacritic, extended to similar math equality symbols.** Shape similar to U+007E TILDE. Retained from USX layout. |
-|<kbd>!`|¡   |U+00A1|INVERTED EXCLAMATION MARK|Punctuation: used to begin exclamations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+0021 EXCLAMATION MARK. |
-|<kbd>@`|√   |U+221A|SQUARE ROOT|Math: second (2) root. |
-|<kbd>#`|∛   |U+221B|CUBE ROOT|Math: third (3) root. |
-|<kbd>$`|£   |U+00A3|POUND SIGN|Retained from USX layout. Near other currency characters. |
-|<kbd>%`|‰   |U+2030|PER MILLE SIGN|Shape and usage similar to U+0025 PERCENT SIGN on the same key. |
-|<kbd>^`|ˆ   |U+0302|COMBINING CIRCUMFLEX ACCENT|**Dead key: characters with the circumflex diacritic.** Shape similar to U+005E CIRCUMFLEX ACCENT on the same key. Retained from USX layout. |
-|<kbd>&`|¦   |U+00A6|BROKEN BAR|**Dead key: ligatures, extended to related punctuation symbols.** Usage of U+0026 AMPERSAND related to the fact that ligatures are joined characters. **Root character** is U+00A6 BROKEN BAR because 1) there is no valid and representative character in the set of ligatures, 2) it is an important character also covered in the USX layout, and 3) its shape suggests the idea of joining two objects. **Default character** is U+200D ZERO WIDTH JOINER, commonly used to compose composite graphemes, especially in emojis. |
-|‍<kbd>*`|⋅   |U+22C5|DOT OPERATOR|Math: dot multiplication. Usage similar to the multiplication meaning of U+002A ASTERISK on this key. |
-|<kbd>(`|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
-|<kbd>)`|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
-|<kbd>_`|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating breaks in sentences. Longer than U+2014 EM DASH, so mapped to the underscore which is longer than the hyphen. |
-|<kbd>+`|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key: superscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00BA MASCULINE ORDINAL INDICATOR in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts. |
+|<kbd>~</kbd>|˜   |U+0303|COMBINING TILDE|**Dead key: characters with the tilde diacritic, extended to similar math equality symbols.** Shape similar to U+007E TILDE. Retained from USX layout. |
+|<kbd>!</kbd>|¡   |U+00A1|INVERTED EXCLAMATION MARK|Punctuation: used to begin exclamations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+0021 EXCLAMATION MARK. |
+|<kbd>@</kbd>|√   |U+221A|SQUARE ROOT|Math: second (2) root. |
+|<kbd>#</kbd>|∛   |U+221B|CUBE ROOT|Math: third (3) root. |
+|<kbd>$</kbd>|£   |U+00A3|POUND SIGN|Retained from USX layout. Near other currency characters. |
+|<kbd>%</kbd>|‰   |U+2030|PER MILLE SIGN|Shape and usage similar to U+0025 PERCENT SIGN on the same key. |
+|<kbd>^</kbd>|ˆ   |U+0302|COMBINING CIRCUMFLEX ACCENT|**Dead key: characters with the circumflex diacritic.** Shape similar to U+005E CIRCUMFLEX ACCENT on the same key. Retained from USX layout. |
+|<kbd>&</kbd>|¦   |U+00A6|BROKEN BAR|**Dead key: ligatures, extended to related punctuation symbols.** Usage of U+0026 AMPERSAND related to the fact that ligatures are joined characters. **Root character** is U+00A6 BROKEN BAR because 1) there is no valid and representative character in the set of ligatures, 2) it is an important character also covered in the USX layout, and 3) its shape suggests the idea of joining two objects. **Default character** is U+200D ZERO WIDTH JOINER, commonly used to compose composite graphemes, especially in emojis. |
+|‍<kbd>*</kbd>|⋅   |U+22C5|DOT OPERATOR|Math: dot multiplication. Usage similar to the multiplication meaning of U+002A ASTERISK on this key. |
+|<kbd>(</kbd>|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
+|<kbd>)</kbd>|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
+|<kbd>_</kbd>|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating breaks in sentences. Longer than U+2014 EM DASH, so mapped to the underscore which is longer than the hyphen. |
+|<kbd>+</kbd>|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key: superscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00BA MASCULINE ORDINAL INDICATOR in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### Notes
 1. There exists U+2057 QUADRUPLE PRIME and U+221C FOURTH ROOT as candidates for key `4`, but they were not chosen because 1) these characters are rarely used (we live in a 3-dimensional world), and 2) there exists reasonable USX layout options to retain (which were used in this layout).
@@ -183,99 +183,99 @@ Below is a detailed documentation on the complete set of key mappings for the US
 #### AltGr shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>q`|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key `x`), another common math operator. |
-|<kbd>w`|ϵ   |U+03F5|GREEK LUNATE EPSILON SYMBOL|Shape similar to a turned "w". Key `e` is reserved for "element of"-related (set membership) symbols. |
-|<kbd>e`|϶   |U+03F6|GREEK REVERSED LUNATE EPSILON SYMBOL|**Dead key: set membership math symbols.** **Root character** has a shape similar to a reversed "e", and is near its mirror image U+03F5 GREEK LUNATE EPSILON SYMBOL. **Default character** is U+2208 ELEMENT OF, which starts with the letter "e". |
-|<kbd>r`|®   |U+00AE|REGISTERED SIGN|Retained from USX layout. Shape includes letter "R". Shift state same as ℗ and ©. |
-|<kbd>t`|†   |U+2020|DAGGER|Often used for marking footnotes, also used in math/physics for the conjugate (Hermitian) transpose. Shape similar to letter "t". |
-|<kbd>y`|±   |U+00B1|PLUS-MINUS SIGN|**Dead key: math symbols comprised of horizontal and vertical lines, such as relational operators.** Shapes similar to the crossed shape of the letter "y", which also notes that the characters in this set could comprise of lines towards all directions. **Root character and default character** is U+00B1 PLUS-MINUS SIGN because it is most commonly used, and is the only character in this set which has a code point that is valid for a dead key. |
-|<kbd>u`|∪   |U+222A|UNION|Math: set notation. Shape similar to letter "U". |
-|<kbd>i`|ı   |U+0131|LATIN SMALL LETTER DOTLESS I|Math: imaginary unit in some fields, eg. engineering. Also used in some languages, eg. Azerbaijani, Turkish. Shape similar to letter "i". |
-|<kbd>o`|ϕ   |U+03D5|GREEK PHI SYMBOL|**Dead key: circle-related math symbols.** Shapes include a circle, similar to shape of letter "o". **Root character and default character** is U+03D5 GREEK PHI SYMBOL, a common Greek variable name in math. Note for Greek language, U+03C6 GREEK SMALL LETTER PHI (φ) is used. |
-|<kbd>p`|℗   |U+2117|SOUND RECORDING COPYRIGHT|Also known as published phonorecord sign. Shape includes letter "P". Shift state same as ® and ©. |
-|<kbd>[`|‹   |U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. |
-|<kbd>]`|›   |U+203A|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK|Punctuation: right single quotation mark in some European languages. Justification similar to U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK. |
+|<kbd>q</kbd>|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key `x`), another common math operator. |
+|<kbd>w</kbd>|ϵ   |U+03F5|GREEK LUNATE EPSILON SYMBOL|Shape similar to a turned "w". Key `e` is reserved for "element of"-related (set membership) symbols. |
+|<kbd>e</kbd>|϶   |U+03F6|GREEK REVERSED LUNATE EPSILON SYMBOL|**Dead key: set membership math symbols.** **Root character** has a shape similar to a reversed "e", and is near its mirror image U+03F5 GREEK LUNATE EPSILON SYMBOL. **Default character** is U+2208 ELEMENT OF, which starts with the letter "e". |
+|<kbd>r</kbd>|®   |U+00AE|REGISTERED SIGN|Retained from USX layout. Shape includes letter "R". Shift state same as ℗ and ©. |
+|<kbd>t</kbd>|†   |U+2020|DAGGER|Often used for marking footnotes, also used in math/physics for the conjugate (Hermitian) transpose. Shape similar to letter "t". |
+|<kbd>y</kbd>|±   |U+00B1|PLUS-MINUS SIGN|**Dead key: math symbols comprised of horizontal and vertical lines, such as relational operators.** Shapes similar to the crossed shape of the letter "y", which also notes that the characters in this set could comprise of lines towards all directions. **Root character and default character** is U+00B1 PLUS-MINUS SIGN because it is most commonly used, and is the only character in this set which has a code point that is valid for a dead key. |
+|<kbd>u</kbd>|∪   |U+222A|UNION|Math: set notation. Shape similar to letter "U". |
+|<kbd>i</kbd>|ı   |U+0131|LATIN SMALL LETTER DOTLESS I|Math: imaginary unit in some fields, eg. engineering. Also used in some languages, eg. Azerbaijani, Turkish. Shape similar to letter "i". |
+|<kbd>o</kbd>|ϕ   |U+03D5|GREEK PHI SYMBOL|**Dead key: circle-related math symbols.** Shapes include a circle, similar to shape of letter "o". **Root character and default character** is U+03D5 GREEK PHI SYMBOL, a common Greek variable name in math. Note for Greek language, U+03C6 GREEK SMALL LETTER PHI (φ) is used. |
+|<kbd>p</kbd>|℗   |U+2117|SOUND RECORDING COPYRIGHT|Also known as published phonorecord sign. Shape includes letter "P". Shift state same as ® and ©. |
+|<kbd>[</kbd>|‹   |U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. |
+|<kbd>]</kbd>|›   |U+203A|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK|Punctuation: right single quotation mark in some European languages. Justification similar to U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK. |
 |<kbd>\`|↓   |U+2193|DOWNWARDS ARROW|Meaning related to U+005C REVERSE SOLIDUS (backslash) that indicates a falling notion. Mirror image of U+2191 UPWARDS ARROW. |
 
 
 #### AltGr + Shift shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>Q`|≡   |U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter `q`. This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
-|<kbd>W`|   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Root character and default character** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key `I` mapped to U+0283 LATIN SMALL LETTER ESH. Key `E` is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
-|<kbd>E`|∃   |U+2203|THERE EXISTS|Math: existential quantifier. Shape similar to a reversed letter "E". |
-|<kbd>R`|™   |U+2122|TRADE MARK SIGN|Usage highly related to U+00AE REGISTERED SIGN mapped to the same key. |
-|<kbd>T`|‡   |U+2021|DOUBLE DAGGER|Often used for marking footnotes, also used in chemistry to denote a transition state. Shape similar to letter "t" and U+2020 DAGGER mapped to the same key. |
-|<kbd>Y`|¥   |U+00A5|YEN SIGN|Shape similar to letter "Y". Near other currency signs. |
-|<kbd>U`|∩   |U+2229|INTERSECTION|Math: set notation. Mirror image of U+222A UNION mapped to the same key. |
-|<kbd>I`|ʃ   |U+0283|LATIN SMALL LETTER ESH|**Dead key: integral math symbols.** The name "integral" begins with the letter "i". Also integrals are large math operators, so they are mapped to capital key "I". **Root character and default character** is U+0283 LATIN SMALL LETTER ESH becuase it is a useful latin letter that resembles an integral, while all integral characters in this set have code points that are invalid for a dead key. |
-|<kbd>O`|∅   |U+2205|EMPTY SET|Math: set notation. Shape similar to letter "O" and U+03D5 GREEK PHI SYMBOL mapped to the same key. |
-|<kbd>P`|¶   |U+00B6|PILCROW SIGN|Typography: denotes a paragraph. Name starts with letter "p". Shape similar to reversed letter "P". Has same shift state as U+00A7 SECTION SIGN. |
-|<kbd>{`|«   |U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages (eg. French guillemets). Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
-|<kbd>}`|»   |U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages (eg. French guillemets). Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
+|<kbd>Q</kbd>|≡   |U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter `q`. This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
+|<kbd>W</kbd>|   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Root character and default character** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key `I` mapped to U+0283 LATIN SMALL LETTER ESH. Key `E` is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
+|<kbd>E</kbd>|∃   |U+2203|THERE EXISTS|Math: existential quantifier. Shape similar to a reversed letter "E". |
+|<kbd>R</kbd>|™   |U+2122|TRADE MARK SIGN|Usage highly related to U+00AE REGISTERED SIGN mapped to the same key. |
+|<kbd>T</kbd>|‡   |U+2021|DOUBLE DAGGER|Often used for marking footnotes, also used in chemistry to denote a transition state. Shape similar to letter "t" and U+2020 DAGGER mapped to the same key. |
+|<kbd>Y</kbd>|¥   |U+00A5|YEN SIGN|Shape similar to letter "Y". Near other currency signs. |
+|<kbd>U</kbd>|∩   |U+2229|INTERSECTION|Math: set notation. Mirror image of U+222A UNION mapped to the same key. |
+|<kbd>I</kbd>|ʃ   |U+0283|LATIN SMALL LETTER ESH|**Dead key: integral math symbols.** The name "integral" begins with the letter "i". Also integrals are large math operators, so they are mapped to capital key "I". **Root character and default character** is U+0283 LATIN SMALL LETTER ESH becuase it is a useful latin letter that resembles an integral, while all integral characters in this set have code points that are invalid for a dead key. |
+|<kbd>O</kbd>|∅   |U+2205|EMPTY SET|Math: set notation. Shape similar to letter "O" and U+03D5 GREEK PHI SYMBOL mapped to the same key. |
+|<kbd>P</kbd>|¶   |U+00B6|PILCROW SIGN|Typography: denotes a paragraph. Name starts with letter "p". Shape similar to reversed letter "P". Has same shift state as U+00A7 SECTION SIGN. |
+|<kbd>{</kbd>|«   |U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages (eg. French guillemets). Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
+|<kbd>}</kbd>|»   |U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages (eg. French guillemets). Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
 |<kbd>\|`|↑   |U+2191|UPWARDS ARROW|Shape similar to U+007C VERTICAL BAR mapped to this key. Indicates upward motion, which is related to the <kbd>Shift</kbd> key icon. Mirror image of U+2193 DOWNWARDS ARROW. |
 
 ### ASDF row
 #### AltGr shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>a`|ɐ   |U+0250|LATIN SMALL LETTER TURNED A|**Dead key: set inclusion math symbols.** Mainly mapped to this key in accordance with key mappings of set membership symbols and U+2203 THERE EXISTS to key `E`. U+2220 ANGLE is also included for its similar shape with these symbols and its name starting with letter "a". **Root character** has a shape similar to a turned "a". **Default character** is U+2282 SUBSET OF, which is representative. |
-|<kbd>s`|ß   |U+00DF|LATIN SMALL LETTER SHARP S|Common letter in German language. Shape and usage similar to letter "s". Retained from USX layout. |
-|<kbd>d`|∂   |U+2202|PARTIAL DIFFERENTIAL|Math: calculus. Shape is essentially a variant of letter "d". |
-|<kbd>f`|ϝ   |U+03DD|GREEK SMALL LETTER DIGAMMA|Math: variable name. Shape similar to letter "f". Required to be included in UTR25. |
-|<kbd>g`|γ   |U+03B3|GREEK SMALL LETTER GAMMA|**Dead key: Greek letters, expanded to other math variable letters.** The name "Greek" starts with the letter "g". The Base characterstrokes for this dead key is based on the Greek QWERTY keyboard layout. **Root character and default character** is U+03B3 GREEK SMALL LETTER GAMMA because it is the Greek version of letter "g", and also mapped so in the Greek QWERTY keyboard layout. |
-|<kbd>h`|ℏ   |U+210F|PLANCK CONSTANT OVER TWO PI|Physics: reduced Plank's constant. Shape similar to letter "h". |
-|<kbd>j`|←   |U+2190|LEFTWARDS ARROW|Shape of letter "J" points to the left, similar to a mirror image of letter "L". Conventionally, many video websites (eg. Youtube) map rewind/pause/foward shortcuts to keys `J`, `K`, and `L`. |
-|<kbd>k`|↔   |U+2194|LEFT RIGHT ARROW|Letter "K" positioned between letters "J" and "L" mapped to the left and right arrows. Shape of letter "K" also points to two directions. |
-|<kbd>l`|→   |U+2192|RIGHTWARDS ARROW|Shape of letter "L" points to the left, similar to a mirror image of letter "J". Justification similar to U+2190 LEFTWARDS ARROW. |
-|<kbd>;`|∴   |U+2234|THEREFORE|Math: indicates logical consequence in proofs, especially for geometry. Shape has multiple dots, similar to the colon and semicolon. In pair with U+2235 BECAUSE, but normally used after it, thus mapped to the non-shifted shift state. |
-|<kbd>'`|´   |U+0301|COMBINING ACUTE ACCENT|**Dead key: characters with the acute accent diacritic.** Shape of apostrophe similar to acute accent. Retained from USX layout. |
+|<kbd>a</kbd>|ɐ   |U+0250|LATIN SMALL LETTER TURNED A|**Dead key: set inclusion math symbols.** Mainly mapped to this key in accordance with key mappings of set membership symbols and U+2203 THERE EXISTS to key `E`. U+2220 ANGLE is also included for its similar shape with these symbols and its name starting with letter "a". **Root character** has a shape similar to a turned "a". **Default character** is U+2282 SUBSET OF, which is representative. |
+|<kbd>s</kbd>|ß   |U+00DF|LATIN SMALL LETTER SHARP S|Common letter in German language. Shape and usage similar to letter "s". Retained from USX layout. |
+|<kbd>d</kbd>|∂   |U+2202|PARTIAL DIFFERENTIAL|Math: calculus. Shape is essentially a variant of letter "d". |
+|<kbd>f</kbd>|ϝ   |U+03DD|GREEK SMALL LETTER DIGAMMA|Math: variable name. Shape similar to letter "f". Required to be included in UTR25. |
+|<kbd>g</kbd>|γ   |U+03B3|GREEK SMALL LETTER GAMMA|**Dead key: Greek letters, expanded to other math variable letters.** The name "Greek" starts with the letter "g". The Base characterstrokes for this dead key is based on the Greek QWERTY keyboard layout. **Root character and default character** is U+03B3 GREEK SMALL LETTER GAMMA because it is the Greek version of letter "g", and also mapped so in the Greek QWERTY keyboard layout. |
+|<kbd>h</kbd>|ℏ   |U+210F|PLANCK CONSTANT OVER TWO PI|Physics: reduced Plank's constant. Shape similar to letter "h". |
+|<kbd>j</kbd>|←   |U+2190|LEFTWARDS ARROW|Shape of letter "J" points to the left, similar to a mirror image of letter "L". Conventionally, many video websites (eg. Youtube) map rewind/pause/foward shortcuts to keys `J`, `K`, and `L`. |
+|<kbd>k</kbd>|↔   |U+2194|LEFT RIGHT ARROW|Letter "K" positioned between letters "J" and "L" mapped to the left and right arrows. Shape of letter "K" also points to two directions. |
+|<kbd>l</kbd>|→   |U+2192|RIGHTWARDS ARROW|Shape of letter "L" points to the left, similar to a mirror image of letter "J". Justification similar to U+2190 LEFTWARDS ARROW. |
+|<kbd>;</kbd>|∴   |U+2234|THEREFORE|Math: indicates logical consequence in proofs, especially for geometry. Shape has multiple dots, similar to the colon and semicolon. In pair with U+2235 BECAUSE, but normally used after it, thus mapped to the non-shifted shift state. |
+|<kbd>'</kbd>|´   |U+0301|COMBINING ACUTE ACCENT|**Dead key: characters with the acute accent diacritic.** Shape of apostrophe similar to acute accent. Retained from USX layout. |
 
 
 #### AltGr + Shift shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>A`|∀   |U+2200|FOR ALL|Math: universal quantifier. Shape similar to a turned letter "A". |
-|<kbd>S`|§   |U+00A7|SECTION SIGN|Typography: denotes a section. Shape includes two letter "S"s. Retained from USX layout. Has same shift state as U+00B6 PILCROW SIGN. |
-|<kbd>D`|∆   |U+2206|INCREMENT|Math: indicates the difference of the value of a variable resulting from change. Shape similar to Greek capital letter delta. Related to U+2202 PARTIAL DIFFERENTIAL mapped to the same key. |
-|<kbd>F`|Ϝ   |U+03DC|GREEK LETTER DIGAMMA|Math: variable name. Shape similar to letter "F". Required to be included in UTR25. |
-|<kbd>G`|∇   |U+2207|NABLA|Physics: differential operator. Describes gradient, which starts with letter "g". Similar to an inverted Greek capital delta, that also shares the same shift state with this character. Near other Greek letters. |
-|<kbd>H`|Ħ   |U+0126|LATIN CAPITAL LETTER H WITH STROKE|**Dead key: letters with the mathematical Fraktur (Black-letter or Gothic) font.** Due to Windows limitations, only a few such letters are available. **Root character** is U+0126 LATIN CAPITAL LETTER H WITH STROKE only as a representation of the special font, while all Fraktur letters are not valid as dead key root characters; this character is by intent not mapped to a Base characterstroke because it is only a placeholder and not a Fraktur letter. **Default character** is U+210C BLACK-LETTER CAPITAL H (ℌ), which is commonly used in physics for Hilbert space. |
-|<kbd>J`|⇐   |U+21D0|LEFTWARDS DOUBLE ARROW|Justification similar to U+2190 LEFTWARDS ARROW. Mapped to shifted state because it is double-stroke, a variant of the single arrow. |
-|<kbd>K`|⇔   |U+21D4|LEFT RIGHT DOUBLE ARROW|Justification similar to U+2194 LEFT RIGHT ARROW. Mapped to shifted state because it is double-stroke, a variant of the single arrow. |
-|<kbd>L`|⇒   |U+21D2|RIGHTWARDS DOUBLE ARROW|Justification similar to U+2192 RIGHTWARDS ARROW. Mapped to shifted state because it is double-stroke, a variant of the single arrow. |
-|<kbd>:`|∵   |U+2235|BECAUSE|Math: indicates logical conditions in proofs, especially for geometry. Shape has multiple dots, similar to the colon and semicolon. In pair with U+2234 THEREFORE, but normally used first, thus mapped to the shifted shift state. |
-|<kbd>"`|¨   |U+0308|COMBINING DIAERESIS|**Dead key: characters with the diaeresis diacritic, extended to diacritics with one or multiple dots.** Shape of quotation mark similar to diaeresis accent. Retained from USX layout. |
+|<kbd>A</kbd>|∀   |U+2200|FOR ALL|Math: universal quantifier. Shape similar to a turned letter "A". |
+|<kbd>S</kbd>|§   |U+00A7|SECTION SIGN|Typography: denotes a section. Shape includes two letter "S"s. Retained from USX layout. Has same shift state as U+00B6 PILCROW SIGN. |
+|<kbd>D</kbd>|∆   |U+2206|INCREMENT|Math: indicates the difference of the value of a variable resulting from change. Shape similar to Greek capital letter delta. Related to U+2202 PARTIAL DIFFERENTIAL mapped to the same key. |
+|<kbd>F</kbd>|Ϝ   |U+03DC|GREEK LETTER DIGAMMA|Math: variable name. Shape similar to letter "F". Required to be included in UTR25. |
+|<kbd>G</kbd>|∇   |U+2207|NABLA|Physics: differential operator. Describes gradient, which starts with letter "g". Similar to an inverted Greek capital delta, that also shares the same shift state with this character. Near other Greek letters. |
+|<kbd>H</kbd>|Ħ   |U+0126|LATIN CAPITAL LETTER H WITH STROKE|**Dead key: letters with the mathematical Fraktur (Black-letter or Gothic) font.** Due to Windows limitations, only a few such letters are available. **Root character** is U+0126 LATIN CAPITAL LETTER H WITH STROKE only as a representation of the special font, while all Fraktur letters are not valid as dead key root characters; this character is by intent not mapped to a Base characterstroke because it is only a placeholder and not a Fraktur letter. **Default character** is U+210C BLACK-LETTER CAPITAL H (ℌ), which is commonly used in physics for Hilbert space. |
+|<kbd>J</kbd>|⇐   |U+21D0|LEFTWARDS DOUBLE ARROW|Justification similar to U+2190 LEFTWARDS ARROW. Mapped to shifted state because it is double-stroke, a variant of the single arrow. |
+|<kbd>K</kbd>|⇔   |U+21D4|LEFT RIGHT DOUBLE ARROW|Justification similar to U+2194 LEFT RIGHT ARROW. Mapped to shifted state because it is double-stroke, a variant of the single arrow. |
+|<kbd>L</kbd>|⇒   |U+21D2|RIGHTWARDS DOUBLE ARROW|Justification similar to U+2192 RIGHTWARDS ARROW. Mapped to shifted state because it is double-stroke, a variant of the single arrow. |
+|<kbd>:</kbd>|∵   |U+2235|BECAUSE|Math: indicates logical conditions in proofs, especially for geometry. Shape has multiple dots, similar to the colon and semicolon. In pair with U+2234 THEREFORE, but normally used first, thus mapped to the shifted shift state. |
+|<kbd>"</kbd>|¨   |U+0308|COMBINING DIAERESIS|**Dead key: characters with the diaeresis diacritic, extended to diacritics with one or multiple dots.** Shape of quotation mark similar to diaeresis accent. Retained from USX layout. |
 
 ### ZXCV row
 #### AltGr shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>z`|≠   |U+2260|NOT EQUAL TO|Math. Shape similar to letter "z". Has the same shift state as the equals sign ("="). |
-|<kbd>x`|×   |U+00D7|MULTIPLICATION SIGN|Math. Shape similar to letter "x". Has same shift state as U+00F7 DIVISION SIGN (mapped to key `x`), another common math operator. |
-|<kbd>c`|©   |U+00A9|COPYRIGHT SIGN|Shape includes letter "c". Retained from USX layout. Shift state same as ® and ℗. |
-|<kbd>v`|∨   |U+2228|LOGICAL OR|Math: logical operator. Shape similar to letter "v". |
-|<kbd>b`|ˉ   |U+0304|COMBINING MACRON|**Dead keys: characters with the macron diacritic, extended to overline diacritics.** The shapes of these diacritics are usually called "bars" (especially in physics), which starts with letter "b". This key was originally intended for only U+0305 COMBINING OVERLINE for use in math and physics (denoting averages), then extended. |
-|<kbd>n`|¬   |U+00AC|NOT SIGN|Math: logical operator. The name "not" starts with letter "n". |
-|<kbd>m`|↦   |U+21A6|RIGHTWARDS ARROW FROM BAR|Math: function notation. Commonly called the maplet, which starts with letter "m". |
-|<kbd>,`|¸   |U+0327|COMBINING CEDILLA|**Dead key: characters with the cedilla or ogonek diacritic.** Shape of cedilla similar to the comma, while shape of ogonek similar to a reversed comma. The two diacritics are mutually exclusive on a letter, thus they are mapped to the same key. |
-|<kbd>.`|̣   |U+0323|COMBINING DOT BELOW|**Dead key: characters with the underdot diacritic, extended to punctuation with multiple dots.** Shape similar to the period. In accordance with $\LaTeX$, includes the family of matrix abbreviators `\cdot`, `\cdots`, `\vdots`, etc. **Default character** is the punctuation U+00B7 MIDDLE DOT (·), as there is no modifier letter for the below dot diacritic. Not to be confused with U+22C5 DOT OPERATOR (⋅), which should be used exclusively for dot multiplication in math. |
-|<kbd>/`|̸   |U+0338|COMBINING LONG SOLIDUS OVERLAY|**Dead key: characters with a stroke.** Shape similar to the solidus. Standard combining character for "crossing out" other characters in Unicode. **Default character** is U+2044 FRACTION SLASH, which has a similar shape with the solidus, and also represents the usage of the solidus as the division operator. |
+|<kbd>z</kbd>|≠   |U+2260|NOT EQUAL TO|Math. Shape similar to letter "z". Has the same shift state as the equals sign ("="). |
+|<kbd>x</kbd>|×   |U+00D7|MULTIPLICATION SIGN|Math. Shape similar to letter "x". Has same shift state as U+00F7 DIVISION SIGN (mapped to key `x`), another common math operator. |
+|<kbd>c</kbd>|©   |U+00A9|COPYRIGHT SIGN|Shape includes letter "c". Retained from USX layout. Shift state same as ® and ℗. |
+|<kbd>v</kbd>|∨   |U+2228|LOGICAL OR|Math: logical operator. Shape similar to letter "v". |
+|<kbd>b</kbd>|ˉ   |U+0304|COMBINING MACRON|**Dead keys: characters with the macron diacritic, extended to overline diacritics.** The shapes of these diacritics are usually called "bars" (especially in physics), which starts with letter "b". This key was originally intended for only U+0305 COMBINING OVERLINE for use in math and physics (denoting averages), then extended. |
+|<kbd>n</kbd>|¬   |U+00AC|NOT SIGN|Math: logical operator. The name "not" starts with letter "n". |
+|<kbd>m</kbd>|↦   |U+21A6|RIGHTWARDS ARROW FROM BAR|Math: function notation. Commonly called the maplet, which starts with letter "m". |
+|<kbd>,</kbd>|¸   |U+0327|COMBINING CEDILLA|**Dead key: characters with the cedilla or ogonek diacritic.** Shape of cedilla similar to the comma, while shape of ogonek similar to a reversed comma. The two diacritics are mutually exclusive on a letter, thus they are mapped to the same key. |
+|<kbd>.</kbd>|̣   |U+0323|COMBINING DOT BELOW|**Dead key: characters with the underdot diacritic, extended to punctuation with multiple dots.** Shape similar to the period. In accordance with $\LaTeX$, includes the family of matrix abbreviators `\cdot`, `\cdots`, `\vdots`, etc. **Default character** is the punctuation U+00B7 MIDDLE DOT (·), as there is no modifier letter for the below dot diacritic. Not to be confused with U+22C5 DOT OPERATOR (⋅), which should be used exclusively for dot multiplication in math. |
+|<kbd>/</kbd>|̸   |U+0338|COMBINING LONG SOLIDUS OVERLAY|**Dead key: characters with a stroke.** Shape similar to the solidus. Standard combining character for "crossing out" other characters in Unicode. **Default character** is U+2044 FRACTION SLASH, which has a similar shape with the solidus, and also represents the usage of the solidus as the division operator. |
 
 
 #### AltGr + Shift shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>Z`|Ƶ   |U+01B5|LATIN CAPITAL LETTER Z WITH STROKE|**Dead key: letters with the mathematical double-struck font.** Due to Windows limitations, only a few such letters are available. **Root character** is U+01B5 LATIN CAPITAL LETTER Z WITH STROKE only as a representation of the special font, while all double-struck letters are not valid as dead key root characters; this character is by intent not mapped to a Base characterstroke because it is only a placeholder and not a double-struck letter. **Default character** is U+2124 DOUBLE-STRUCK CAPITAL Z (ℤ), which is commonly used in math for the set of integers. |
-|<kbd>X`|≈   |U+2248|ALMOST EQUAL TO|Math. Denotes approximation, which has the sound of letter "x". Has the same shift state as U+2261 IDENTICAL TO, both equality-related symbols. |
-|<kbd>C`|¢   |U+00A2|CENT SIGN|Shape similar to letter "c". Similarly in a shifted shift state as the dollar sign. Retained from USX layout. |
-|<kbd>V`|∧   |U+2227|LOGICAL AND|Math: logical operator, conjunction. Mirror image of U+2228 LOGICAL OR. |
-|<kbd>B`|˘   |U+0306|COMBINING BREVE|**Dead key: characters with the breve diacritic.** The name "breve" starts with the letter "b". |
-|<kbd>N`|⊻   |U+22BB|XOR|Math: logical operator, exclusive disjunction. Expresses an alternative version of OR, so mapped to the same key as U+00AC NOT SIGN; but this does not mean that this is a negated version of OR (XOR is not NOR). Near other logical operators. |
-|<kbd>M`|µ   |U+00B5|MICRO SIGN|**Dead key: letters with the mathematical script font.** Due to Windows limitations, only a few such letters are available. **Root character** is U+00B5 MICRO SIGN, whose name starts with letter "m". Itself is a deprecated symbol identical to Greek small letter mu (μ), and the latter should always be used. Here it is a placeholder, while all script letters are not valid as dead key root characters; this character is by intent not mapped to a Base characterstroke because it is only a placeholder and not a script letter. **Default character** is U+2133 SCRIPT CAPITAL M (ℳ), which is the symbol for the M-matrix in physics, and the pre-WWII German Mark. |
-|<kbd><`|<   |U+003C|LESS-THAN SIGN|**Dead key: variants of the less-than sign in math.** **Root character** is the plain less-than sign because all of its variants are not valid as dead key root characters. **Default character** is U+2264 LESS-THAN OR EQUAL TO as the most common and simple variant. |
-|<kbd>>`|>   |U+003E|GREATER-THAN SIGN|**Dead key: variants of the greater-than sign in math.** **Root character** is the plain greater-than sign because all of its variants are not valid as dead key root characters. **Default character** is U+2265 GREATER-THAN OR EQUAL TO as the most common and simple variant. |
-|<kbd>?`|¿   |U+00BF|INVERTED QUESTION MARK|Punctuation: used to begin interrogations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+003F QUESTION MARK. |
+|<kbd>Z</kbd>|Ƶ   |U+01B5|LATIN CAPITAL LETTER Z WITH STROKE|**Dead key: letters with the mathematical double-struck font.** Due to Windows limitations, only a few such letters are available. **Root character** is U+01B5 LATIN CAPITAL LETTER Z WITH STROKE only as a representation of the special font, while all double-struck letters are not valid as dead key root characters; this character is by intent not mapped to a Base characterstroke because it is only a placeholder and not a double-struck letter. **Default character** is U+2124 DOUBLE-STRUCK CAPITAL Z (ℤ), which is commonly used in math for the set of integers. |
+|<kbd>X</kbd>|≈   |U+2248|ALMOST EQUAL TO|Math. Denotes approximation, which has the sound of letter "x". Has the same shift state as U+2261 IDENTICAL TO, both equality-related symbols. |
+|<kbd>C</kbd>|¢   |U+00A2|CENT SIGN|Shape similar to letter "c". Similarly in a shifted shift state as the dollar sign. Retained from USX layout. |
+|<kbd>V</kbd>|∧   |U+2227|LOGICAL AND|Math: logical operator, conjunction. Mirror image of U+2228 LOGICAL OR. |
+|<kbd>B</kbd>|˘   |U+0306|COMBINING BREVE|**Dead key: characters with the breve diacritic.** The name "breve" starts with the letter "b". |
+|<kbd>N</kbd>|⊻   |U+22BB|XOR|Math: logical operator, exclusive disjunction. Expresses an alternative version of OR, so mapped to the same key as U+00AC NOT SIGN; but this does not mean that this is a negated version of OR (XOR is not NOR). Near other logical operators. |
+|<kbd>M</kbd>|µ   |U+00B5|MICRO SIGN|**Dead key: letters with the mathematical script font.** Due to Windows limitations, only a few such letters are available. **Root character** is U+00B5 MICRO SIGN, whose name starts with letter "m". Itself is a deprecated symbol identical to Greek small letter mu (μ), and the latter should always be used. Here it is a placeholder, while all script letters are not valid as dead key root characters; this character is by intent not mapped to a Base characterstroke because it is only a placeholder and not a script letter. **Default character** is U+2133 SCRIPT CAPITAL M (ℳ), which is the symbol for the M-matrix in physics, and the pre-WWII German Mark. |
+|<kbd><</kbd>|<   |U+003C|LESS-THAN SIGN|**Dead key: variants of the less-than sign in math.** **Root character** is the plain less-than sign because all of its variants are not valid as dead key root characters. **Default character** is U+2264 LESS-THAN OR EQUAL TO as the most common and simple variant. |
+|<kbd>></kbd>|>   |U+003E|GREATER-THAN SIGN|**Dead key: variants of the greater-than sign in math.** **Root character** is the plain greater-than sign because all of its variants are not valid as dead key root characters. **Default character** is U+2265 GREATER-THAN OR EQUAL TO as the most common and simple variant. |
+|<kbd>?</kbd>|¿   |U+00BF|INVERTED QUESTION MARK|Punctuation: used to begin interrogations in Spanish languages. Partially retained from USX layout, changed shift state for better accordance with U+003F QUESTION MARK. |
 
 ### Space bar
 - **AltGr shift state:** U+00A0 NO-BREAK SPACE. Special whitespace in typesetting that prevents an automatic line break at its position. 
@@ -295,7 +295,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Tilde diacritic + math equality symbols|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>~`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>~</kbd>|
 |Root|U+0303 COMBINING TILDE (◌̃)|
 |Bases|`aeiouynv AEIOUYNV -=`|
 |Composites|ãẽĩõũỹñṽ ÃẼĨÕŨỸÑṼ ≃≅|
@@ -304,7 +304,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Caron diacritic|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>6`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>6</kbd>|
 |Root|U+030C COMBINING CARON (◌̌)|
 |Bases|`aeiou cdgjklnrstz AEIOU CDGKLNRSTZ`|
 |Composites|ǎěǐǒǔ čďǧǐǰǩľňřšťž ǍĚǏǑǓ ČĎǦǏǨĽŇŘŠŤŽ|
@@ -313,7 +313,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Circumflex accents|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>^`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>^</kbd>|
 |Root|U+0302 COMBINING CIRCUMFLEX ACCENT (◌̂)|
 |Bases|`aeiouy cghjsw AEIOUY CGHJSW`|
 |Composites|âêîôûŷ ĉĝĥĵŝŵ ÂÊÎÔÛŶ ĈĜĤĴŜŴ|
@@ -321,7 +321,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Ring above diacritic + circle symbols|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>0`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>0</kbd>|
 |Root|U+030A COMBINING RING ABOVE (◌̊)|
 |Bases|`au AU CF oO.b -`|
 |Composites|åů ÅŮ ℃℉ ○◯◌● ᶱ|
@@ -330,7 +330,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Acute accent|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>'`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>'</kbd>|
 |Root|U+0301 COMBINING ACUTE ACCENT (◌́)|
 |Bases|`aeiouy cgklmnprswz AEIOUY CGKLMNPRSWZ`|
 |Composites|áéíóúý ćǵḱĺḿńṕŕśẃź ÁÉÍÓÚÝ ĆǴḰĹḾŃṔŔŚẂŹ|
@@ -338,7 +338,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Diaeresis diacritic + dot diacritics|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>"`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>"</kbd>|
 |Root|U+0308 COMBINING DIAERESIS (◌̈)|
 |Bases|`aeiouy htw AEIOUY HW 1234`|
 |Composites|äëïöüÿ ḧẗẅ ÄËÏÖÜ ḦẄ ◌̇◌̈ ⃛ ⃜|
@@ -347,7 +347,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Macron diacritic + bar diacritics|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>b`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>b</kbd>|
 |Root|U+0304 COMBINING MACRON (◌̄)|
 |Bases|`aeioug AEIOUG -=_`|
 |Composites|āēīōūḡ ĀĒĪŌŪḠ ◌̅◌̿¯|
@@ -356,7 +356,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Breve diacritic|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>B`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>B</kbd>|
 |Root|U+0306 COMBINING BREVE (◌̆)|
 |Bases|`aeioug AEIOUG`|
 |Composites|ăĕĭŏŭğ ĂĔĬŎŬĞ|
@@ -364,7 +364,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Cedilla and ogonek diacritics|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>,`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>,</kbd>|
 |Root|U+0327 COMBINING CEDILLA (◌̧)|
 |Bases|`aeiou cdghklnrst AEIOU CDGHKLNRST \\|`|
 |Composites|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŅRŞŢ ◌̨ ˛|
@@ -373,7 +373,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Underdot diacritic + dot-related punctuation|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>.`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>.</kbd>|
 |Root|U+0323 COMBINING DOT BELOW (◌̣)|
 |Bases|`abdehiklmnorstuvwyz ABDEHIKLMNORSTUVWYZ -/\|\ ."`|
 |Composites|ạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒ ⋯⋰⋮⋱ …◌̤|
@@ -391,7 +391,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Ligatures + North European letters|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>&`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>&</kbd>|
 |Root|U+00A6 BROKEN BAR (¦)|
 |Bases|`ao ilnd AO ILND tT eE &\|`|
 |Composites|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ þÞ ðᴆ ⅋¦|
@@ -401,7 +401,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 ### Mathematical alphanumeric symbols
 |Category|Subscripts|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>=`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>=</kbd>|
 |Root|U+00AA FEMININE ORDINAL INDICATOR (ª)|
 |Bases|`0123456789+-=() aehijklmnoprstuvx`|
 |Composites|₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ|
@@ -410,7 +410,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Superscripts|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>+`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>+</kbd>|
 |Root|U+00BA MASCULINE ORDINAL INDICATOR (º)|
 |Bases|`0123456789+-=()`<br>`abcdefghijklmnoprstuvwxyz`<br>`ABCDEFGHIJKLMNOPQRTUVW`|
 |Composites|⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾<br>ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻ<br>ᴬᴮꟲᴰᴱꟳᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾꟴᴿᵀᵁⱽᵂ|
@@ -419,7 +419,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Greek letters with variants + first 4 Hebrew letters|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>g`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>g</kbd>|
 |Root|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
 |Bases|`qwertyuiop`<br>`asdfghjkl`<br>`zxcvbnm`<br>`QWERTYUIOP`<br>`ASDFGHJKL`<br>`ZXCVBNM`<br>`123456`|
 |Composites|ϑςερτυθιοπ<br>ασδφγηξκλ<br>ζχψωβνμ<br>ϴϖΕΡΤΥΘΙΟΠ<br>ΑΣΔΦΓΗΞΚΛ<br>ΖΧΨΩΒΝΜ<br>ℵℶℷℸϰϱ|
@@ -428,7 +428,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Black-letter (Fraktur) font letters|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>H`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>H</kbd>|
 |Root|U+0126 LATIN CAPITAL LETTER H WITH STROKE (Ħ)|
 |Bases|`CHIRZ`|
 |Composites|ℭℌℑℜℨ|
@@ -437,7 +437,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Double-struck font letters + italics|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>Z`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>Z</kbd>|
 |Root|U+01B5 LATIN CAPITAL LETTER Z WITH STROKE (Ƶ)|
 |Bases|`CDHNPQRZ Ddeij`|
 |Composites|ℂℍℕℙℚℝℤ ⅅⅆⅇⅈⅉ|
@@ -446,7 +446,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Script font letters|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>M`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>M</kbd>|
 |Root|U+00B5 MICRO SIGN (µ)|
 |Bases|`eglo BEFHILMPR`|
 |Composites|ℯℊℓℴ ℬℰℱℋℐℒℳ℘ℛ|
@@ -456,7 +456,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 ### Mathematical operators
 |Category|Set membership operators + nonexistential quantifier|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>e`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>e</kbd>|
 |Root|U+03F6 GREEK REVERSED LUNATE EPSILON SYMBOL (϶)|
 |Bases|`/\|\ eE`|
 |Composites|∉∋∌ ϶∄|
@@ -465,7 +465,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Set inclusion operators + angle symbol|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>a`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>a</kbd>|
 |Root|U+0250 LATIN SMALL LETTER TURNED A (ɐ)|
 |Bases|`/[{\|}]\ CaA`|
 |Composites|⊄⊆⊈⊃⊉⊇⊅ ∁ɐ∠|
@@ -474,7 +474,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Relational operators + tack-like symbols|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>y`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>y</kbd>|
 |Root|U+00B1 PLUS-MINUS SIGN (±)|
 |Bases|`amtfATF udrl p +-`|
 |Composites|⊦⊧⊨⊩⊬⊭⊮ ⊥⊤⊢⊣ ⟂ ±∓|
@@ -483,7 +483,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|N-ary operators|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>W`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>W</kbd>|
 |Root|U+01A9 LATIN CAPITAL LETTER ESH (Ʃ)|
 |Bases|`sSpPuUvV .+x`|
 |Composites|∑⅀∏∐⋃⋂⋁⋀ ⨀⨁⨂|
@@ -492,7 +492,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Integral operators|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>I`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>I</kbd>|
 |Root|U+0283 LATIN SMALL LETTER ESH (ʃ)|
 |Bases|`1234567890`|
 |Composites|∫∬∭⨌∮∯∰∱∲∳|
@@ -501,7 +501,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Circle-related operators + QED|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>o`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>o</kbd>|
 |Root|U+03D5 GREEK PHI SYMBOL (ϕ)|
 |Bases|`+-x/.oO*=_ q`|
 |Composites|⊕⊖⊗⊘⊙∘⊚⊛⊜⊝ ∎|
@@ -510,7 +510,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Less-than operator variants + left ceiling/floor|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd><`|
+|Dead key|<kbd>AltGr</kbd> + <kbd><</kbd>|
 |Root|U+003C LESS-THAN SIGN (<)|
 |Bases|`/-+~=<> [{`|
 |Composites|≮≤≰≲≦≪≶ ⌊⌈|
@@ -519,7 +519,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 
 |Category|Greater-than operator variants + right ceiling/floor|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>>`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>></kbd>|
 |Root|U+003E GREATER-THAN SIGN (>)|
 |Bases|`/-+~=>< [{`|
 |Composites|≯≥≱≳≧≫≷ ⌋⌉|
