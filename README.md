@@ -131,7 +131,7 @@ Also, key mappings from the original United States-International keyboard are re
 
 3. __Maximum flexibility under system restraints.__ Due to the restrictions imposed explicitly and implicitly, by MSKLC 1.4, Microsoft frameworks, and related bugs, the scope of design and functionality of this keyboard layout is somewhat restricted. However, under these restrictions, the design will strive to include the most functionality possible without causing compatibility issues. 
    - Mathematical Greek letters are fully supported as in §2.2 of [Unicode® Technical Report #25: Unicode Support For Mathematics](https://www.unicode.org/reports/tr25/).
-   - **The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000..U+FFFF). All dead key root characters are within U+0000..U+0FFF.** Currently most characters are within U+0000..U+2FFF. 
+   - **The range of Unicode characters included is limited. All output only include one character or code point. All output characters are within the Basic Multilingual Plane (BMP) of Unicode (U+0000–U+FFFF). All dead key root characters are within U+0000–U+0FFF.** Currently most characters are within U+0000–U+2FFF. 
    - Customization is not imposed on control keys, numpad, arrow keys, and function keys. 
    - Dead keys are not chained, and all base characters are available in the normal and Shift shift states. 
    - Shift states only include normal, Shift, AltGr, and Shift+AltGr. Excluded states include Ctrl, Ctrl+Shift, SGCaps (<kbd>CapsLock</kbd>), and so on.
