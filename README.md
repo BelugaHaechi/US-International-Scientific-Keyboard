@@ -116,7 +116,7 @@ For details on the secondary mappings of dead keys, please jump to [this section
 
 ## Core Design Ideas
 1. __Complete compatibility with plain keyboards.__ _The US QWERTY keyboard layout remains unchanged_, and all extensions are "hidden" in the AltGr (<kbd>Alt</kbd> + <kbd>Ctrl</kbd>) and AltGr + Shift (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd>) shift states. Therefore it will be just an ordinary layout under normal use, and fits with its positioning as a "keyboard extension".   
-Also, key mappings from the original United States-International keyboard are retained whenever appropriate, so that it aligns with Microsoft design and users switching over will find it more familiar to work with. 
+Also, key mappings from the original United States-International keyboard are retained whenever appropriate (denoted as `USX` in this documentation), so that it aligns with Microsoft design and users switching over will find it more familiar to work with. 
 
 1. __Consistent logicality of key mappings.__ Every key mapping should always _make as much sense as possible_ and provide convenience for both multilingual and mathematical input. Every reason for a certain mapping should be explicitly documented, and alternatives should be discussed if any. 
    - At least one among name, shape, usage, etc. of the character allocated should be related with the key that it is mapped to. 
@@ -223,7 +223,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |<kbd>s</kbd>|ß   |U+00DF|LATIN SMALL LETTER SHARP S|Common letter in German language. Shape and usage similar to letter "s". Retained from USX layout. |
 |<kbd>d</kbd>|∂   |U+2202|PARTIAL DIFFERENTIAL|Math: calculus. Shape is essentially a variant of letter "d". |
 |<kbd>f</kbd>|ϝ   |U+03DD|GREEK SMALL LETTER DIGAMMA|Math: variable name. Shape similar to letter "f". Required to be included in UTR25. |
-|<kbd>g</kbd>|γ   |U+03B3|GREEK SMALL LETTER GAMMA|**Dead key: Greek letters, expanded to other math variable letters.** The name "Greek" starts with the letter "g". The Base characterstrokes for this dead key is based on the Greek QWERTY keyboard layout. **Root character and default character** is U+03B3 GREEK SMALL LETTER GAMMA because it is the Greek version of letter "g", and also mapped so in the Greek QWERTY keyboard layout. |
+|<kbd>g</kbd>|γ   |U+03B3|GREEK SMALL LETTER GAMMA|**Dead key: Greek letters, expanded to other math variable letters.** The name "Greek" starts with the letter "g". The base character mappings for this dead key is based on the Greek QWERTY keyboard layout. **Root character and default character** is U+03B3 GREEK SMALL LETTER GAMMA because it is the Greek version of letter "g", and also mapped so in the Greek QWERTY keyboard layout. |
 |<kbd>h</kbd>|ℏ   |U+210F|PLANCK CONSTANT OVER TWO PI|Physics: reduced Plank's constant. Shape similar to letter "h". |
 |<kbd>j</kbd>|←   |U+2190|LEFTWARDS ARROW|Shape of letter "J" points to the left, similar to a mirror image of letter "L". Conventionally, many video websites (eg. Youtube) map rewind/pause/foward shortcuts to keys <kbd>J</kbd>, <kbd>K</kbd>, and <kbd>L</kbd>. |
 |<kbd>k</kbd>|↔   |U+2194|LEFT RIGHT ARROW|Letter "K" positioned between letters "J" and "L" mapped to the left and right arrows. Shape of letter "K" also points to two directions. |
