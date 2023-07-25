@@ -24,7 +24,7 @@
     },
     "^\n6\nˆ\nˇ",
     {
-      "t": "#000000\n\n#9b00ff\n#000000\n\n\n\n\n#9900ff",
+      "t": "#000000\n\n#9b00ff\n\n\n\n\n\n#9900ff",
       "fa": [
         0,
         0,
@@ -80,9 +80,12 @@
     },
     "Tab",
     "Q\n\n≡\n÷",
-    "W\n\n∑\nϵ",
     {
       "c": "#e5abab",
+      "t": "#000000\n\n#ff0000"
+    },
+    "W\n\nƩ\nϵ",
+    {
       "t": "#000000\n\n\n#9b00ff\n\n\n\n\n\n\n#9a00ff"
     },
     "E\n\n∃\n∈\n\n\n\n\n\n\n϶",
@@ -115,7 +118,7 @@
       "c": "#cccccc",
       "t": "#000000"
     },
-    "P\n\n∏\n∐",
+    "P\n\n¶\n℗",
     "{\n[\n«\n‹",
     "}\n]\n»\n›",
     {
@@ -251,7 +254,7 @@
         3
       ]
     },
-    ">\n.\n≥\n·",
+    ">\n.\n≥\ṇ",
     {
       "t": "#000000\n\n\n#ff0000",
       "f": 5
@@ -301,9 +304,10 @@
     "Space\n\nZero Width Space\nNo-Break Space",
     {
       "c": "#98b2d1",
+      "f2": 3,
       "w": 1.25
     },
-    "AltGr",
+    "AltGr\n(RAlt)",
     {
       "c": "#cccccc",
       "w": 1.25
@@ -334,6 +338,6 @@
       "h": 0.75,
       "d": true
     },
-    "\n\nDead key\nbase vs. default\n\n\n<i class='fa fa-circle'></i>"
+    "\n\nDead key\nroot vs. default\n\n\n<i class='fa fa-circle'></i>"
   ]
 ]
