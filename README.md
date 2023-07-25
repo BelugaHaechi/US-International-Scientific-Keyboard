@@ -81,7 +81,7 @@ When a normal key is pressed, a character is returned. However, [**dead keys**](
 
 The character corresponding to the first keystroke (also the dead key itself) is called the **root character**, the character for the second keystroke is called the **base character**, and the returned character is called the **composite character**. If the root character does not map to a composite character in the dead key's character set, the root character of the dead key is returned, followed by the base character. 
 
-By convention, the set of characters mapped to a dead key should share similar features, and also with the root character. It is also conventional to always have the _space key_ mapped to the **default character** of a dead key, usually the root character in isolation. 
+By convention, the set of characters mapped to a dead key should share similar features, and also with the root character. It is also conventional to always have the <kbd>Space</kbd> key mapped to the **default character** of a dead key, usually the root character in isolation. 
 
 Dead keys are used extensively in many modern keyboard layouts, such as in the Greek Polytonic layout, the US-International layout, the UK Extended layout, and so on. 
 
