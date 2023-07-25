@@ -61,13 +61,17 @@ Setting up this keyboard on your computer is very simple!
 
 ## Update / Uninstallation Guide
 Uninstallation of the keyboard layout is also simple. You may wish to do so, if:
-1. There is a new version of the keyboard available, and you will need to uninstall the previous version before installing the new one. Yes, minor improvements may be made to the layout upon request, feel free to post your ideas in Issues.
+1. There is a new version of the keyboard available, and you will need to uninstall the previous version before installing the new one. Yes, minor improvements may be made to the layout upon request, feel free to post your ideas in Issues!
 2. The keyboard layout doesn't work as intended on your device. If so, you may wish to reinstall the layout.
-3. You wish to discard the layout for any reason :( Sad, but you are free to do so.
+3. You wish to discard the layout for any reason :(
 
-To uninstall the keyboard layout, simply revisit the `KBDUSS**` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. 
+To uninstall the keyboard layout, simply revisit the `KBDUSS**` folder, and run `setup.exe` again. This time you would be prompted to repair or uninstall the keyboard layout, and select the action as you wish. Administrator permission may be required again. You may need to restart your computer for changes to take effect. 
 
-> **Known issue:** Possibly due to a Windows system bug, on uninstallation the keyboard layout will not be compeletely removed. Don't worry – this does not affect normal usage of other keyboard layouts. You may be still able to find the name of the layout in the keyboard layout list in computer settings, but if you try to add this layout to your input methods, it cannot appear in the input methods list for actual use. In other words, only a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still registered somewhere as a blank case. 
+> **Known issue:** Possibly due to a Windows system bug, sometimes on uninstallation the keyboard layout will not be compeletely removed, where the name of the layout is still retained in the keyboard layout list in computer settings. If you try to add this layout to your input methods, it cannot appear in the input methods list for actual use. 
+> 
+> In other words, only a "ghost" placeholder of the layout will remain in the list. In the system files the keyboard layout's `.dll` configuration is deleted, but it is still present in the registry. 
+> 
+> To solve this issue, navigate in the Registry Editor to `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts`, and manually delete the registry folder for this layout (usually called `a0000409`). Always backup the registry before making changes, in case of causing serious errors!   
 
 ## Must-know Concepts
 The US International Scientific keyboard layout utilizes two important concepts to achieve its unparalleled functionality: **dead keys** and the **AltGr shift state**. These concepts, common in non-English keyboard layouts, are explained below for those unfamiliar with them. 
@@ -378,10 +382,10 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|`AltGr` + `\`|
 |Base character|U+0338 COMBINING LONG SOLIDUS OVERLAY (◌̸)|
-|Secondary keys|`bcdeghijloprtyz ABCDEGHIJLOPRTYZ`|
-|Characters|ƀȼđɇǥħɨɉłøᵽɍŧɏƶ ȺɃȻĐɆǤĦƗɈŁØⱣɌŦɎƵ|
+|Secondary keys|`abcdefghijkloprtuyz ABCDEFGHIJKLOPRTUYZ`|
+|Characters|ⱥƀȼđɇꞙǥħɨɉꝁłøᵽɍŧꞹɏƶ ȺɃȻĐɆꞘǤĦƗɈꝀŁØⱣɌŦꞸɎƵ|
 |Default case|U+2044 FRACTION SLASH (⁄)|
-|Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). For unknown reasons, Unicode does not include capital letter "B" with stroke, although its lowercase form is encoded. |
+|Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). |
 
 |Category|Ligatures + North European letters|
 |:------:|---|
@@ -525,7 +529,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |------|-|-|-|-|
 |Basic Latin and ASCII|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
 |Latin-1 Supplement letters (àéçôïñðœßøþ...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Most|
-|Latin-1 punctuation and symbols (¡¢£¤§...)|![!](assets/limited.svg)27/29|![-](assets/minus.svg)None|![!](assets/limited.svg)22/29|![!](assets/limited.svg)Most|
+|Latin-1 punctuation and symbols (¡¢£¤§...)|![!](assets/limited.svg)28/29|![-](assets/minus.svg)None|![!](assets/limited.svg)22/29|![!](assets/limited.svg)Most|
 |Multiplication and division operators (×÷)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Some|
 |Vulgar fractions (¼½¾)|![√](assets/check.svg)Any*|![-](assets/minus.svg)|![!](assets/limited.svg)¼½¾|![-](assets/minus.svg)|
 |French special letters (éàç...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
