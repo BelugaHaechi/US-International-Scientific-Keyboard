@@ -152,9 +152,9 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |<kbd>7</kbd>|⃗   |U+20D7|COMBINING RIGHT ARROW ABOVE|Physics: vector notation. Shape of 7 similar to right arrow. Near other combining diacritical marks. |
 |<kbd>8</kbd>|∞   |U+221E|INFINITY|Math. Shape similar to a turned 8. |
 |<kbd>9</kbd>|∝   |U+221D|PROPORTIONAL TO|Math. Near U+221E INFINITY. Shape similar to a turned 9, or a turned 8 with an opening. |
-|<kbd>0</kbd>|°   |U+030A|COMBINING RING ABOVE|**Dead key: characters with a ring above, expanded to related non-math symbols.** Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key `0` is prioritized over `O`). |
+|<kbd>0</kbd>|°   |U+030A|COMBINING RING ABOVE|**Dead key: characters with a ring above, expanded to related non-math symbols.** Shape similar to 0, also the key is positioned at the top of the keyboard (Thus mapping to key <kbd>0</kbd> is prioritized over <kbd>O</kbd>). |
 |<kbd>-</kbd>|–   |U+2013|EN DASH|Punctuation: commonly used as the dash indicating ranges of numbers. Shorter than U+2014 EM DASH, so mapped to the hyphen which is shorter than the underscore. |
-|<kbd>=</kbd>|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key: subscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + `=` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00AA FEMININE ORDINAL INDICATOR in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
+|<kbd>=</kbd>|ª   |U+00AA|FEMININE ORDINAL INDICATOR|**Dead key: subscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + <kbd>=</kbd> in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00AA FEMININE ORDINAL INDICATOR in pair with U+00BA MASCULINE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### AltGr + Shift shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
@@ -171,20 +171,20 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |<kbd>(</kbd>|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
 |<kbd>)</kbd>|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
 |<kbd>_</kbd>|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating breaks in sentences. Longer than U+2014 EM DASH, so mapped to the underscore which is longer than the hyphen. |
-|<kbd>+</kbd>|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key: superscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + `+` in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00BA MASCULINE ORDINAL INDICATOR in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts. |
+|<kbd>+</kbd>|º   |U+00BA|MASCULINE ORDINAL INDICATOR|**Dead key: superscript characters.** Conventionally, the hotkey for subscripts is <kbd>Ctrl</kbd> + <kbd>+</kbd> in rich text programms such as MS Word. Also, Unicode provides a full set of subscripts for numbers, which relates to the position of this key (at the top of the keyboard). **Root character and default character** is U+00BA MASCULINE ORDINAL INDICATOR in pair with U+00AA FEMININE ORDINAL INDICATOR, because they are essentially superscripts. |
 
 #### Notes
-1. There exists U+2057 QUADRUPLE PRIME and U+221C FOURTH ROOT as candidates for key `4`, but they were not chosen because 1) these characters are rarely used (we live in a 3-dimensional world), and 2) there exists reasonable USX layout options to retain (which were used in this layout).
+1. There exists U+2057 QUADRUPLE PRIME and U+221C FOURTH ROOT as candidates for key <kbd>4</kbd>, but they were not chosen because 1) these characters are rarely used (we live in a 3-dimensional world), and 2) there exists reasonable USX layout options to retain (which were used in this layout).
 2. The superscripts and subscripts provided are limited intentionally by Unicode, in a way that not every letter in the alphabet has one. Most of these mini letters were coded in the first place for IPA phonetics! It is suggested to always use rich text to achieve such styles for normal text, and this keyboard layout provides these choices only to aid in plain text communication. 
-3. For keys `=` and `+`, for the pair of characters U+00BA MASCULINE ORDINAL INDICATOR and U+00AA FEMININE ORDINAL INDICATOR, the decision to map the former to the shifted shift state was based on the fact that masculinity is usually associated with outgoing character. Here no bias on gender and sex is intended; this was solely based on general social observation, which is subject to change as society progresses. It is thoroughly acknowledged that females could express masculinity and vice versa, and there are other gender identities apart from the binary system.  
+3. For keys <kbd>=</kbd> and <kbd>+</kbd>, for the pair of characters U+00BA MASCULINE ORDINAL INDICATOR and U+00AA FEMININE ORDINAL INDICATOR, the decision to map the former to the shifted shift state was based on the fact that masculinity is usually associated with outgoing character. Here no bias on gender and sex is intended; this was solely based on general social observation, which is subject to change as society progresses. It is thoroughly acknowledged that females could express masculinity and vice versa, and there are other gender identities apart from the binary system.  
 
 
 ### QWERTY row
 #### AltGr shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>q</kbd>|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key `x`), another common math operator. |
-|<kbd>w</kbd>|ϵ   |U+03F5|GREEK LUNATE EPSILON SYMBOL|Shape similar to a turned "w". Key `e` is reserved for "element of"-related (set membership) symbols. |
+|<kbd>q</kbd>|÷   |U+00F7|DIVISION SIGN|Math. The result of division, quotient, starts with the letter "q". Has same shift state as U+00D7 MULTIPLICATION SIGN (mapped to key <kbd>x</kbd>), another common math operator. |
+|<kbd>w</kbd>|ϵ   |U+03F5|GREEK LUNATE EPSILON SYMBOL|Shape similar to a turned "w". Key <kbd>e</kbd> is reserved for "element of"-related (set membership) symbols. |
 |<kbd>e</kbd>|϶   |U+03F6|GREEK REVERSED LUNATE EPSILON SYMBOL|**Dead key: set membership math symbols.** **Root character** has a shape similar to a reversed "e", and is near its mirror image U+03F5 GREEK LUNATE EPSILON SYMBOL. **Default character** is U+2208 ELEMENT OF, which starts with the letter "e". |
 |<kbd>r</kbd>|®   |U+00AE|REGISTERED SIGN|Retained from USX layout. Shape includes letter "R". Shift state same as ℗ and ©. |
 |<kbd>t</kbd>|†   |U+2020|DAGGER|Often used for marking footnotes, also used in math/physics for the conjugate (Hermitian) transpose. Shape similar to letter "t". |
@@ -195,14 +195,14 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |<kbd>p</kbd>|℗   |U+2117|SOUND RECORDING COPYRIGHT|Also known as published phonorecord sign. Shape includes letter "P". Shift state same as ® and ©. |
 |<kbd>[</kbd>|‹   |U+2039|SINGLE LEFT-POINTING ANGLE QUOTATION MARK|Punctuation: left single quotation mark in some European languages. Used in pairs, similar to brackets. Shift state in accordance with single/double quotation marks. |
 |<kbd>]</kbd>|›   |U+203A|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK|Punctuation: right single quotation mark in some European languages. Justification similar to U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK. |
-|<kbd>\`|↓   |U+2193|DOWNWARDS ARROW|Meaning related to U+005C REVERSE SOLIDUS (backslash) that indicates a falling notion. Mirror image of U+2191 UPWARDS ARROW. |
+|<kbd>\\</kbd>|↓   |U+2193|DOWNWARDS ARROW|Meaning related to U+005C REVERSE SOLIDUS (backslash) that indicates a falling notion. Mirror image of U+2191 UPWARDS ARROW. |
 
 
 #### AltGr + Shift shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>Q</kbd>|≡   |U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter `q`. This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
-|<kbd>W</kbd>|   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Root character and default character** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key `I` mapped to U+0283 LATIN SMALL LETTER ESH. Key `E` is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
+|<kbd>Q</kbd>|≡   |U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter "q". This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
+|<kbd>W</kbd>|   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Root character and default character** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key <kbd>I</kbd> mapped to U+0283 LATIN SMALL LETTER ESH. Key <kbd>E</kbd> is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
 |<kbd>E</kbd>|∃   |U+2203|THERE EXISTS|Math: existential quantifier. Shape similar to a reversed letter "E". |
 |<kbd>R</kbd>|™   |U+2122|TRADE MARK SIGN|Usage highly related to U+00AE REGISTERED SIGN mapped to the same key. |
 |<kbd>T</kbd>|‡   |U+2021|DOUBLE DAGGER|Often used for marking footnotes, also used in chemistry to denote a transition state. Shape similar to letter "t" and U+2020 DAGGER mapped to the same key. |
@@ -213,19 +213,19 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |<kbd>P</kbd>|¶   |U+00B6|PILCROW SIGN|Typography: denotes a paragraph. Name starts with letter "p". Shape similar to reversed letter "P". Has same shift state as U+00A7 SECTION SIGN. |
 |<kbd>{</kbd>|«   |U+00AB|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: left double quotation mark in some European languages (eg. French guillemets). Used in pairs, similar to braces. Shift state in accordance with single/double quotation marks. |
 |<kbd>}</kbd>|»   |U+00BB|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK|Punctuation: right double quotation mark in some European languages (eg. French guillemets). Justification similar to U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK. |
-|<kbd>\|`|↑   |U+2191|UPWARDS ARROW|Shape similar to U+007C VERTICAL BAR mapped to this key. Indicates upward motion, which is related to the <kbd>Shift</kbd> key icon. Mirror image of U+2193 DOWNWARDS ARROW. |
+|<kbd>\|</kbd>|↑   |U+2191|UPWARDS ARROW|Shape similar to U+007C VERTICAL BAR mapped to this key. Indicates upward motion, which is related to the <kbd>Shift</kbd> key icon. Mirror image of U+2193 DOWNWARDS ARROW. |
 
 ### ASDF row
 #### AltGr shift state
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
-|<kbd>a</kbd>|ɐ   |U+0250|LATIN SMALL LETTER TURNED A|**Dead key: set inclusion math symbols.** Mainly mapped to this key in accordance with key mappings of set membership symbols and U+2203 THERE EXISTS to key `E`. U+2220 ANGLE is also included for its similar shape with these symbols and its name starting with letter "a". **Root character** has a shape similar to a turned "a". **Default character** is U+2282 SUBSET OF, which is representative. |
+|<kbd>a</kbd>|ɐ   |U+0250|LATIN SMALL LETTER TURNED A|**Dead key: set inclusion math symbols.** Mainly mapped to this key in accordance with key mappings of set membership symbols and U+2203 THERE EXISTS to key <kbd>E</kbd>. U+2220 ANGLE is also included for its similar shape with these symbols and its name starting with letter "a". **Root character** has a shape similar to a turned "a". **Default character** is U+2282 SUBSET OF, which is representative. |
 |<kbd>s</kbd>|ß   |U+00DF|LATIN SMALL LETTER SHARP S|Common letter in German language. Shape and usage similar to letter "s". Retained from USX layout. |
 |<kbd>d</kbd>|∂   |U+2202|PARTIAL DIFFERENTIAL|Math: calculus. Shape is essentially a variant of letter "d". |
 |<kbd>f</kbd>|ϝ   |U+03DD|GREEK SMALL LETTER DIGAMMA|Math: variable name. Shape similar to letter "f". Required to be included in UTR25. |
 |<kbd>g</kbd>|γ   |U+03B3|GREEK SMALL LETTER GAMMA|**Dead key: Greek letters, expanded to other math variable letters.** The name "Greek" starts with the letter "g". The Base characterstrokes for this dead key is based on the Greek QWERTY keyboard layout. **Root character and default character** is U+03B3 GREEK SMALL LETTER GAMMA because it is the Greek version of letter "g", and also mapped so in the Greek QWERTY keyboard layout. |
 |<kbd>h</kbd>|ℏ   |U+210F|PLANCK CONSTANT OVER TWO PI|Physics: reduced Plank's constant. Shape similar to letter "h". |
-|<kbd>j</kbd>|←   |U+2190|LEFTWARDS ARROW|Shape of letter "J" points to the left, similar to a mirror image of letter "L". Conventionally, many video websites (eg. Youtube) map rewind/pause/foward shortcuts to keys `J`, `K`, and `L`. |
+|<kbd>j</kbd>|←   |U+2190|LEFTWARDS ARROW|Shape of letter "J" points to the left, similar to a mirror image of letter "L". Conventionally, many video websites (eg. Youtube) map rewind/pause/foward shortcuts to keys <kbd>J</kbd>, <kbd>K</kbd>, and <kbd>L</kbd>. |
 |<kbd>k</kbd>|↔   |U+2194|LEFT RIGHT ARROW|Letter "K" positioned between letters "J" and "L" mapped to the left and right arrows. Shape of letter "K" also points to two directions. |
 |<kbd>l</kbd>|→   |U+2192|RIGHTWARDS ARROW|Shape of letter "L" points to the left, similar to a mirror image of letter "J". Justification similar to U+2190 LEFTWARDS ARROW. |
 |<kbd>;</kbd>|∴   |U+2234|THEREFORE|Math: indicates logical consequence in proofs, especially for geometry. Shape has multiple dots, similar to the colon and semicolon. In pair with U+2235 BECAUSE, but normally used after it, thus mapped to the non-shifted shift state. |
@@ -252,7 +252,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |<kbd>z</kbd>|≠   |U+2260|NOT EQUAL TO|Math. Shape similar to letter "z". Has the same shift state as the equals sign ("="). |
-|<kbd>x</kbd>|×   |U+00D7|MULTIPLICATION SIGN|Math. Shape similar to letter "x". Has same shift state as U+00F7 DIVISION SIGN (mapped to key `x`), another common math operator. |
+|<kbd>x</kbd>|×   |U+00D7|MULTIPLICATION SIGN|Math. Shape similar to letter "x". Has same shift state as U+00F7 DIVISION SIGN (mapped to key <kbd>x</kbd>), another common math operator. |
 |<kbd>c</kbd>|©   |U+00A9|COPYRIGHT SIGN|Shape includes letter "c". Retained from USX layout. Shift state same as ® and ℗. |
 |<kbd>v</kbd>|∨   |U+2228|LOGICAL OR|Math: logical operator. Shape similar to letter "v". |
 |<kbd>b</kbd>|ˉ   |U+0304|COMBINING MACRON|**Dead keys: characters with the macron diacritic, extended to overline diacritics.** The shapes of these diacritics are usually called "bars" (especially in physics), which starts with letter "b". This key was originally intended for only U+0305 COMBINING OVERLINE for use in math and physics (denoting averages), then extended. |
@@ -279,7 +279,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 
 ### Space bar
 - **AltGr shift state:** U+00A0 NO-BREAK SPACE. Special whitespace in typesetting that prevents an automatic line break at its position. 
-- **AltGr + Shift shift state:** U+200B ZERO WIDTH SPACE. Special whitespace that has no width, which could serve as implicit word boundaries in typesetting. Not to be confused with U+200D ZERO WIDTH JOINER available at key `&`, that is for joining and composing graphemes. 
+- **AltGr + Shift shift state:** U+200B ZERO WIDTH SPACE. Special whitespace that has no width, which could serve as implicit word boundaries in typesetting. Not to be confused with U+200D ZERO WIDTH JOINER available at key <kbd>&</kbd>, that is for joining and composing graphemes. 
 
 ## Dead Key Secondary Mappings
 For convenience and ease of memory, the 26 dead keys in the US International Scientific keyboard layout are listed below in groups sharing similar design logic, instead of original order. 
@@ -369,7 +369,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`aeiou cdghklnrst AEIOU CDGHKLNRST \\|`|
 |Composites|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŅRŞŢ ◌̨ ˛|
 |Default|U+00B8 CEDILLA (¸)|
-|Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to `\` and `\|` since the ogonek and cedilla are approximately mirror images. |
+|Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to <kbd>\\</kbd> and <kbd>\|</kbd> since the ogonek and cedilla are approximately mirror images. |
 
 |Category|Underdot diacritic + dot-related punctuation|
 |:------:|---|
@@ -378,11 +378,11 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`abdehiklmnorstuvwyz ABDEHIKLMNORSTUVWYZ -/\|\ ."`|
 |Composites|ạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒ ⋯⋰⋮⋱ …◌̤|
 |Default|U+00B7 MIDDLE DOT (·)|
-|Notes|Ellipsis is mapped to key `.` representing the extra dots. This is more convenient than key `_` which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR. |
+|Notes|Ellipsis is mapped to key <kbd>.</kbd> representing the extra dots. This is more convenient than key <kbd>_</kbd> which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR. |
 
 |Category|Stroked letters + fraction slash|
 |:------:|---|
-|Dead key|<kbd>AltGr</kbd> + <kbd>\`|
+|Dead key|<kbd>AltGr</kbd> + <kbd>\\</kbd>|
 |Root|U+0338 COMBINING LONG SOLIDUS OVERLAY (◌̸)|
 |Bases|`abcdefghijkloprtuyz ABCDEFGHIJKLOPRTUYZ`|
 |Composites|ⱥƀȼđɇꞙǥħɨɉꝁłøᵽɍŧꞹɏƶ ȺɃȻĐɆꞘǤĦƗɈꝀŁØⱣɌŦꞸɎƵ|
@@ -424,7 +424,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`qwertyuiop`<br>`asdfghjkl`<br>`zxcvbnm`<br>`QWERTYUIOP`<br>`ASDFGHJKL`<br>`ZXCVBNM`<br>`123456`|
 |Composites|ϑςερτυθιοπ<br>ασδφγηξκλ<br>ζχψωβνμ<br>ϴϖΕΡΤΥΘΙΟΠ<br>ΑΣΔΦΓΗΞΚΛ<br>ΖΧΨΩΒΝΜ<br>ℵℶℷℸϰϱ|
 |Default|U+03B3 GREEK SMALL LETTER GAMMA (γ)|
-|Notes|These letters are included in the Basic Set of Alphanumeric Characters for mathematical notation (see §2.2 of [UTR25](http://www.unicode.org/reports/tr25/)). For convenience and consistency, the mappings are mostly identical to the standard Greek keyboard layout. Greek diacritics were removed. Key `w` is retained as the lowercase final sigma. Keys `QqW` are mapped respectively to U+03F4 (ϴ ↔ Θ), U+03D1 (ϑ ↔ θ), and U+03D6 (ϖ ↔ π), based on their similar shapes. Keys `1234` are the first 4 capital Herbrew letters Alef, Bet, Gimel, and Dalet. Keys `56` are mapped respectively to U+03F0 (ϰ ↔ κ) and U+03F1 (ϱ ↔ ρ) due to the lack of space, yet coincidently the shapes are relatable (ϰ looks like a distorted turned 5, ϱ looks like a flipped 6), and their Unicode datapoints are consecutive! |
+|Notes|These letters are included in the Basic Set of Alphanumeric Characters for mathematical notation (see §2.2 of [UTR25](http://www.unicode.org/reports/tr25/)). For convenience and consistency, the mappings are mostly identical to the standard Greek keyboard layout. Greek diacritics were removed. Key <kbd>w</kbd> is retained as the lowercase final sigma. Keys `QqW` are mapped respectively to U+03F4 (ϴ ↔ Θ), U+03D1 (ϑ ↔ θ), and U+03D6 (ϖ ↔ π), based on their similar shapes. Keys `1234` are the first 4 capital Herbrew letters Alef, Bet, Gimel, and Dalet. Keys `56` are mapped respectively to U+03F0 (ϰ ↔ κ) and U+03F1 (ϱ ↔ ρ) due to the lack of space, yet coincidently the shapes are relatable (ϰ looks like a distorted turned 5, ϱ looks like a flipped 6), and their Unicode datapoints are consecutive! |
 
 |Category|Black-letter (Fraktur) font letters|
 |:------:|---|
@@ -461,7 +461,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`/\|\ eE`|
 |Composites|∉∋∌ ϶∄|
 |Default|U+2208 ELEMENT OF (∈)|
-|Notes|Since ∈ and ∋ are mirror images, the latter is mapped to key `\|` indicating the plane of symmetry; other mappings follow this logic. Includes U+2204 THERE DOES NOT EXIST (∄) since key `E` is mapped to U+2203 THERE EXISTS (∃). 
+|Notes|Since ∈ and ∋ are mirror images, the latter is mapped to key </kbd>\|` indicating the plane of symmetry; other mappings follow this logic. Includes U+2204 THERE DOES NOT EXIST (∄) since key <kbd>E</kbd> is mapped to U+2203 THERE EXISTS (∃). 
 
 |Category|Set inclusion operators + angle symbol|
 |:------:|---|
@@ -470,7 +470,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`/[{\|}]\ CaA`|
 |Composites|⊄⊆⊈⊃⊉⊇⊅ ∁ɐ∠|
 |Default|U+2282 SUBSET OF (⊂)|
-|Notes|Logic similar to set membership operators. Includes notation for complimentary sets and angles (since the key is `a`). |
+|Notes|Logic similar to set membership operators. Includes notation for complimentary sets and angles (since the key is <kbd>a</kbd>). |
 
 |Category|Relational operators + tack-like symbols|
 |:------:|---|
@@ -506,7 +506,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`+-x/.oO*=_ q`|
 |Composites|⊕⊖⊗⊘⊙∘⊚⊛⊜⊝ ∎|
 |Default|U+03D5 GREEK PHI SYMBOL (ϕ)|
-|Notes|Includes the QED (end-of-proof) symbol mapped to key `q`. |
+|Notes|Includes the QED (end-of-proof) symbol mapped to key <kbd>q</kbd>. |
 
 |Category|Less-than operator variants + left ceiling/floor|
 |:------:|---|
