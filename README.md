@@ -527,19 +527,19 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Notes|Includes right ceiling/floor brackets. |
 
 ## Comparison to Other Layouts
-|Aspect|<i style="color:#6699cc">US Intl. Sci.</i>|US|US Intl|Other projects|
+|Aspect|<i>US Intl. Sci.</i>|US|US Intl|Other projects|
 |------|-|-|-|-|
 |Basic Latin and ASCII|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
 |Latin-1 Supplement letters (àéçôïñðœßøþ...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Most|
-|Latin-1 punctuation and symbols (¡¢£¤§...)|![!](assets/limited.svg)28/29|![-](assets/minus.svg)None|![!](assets/limited.svg)22/29|![!](assets/limited.svg)Most|
+|Latin-1 punctuation and symbols (¡¢£¤§...)|![!](assets/limited.svg)28/29|![-](assets/minus.svg)|![!](assets/limited.svg)22/29|![!](assets/limited.svg)Most|
 |Multiplication and division operators (×÷)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![!](assets/limited.svg)Some|
-|Vulgar fractions (¼½¾)|![√](assets/check.svg)Any*|![-](assets/minus.svg)|![!](assets/limited.svg)¼½¾|![-](assets/minus.svg)|
+|Vulgar fractions (¼½¾)|![√](assets/check.svg)Any|![-](assets/minus.svg)|![!](assets/limited.svg)|![-](assets/minus.svg)|
 |French special letters (éàç...)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
 |German special letters (ßöü)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
 |Spanish/Portugese special letters (ñãõ)|![√](assets/check.svg)|![-](assets/minus.svg)|![√](assets/check.svg)|![√](assets/check.svg)|
 |East European special letters (ščžşçąų...)|![√](assets/check.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|![!](assets/limited.svg)|
 |North European special letters (åþð)|![√](assets/check.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|![-](assets/minus.svg)|
-|Ligatures|![√](assets/check.svg)ĳǳ|![-](assets/minus.svg)|![!](assets/limited.svg)œæ|![!](assets/limited.svg)|
+|Ligatures|![√](assets/check.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|![!](assets/limited.svg)|
 |Greek letters|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![!](assets/limited.svg)|
 |Greek letter variants in math|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
 |Hebrew letters in math|![√](assets/check.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|![-](assets/minus.svg)|
