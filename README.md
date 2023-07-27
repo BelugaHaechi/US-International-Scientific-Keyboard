@@ -202,7 +202,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |Key|Char|Unicode|Character&nbsp;name|Description|
 |:-:|:--:|:-----:|--------------|-----------|
 |<kbd>Q</kbd>|≡   |U+2261|IDENTICAL TO|Math: congruency, equivalence. Related to "equality", which has the letter "q". This symbol has a stronger mathematical meaning than U+00F7 DIVISION SIGN, and thus is mapped to the shifted shift state. |
-|<kbd>W</kbd>|   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Root character and default character** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key <kbd>I</kbd> mapped to U+0283 LATIN SMALL LETTER ESH. Key <kbd>E</kbd> is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
+|<kbd>W</kbd>|Ʃ   |U+01A9|LATIN CAPITAL LETTER ESH|**Dead key: n-ary math operators.** Large math operators, such as summation, multiplication, and coproduct. **Root character and default character** is used in the African Alphabet, shape similar to capital letter sigma and turned letter "W". This pairs with key <kbd>I</kbd> mapped to U+0283 LATIN SMALL LETTER ESH. Key <kbd>E</kbd> is reserved for U+2203 THERE EXISTS, which resembles the letter "E" more. |
 |<kbd>E</kbd>|∃   |U+2203|THERE EXISTS|Math: existential quantifier. Shape similar to a reversed letter "E". |
 |<kbd>R</kbd>|™   |U+2122|TRADE MARK SIGN|Usage highly related to U+00AE REGISTERED SIGN mapped to the same key. |
 |<kbd>T</kbd>|‡   |U+2021|DOUBLE DAGGER|Often used for marking footnotes, also used in chemistry to denote a transition state. Shape similar to letter "t" and U+2020 DAGGER mapped to the same key. |
