@@ -38,24 +38,23 @@ This keyboard layout is easy to install, easy to use, and easy to memorize, whil
 
 > **Note:** This keyboard layout is **not a replacement for proper scientific notation** that can be formatted using rich-text programs like $\LaTeX$, UnicodeMath, or MathML, but rather a method to extend the symbols available in plain text input scenarios, e.g. texting on Discord, using Notepad, or non-technical writing.
 
-This keyboard layout was created using Microsoft Keyboard Layout Creator 1.4 (MSKLC 1.4). The layout is based on the common __English (United States) QWERTY keyboard layout__, and some designs are consistent with the _United States-International keyboard layout_. Other ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
+This keyboard layout was created using [Microsoft Keyboard Layout Creator 1.4](https://www.microsoft.com/en-us/download/details.aspx?id=102134) (MSKLC 1.4). The layout is based on the common __English (United States) QWERTY keyboard layout__, and some designs are consistent with the __United States-International keyboard layout__. Other ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
 A detailed comparison chart of this keyboard layout with other layouts can be found in [this section](#comparison-to-other-layouts). 
 
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
-
-1. (_Optional_) Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
-2. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
+> **Note:** Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
+1. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
    > **Note:** Releases are named as `KBDUSS` + major version number + minor version letter. We will use `KBDUSS**` to represent this below. This naming system is in conformity with system files in `C:\Windows\System32\KBD*.dll`. 
-3. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
-4. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
-5. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
+2. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
+3. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
+4. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
 	- Open Settings on your computer.
 	- Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
 	- Select `Add a keyboard`, and select `US-International and Scientific keyboard` in the drop-down menu.
 	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
-6. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
+5. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
 > **Tip:** You may wish to retain the `KBDUSS**` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
 
