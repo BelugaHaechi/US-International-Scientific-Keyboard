@@ -339,8 +339,8 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>"</kbd>|
 |Root|U+0308 COMBINING DIAERESIS (◌̈)|
-|Bases|`aeiouy htw AEIOUY HW 1234`|
-|Composites|äëïöüÿ ḧẗẅ ÄËÏÖÜ ḦẄ ◌̇◌̈ ⃛ ⃜|
+|Bases|`aeiouy htwx AEIOUY HWX 1234`|
+|Composites|äëïöüÿ ḧẗẅẍ ÄËÏÖÜ ḦẄẌ ◌̇◌̈ ⃛ ⃜|
 |Default|U+00A8 DIAERESIS (¨)|
 |Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. |
 
