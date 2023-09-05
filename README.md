@@ -46,7 +46,7 @@ A detailed comparison chart of this keyboard layout with other layouts can be fo
 Setting up this keyboard on your computer is very simple! 
 > **Note:** Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
 1. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
-   > **Note:** Releases are named as `KBDUSS` + major version number + minor version letter. We will use `KBDUSS**` to represent this below. This naming system is in conformity with system files in `C:\Windows\System32\KBD*.dll`. 
+   > **Note:** Releases are named as `KBDUSS` + major version number + minor version letter. We will use `KBDUSS**` to represent this below. This naming system is in conformity with system files in `C:\Windows\System32\KBD*.dll`. From version 1.6.0, you can also view the current version of the installed layout conveniently, just by checking the layout name on the taskbar.
 2. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
 3. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
 4. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
@@ -288,8 +288,8 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>\`</kbd>|
 |Root|U+0300 COMBINING GRAVE ACCENT (◌̀)|
-|Bases|`aeiouyw AEIOUYW`|
-|Composites|àèìòùỳẁ ÀÈÌÒÙỲẀ|
+|Bases|`aeiouynw AEIOUYNW`|
+|Composites|àèìòùỳǹẁ ÀÈÌÒÙỲǸẀ|
 |Default|U+0060 GRAVE ACCENT (`)|
 
 |Category|Tilde diacritic + math equality symbols|
@@ -305,8 +305,8 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>6</kbd>|
 |Root|U+030C COMBINING CARON (◌̌)|
-|Bases|`aeiou cdgjklnrstz AEIOU CDGKLNRSTZ`|
-|Composites|ǎěǐǒǔ čďǧǐǰǩľňřšťž ǍĚǏǑǓ ČĎǦǏǨĽŇŘŠŤŽ|
+|Bases|`aeiou cdghjklnrstz AEIOU CDGHKLNRSTZ`|
+|Composites|ǎěǐǒǔ čďǧȟǐǰǩľňřšťž ǍĚǏǑǓ ČĎǦȞǏǨĽŇŘŠŤŽ|
 |Default|U+02C7 CARON (ˇ)|
 |Notes|For unknown reasons, Unicode does not include capital letter "J" with caron, although its lowercase form is encoded. Certain letters may have a different display for the caron, such as an apostrophe at the upper right corner. |
 
@@ -314,18 +314,18 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>^</kbd>|
 |Root|U+0302 COMBINING CIRCUMFLEX ACCENT (◌̂)|
-|Bases|`aeiouy cghjsw AEIOUY CGHJSW`|
-|Composites|âêîôûŷ ĉĝĥĵŝŵ ÂÊÎÔÛŶ ĈĜĤĴŜŴ|
+|Bases|`aeiouy cghjswz AEIOUY CGHJSWZ`|
+|Composites|âêîôûŷ ĉĝĥĵŝŵẑ ÂÊÎÔÛŶ ĈĜĤĴŜŴẐ|
 |Default|U+02C6 MODIFIER LETTER CIRCUMFLEX ACCENT (ˆ)|
 
 |Category|Ring above diacritic + circle symbols|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>0</kbd>|
 |Root|U+030A COMBINING RING ABOVE (◌̊)|
-|Bases|`au AU CF oO.b -`|
-|Composites|åů ÅŮ ℃℉ ○◯◌● ᶱ|
+|Bases|`auwy AU CF oObB.\| -x`|
+|Composites|åůẘẙ ÅŮ ℃℉ ○◯●⬤◌◍ ⦵⦻|
 |Default|U+00B0 DEGREE SIGN (°)|
-|Notes|Includes related symbols: degree Celsius/Fahrenheit, white/large/dotted/black circles, and U+1DB1 MODIFIER LETTER SMALL BARRED O (ᶱ) as an acceptable *approximation* for the barred circle notation of standard state in chemistry. 
+|Notes|Includes related symbols: degree Celsius/Fahrenheit, various circles, and the Plimsoll symbol (U+29B5 CIRCLE WITH HORIZONTAL BAR) for chemical standard state (however it is not a superscript; for raw-text editing, by IUPAC the degrees sign is also accepted), along with U+29BB	CIRCLE WITH SUPERIMPOSED X. 
 
 |Category|Acute accent|
 |:------:|---|
@@ -339,27 +339,28 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>"</kbd>|
 |Root|U+0308 COMBINING DIAERESIS (◌̈)|
-|Bases|`aeiouy htwx AEIOUY HWX 1234`|
-|Composites|äëïöüÿ ḧẗẅẍ ÄËÏÖÜ ḦẄẌ ◌̇◌̈ ⃛ ⃜|
+|Bases|`` aeiouy htwx AEIOUY HWX 1234 '"` ``|
+|Composites|äëïöüÿ ḧẗẅẍ ÄËÏÖÜ ḦẄẌ ◌̇◌̈ ⃛ ⃜ ◌̋˝̏
 |Default|U+00A8 DIAERESIS (¨)|
-|Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. |
+|Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. Also includes combining double acute and grave accents, and the modifier letter for the former (there is no modifier letter for the latter in Unicode).|
 
 |Category|Macron diacritic + bar diacritics|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>b</kbd>|
 |Root|U+0304 COMBINING MACRON (◌̄)|
-|Bases|`aeioug AEIOUG -=_`|
-|Composites|āēīōūḡ ĀĒĪŌŪḠ ◌̅◌̿¯|
+|Bases|`aeiouyg AEIOUYG -=_`|
+|Composites|āēīōūȳḡ ĀĒĪŌŪ∨YḠ ◌̅◌̿¯|
 |Default|U+02C9 MODIFIER LETTER MACRON (ˉ)|
-|Notes|Includes related combining diacritical marks: U+0305 COMBINING OVERLINE (denotes averages in math), U+033F COMBINING DOUBLE OVERLINE. Includes U+00AF MACRON, a longer variant of the modifier letter from legacy. 
+|Notes|Includes related combining diacritical marks: U+0305 COMBINING OVERLINE (denotes averages in math), U+033F COMBINING DOUBLE OVERLINE. Includes U+00AF MACRON, a longer variant of the modifier letter from legacy.|
 
 |Category|Breve diacritic|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>B</kbd>|
 |Root|U+0306 COMBINING BREVE (◌̆)|
-|Bases|`aeioug AEIOUG`|
-|Composites|ăĕĭŏŭğ ĂĔĬŎŬĞ|
+|Bases|`aeioug AEIOUG ^`|
+|Composites|ăĕĭŏŭğ ĂĔĬŎŬĞ ◌̑|
 |Default|U+02D8 BREVE (˘)|
+|Notes|Includes combining inverted breve mapped to the circumflex due to similar shape, but there is no modifier letter for this in Unicode.|
 
 |Category|Cedilla and ogonek diacritics|
 |:------:|---|
@@ -368,7 +369,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`aeiou cdghklnrst AEIOU CDGHKLNRST \\|`|
 |Composites|ąęįǫų çḑģḩķļņŗşţ ĄĘĮǪŲ ÇḐĢḨĶĻŅRŞŢ ◌̨ ˛|
 |Default|U+00B8 CEDILLA (¸)|
-|Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key. Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to <kbd>\\</kbd> and <kbd>\|</kbd> since the ogonek and cedilla are approximately mirror images. |
+|Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key (With the exception of letters `E` and `e` with cedilla (Ȩȩ), since they are rare and the more common version with ogonek is already included). Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to <kbd>\\</kbd> and <kbd>\|</kbd> since the ogonek and cedilla are approximately mirror images.|
 
 |Category|Underdot diacritic + dot-related punctuation|
 |:------:|---|
@@ -392,8 +393,8 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>&</kbd>|
 |Root|U+00A6 BROKEN BAR (¦)|
-|Bases|`ao ilnd AO ILND tT eE &\|`|
-|Composites|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ þÞ ðᴆ ⅋¦|
+|Bases|`ao ilnd AO ILND 1234567 tT eE 8* 9( 0) &\|`|
+|Composites|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ ﬀﬁﬂﬃﬄﬅﬆ þÞ ðÐ ȣȢ ƣƢ ŋŊ ⅋¦|
 |Default|U+200D ZERO WIDTH JOINER (‍)|
 |Notes|The default character U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related characters U+214B TURNED AMPERSAND (⅋, used in linear logic) and U+00A6 BROKEN BAR (¦, for [legacy](https://en.wikipedia.org/wiki/Vertical_bar#Solid_vertical_bar_vs_broken_bar)). |
 
@@ -502,8 +503,8 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>o</kbd>|
 |Root|U+03D5 GREEK PHI SYMBOL (ϕ)|
-|Bases|`+-x/.oO*=_ q`|
-|Composites|⊕⊖⊗⊘⊙∘⊚⊛⊜⊝ ∎|
+|Bases|`+-x/\|\\.oO*=_<> q`|
+|Composites|⊕⊖⊗⊘⦶⦸⊙∘⊚⊛⊜⊝⧀⧁ ∎|
 |Default|U+03D5 GREEK PHI SYMBOL (ϕ)|
 |Notes|Includes the QED (end-of-proof) symbol mapped to key <kbd>q</kbd>. |
 
