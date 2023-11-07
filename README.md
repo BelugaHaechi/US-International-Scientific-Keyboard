@@ -31,7 +31,7 @@ This keyboard layout is easy to install, easy to use, and easy to memorize, whil
 
 This keyboard layout was created using [Microsoft Keyboard Layout Creator 1.4](https://www.microsoft.com/en-us/download/details.aspx?id=102134) (MSKLC 1.4). The layout is based on the common __English (United States) QWERTY keyboard layout__, and some designs are consistent with the __United States-International keyboard layout__. Other ideas were inspired by and improved on the basis of [Michael Goerz's version](https://michaelgoerz.net/notes/the-us-international-scientific-keyboard-layout/index.html) of the "U.S. International - Scientific" keyboard layout for Mac systems. 
 
-A detailed comparison chart of this keyboard layout with other layouts can be found in [this section](#comparison-to-other-layouts). 
+A detailed comparison chart of this keyboard layout with other layouts can be found in [this section](#comparison-to-other-layouts). This layout could also be found on the [Keyboard Layout Info website](https://kbdlayout.info/KBDUSS5a/), albeit a previous version (v1.5.1). Special thanks to Mr. Jan Kučera from the Czech Republic for creating the dedicated page and the entire highly useful website! 
 
 ## Quick Start Guide
 Setting up this keyboard on your computer is very simple! 
