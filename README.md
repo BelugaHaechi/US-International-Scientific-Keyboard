@@ -165,8 +165,8 @@ Below is a detailed documentation on the complete set of key mappings for the US
 |<kbd>$</kbd>|£   |U+00A3|POUND SIGN|Retained from USX layout. Near other currency characters. |
 |<kbd>%</kbd>|‰   |U+2030|PER MILLE SIGN|Shape and usage similar to U+0025 PERCENT SIGN on the same key. |
 |<kbd>^</kbd>|ˆ   |U+0302|COMBINING CIRCUMFLEX ACCENT|**Dead key: characters with the circumflex diacritic.** Shape similar to U+005E CIRCUMFLEX ACCENT on the same key. Retained from USX layout. |
-|<kbd>&</kbd>|¦   |U+00A6|BROKEN BAR|**Dead key: ligatures, extended to related punctuation symbols.** Usage of U+0026 AMPERSAND related to the fact that ligatures are joined characters. **Root character** is U+00A6 BROKEN BAR because 1) there is no valid and representative character in the set of ligatures, 2) it is an important character also covered in the USX layout, and 3) its shape suggests the idea of joining two objects. **Default character** is U+200D ZERO WIDTH JOINER, commonly used to compose composite graphemes, especially in emojis. |
-|‍<kbd>*</kbd>|⋅   |U+22C5|DOT OPERATOR|Math: dot multiplication. Usage similar to the multiplication meaning of U+002A ASTERISK on this key. |
+|<kbd>&</kbd>|¦   |U+00A6|BROKEN BAR|**Dead key: ligatures, extended to miscellaenous North European letters.** Usage of U+0026 AMPERSAND related to the fact that ligatures are joined characters. **Root character** is U+00A6 BROKEN BAR because 1) there is no valid and representative character in the set of ligatures, 2) it is an important character also covered in the USX layout, and 3) its shape suggests the idea of joining two objects. **Default character** is U+200D ZERO WIDTH JOINER, commonly used to compose composite graphemes, especially in emojis. |
+|‍<kbd>*</kbd>|̇   |U+0307|COMBINING DOT ABOVE OPERATOR|**Dead key: characters with the overdot diacritic.** Shape indicates a dot-like mark raised above. |
 |<kbd>(</kbd>|⟨   |U+27E8|MATHEMATICAL LEFT ANGLE BRACKET|Physics: Bra-ket notation left bound. Shape and usage similar to U+0028 LEFT PARENTHESIS. |
 |<kbd>)</kbd>|⟩   |U+27E9|MATHEMATICAL RIGHT ANGLE BRACKET|Physics: Bra-ket notation right bound. Shape and usage similar to U+0029 RIGHT PARENTHESIS. |
 |<kbd>_</kbd>|—   |U+2013|EM DASH|Punctuation: commonly used as the dash indicating breaks in sentences. Longer than U+2014 EM DASH, so mapped to the underscore which is longer than the hyphen. |
@@ -318,6 +318,14 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Composites|âêîôûŷ ĉĝĥĵŝŵẑ ÂÊÎÔÛŶ ĈĜĤĴŜŴẐ|
 |Default|U+02C6 MODIFIER LETTER CIRCUMFLEX ACCENT (ˆ)|
 
+|Category|Dot above diacritic
+|:------:|---|
+|Dead key|<kbd>AltGr</kbd> + <kbd>*</kbd>|
+|Root|U+0307 COMBINING DOT ABOVE (◌̇)|
+|Bases|`aeoy bcdfghlmnprstwxz AEIOY BCDFGHLMNPRSTWXZ`|
+|Composites|ȧėȯẏ ḃċḋḟġḣŀṁṅṗṙṡṫẇẋż ȦĖİȮẎ ḂĊḊḞĠḢĿṀṄṖṘṠṪẆẊŻ|
+|Default|U+02D9 DOT ABOVE (˙)|
+
 |Category|Ring above diacritic + circle symbols|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>0</kbd>|
@@ -325,24 +333,25 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Bases|`auwy AU CF oObB.\| -x`|
 |Composites|åůẘẙ ÅŮ ℃℉ ○◯●⬤◌◍ ⦵⦻|
 |Default|U+00B0 DEGREE SIGN (°)|
-|Notes|Includes related symbols: degree Celsius/Fahrenheit, various circles, and the Plimsoll symbol (U+29B5 CIRCLE WITH HORIZONTAL BAR) for chemical standard state (however it is not a superscript; for raw-text editing, by IUPAC the degrees sign is also accepted), along with U+29BB	CIRCLE WITH SUPERIMPOSED X. 
+|Notes|Includes related symbols: degree Celsius/Fahrenheit, various circles, and the Plimsoll symbol (U+29B5 CIRCLE WITH HORIZONTAL BAR) for chemical standard state (however it is not a superscript; for raw-text editing, by IUPAC the degrees sign is also accepted), along with U+29BB	CIRCLE WITH SUPERIMPOSED X. |
 
-|Category|Acute accent|
+|Category|Acute accent + typographical single quotes|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>'</kbd>|
 |Root|U+0301 COMBINING ACUTE ACCENT (◌́)|
-|Bases|`aeiouy cgklmnprswz AEIOUY CGKLMNPRSWZ`|
-|Composites|áéíóúý ćǵḱĺḿńṕŕśẃź ÁÉÍÓÚÝ ĆǴḰĹḾŃṔŔŚẂŹ|
+|Bases|`aeiouy cgklmnprswz AEIOUY CGKLMNPRSWZ []{}`|
+|Composites|áéíóúý ćǵḱĺḿńṕŕśẃź ÁÉÍÓÚÝ ĆǴḰĹḾŃṔŔŚẂŹ ‘’‚‛|
 |Default|U+00B4 ACUTE ACCENT (´)|
+|Notes|Typographical single quotes are included, which have direction. An alternate pair is available for languages such as German. |
 
 |Category|Diaeresis diacritic + dot diacritics|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>"</kbd>|
 |Root|U+0308 COMBINING DIAERESIS (◌̈)|
-|Bases|`` aeiouy htwx AEIOUY HWX 1234 '"` ``|
+|Bases|`` aeiouy htwx AEIOUY HWX 1234 '"` []{}``|
 |Composites|äëïöüÿ ḧẗẅẍ ÄËÏÖÜ ḦẄẌ ◌̇◌̈ ⃛ ⃜ ◌̋˝̏
 |Default|U+00A8 DIAERESIS (¨)|
-|Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. Also includes combining double acute and grave accents, and the modifier letter for the former (there is no modifier letter for the latter in Unicode).|
+|Notes|For unknown reasons, Unicode does not include capital letter "T" with diaeresis, although its lowercase form is encoded. Combining diacritical marks with 1–4 dots above are included, which are commonly used to indicate time derivatives in physics. Also includes combining double acute and grave accents, and the modifier letter for the former mapped to `"` (there is no modifier letter for the latter in Unicode). Typographical single quotes are featured, with alternate pair available for languages such as German. |
 
 |Category|Macron diacritic + bar diacritics|
 |:------:|---|
@@ -371,32 +380,32 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |Default|U+00B8 CEDILLA (¸)|
 |Notes|Since only consonants can have a cedilla while only vowels can have an ogonek, being mutually exclusive, the two diacritics are included in the same key (With the exception of letters `E` and `e` with cedilla (Ȩȩ), since they are rare and the more common version with ogonek is already included). Certain letters may have a different display for the cedilla, such as having the shape of an apostrophe. Includes the combining diacritical mark and modifier letter for the ogonek, respectively mapped to <kbd>\\</kbd> and <kbd>\|</kbd> since the ogonek and cedilla are approximately mirror images.|
 
-|Category|Underdot diacritic + dot-related punctuation|
+|Category|Underdot diacritic + dot-related symbols|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>.</kbd>|
 |Root|U+0323 COMBINING DOT BELOW (◌̣)|
-|Bases|`abdehiklmnorstuvwyz ABDEHIKLMNORSTUVWYZ -/\|\ ."`|
-|Composites|ạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒ ⋯⋰⋮⋱ …◌̤|
+|Bases|`abdehiklmnorstuvwyz ABDEHIKLMNORSTUVWYZ -/\|\ ." *`|
+|Composites|ạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒ ⋯⋰⋮⋱ …◌̤ ⋅|
 |Default|U+00B7 MIDDLE DOT (·)|
-|Notes|Ellipsis is mapped to key <kbd>.</kbd> representing the extra dots. This is more convenient than key <kbd>_</kbd> which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR. |
+|Notes|Ellipsis is mapped to key <kbd>.</kbd> representing the extra dots. This is more convenient than key <kbd>_</kbd> which requires shift. U+00B7 MIDDLE DOT (·) is not for dot multiplication, the preferred character is U+22C5 DOT OPERATOR mapped to `*`. Also includes U+0324 COMBINING DIAERESIS BELOW for two dots below. |
 
-|Category|Stroked letters + fraction slash|
+|Category|Stroked letters + vulgar fractions|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>\\</kbd>|
 |Root|U+0338 COMBINING LONG SOLIDUS OVERLAY (◌̸)|
-|Bases|`abcdefghijkloprtuyz ABCDEFGHIJKLOPRTUYZ`|
-|Composites|ⱥƀȼđɇꞙǥħɨɉꝁłøᵽɍŧꞹɏƶ ȺɃȻĐɆꞘǤĦƗɈꝀŁØⱣɌŦꞸɎƵ|
+|Bases|`abcdefghijkloprtuyz`<br>`ABCDEFGHIJKLOPRTUYZ`<br>`1234567 890 !@#$% ^&() *`|
+|Composites|ⱥƀȼđɇꞙǥħɨɉꝁłøᵽɍŧꞹɏƶ<br>ȺɃȻĐɆꞘǤĦƗɈꝀŁØⱣɌŦꞸɎƵ<br>⅛¼⅜½⅝¾⅞ ⅔⅓↉ ⅕⅖⅗⅘ ⅚⅙⅐⅑⅒ ⅟|
 |Default|U+2044 FRACTION SLASH (⁄)|
-|Notes|This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). |
+|Notes|Includes all vulgar fractions provided in Unicode, perfectly mapped to the number row keys. Third fractions are in reverse order, considering fraction ↉ as 0, and to accommodate the remaining two, 8 is two thirds by having two circles in its shape, and 9 is one third by having one circle only. Other fractions are mapped by their value. U+215F FRACTION NUMERATOR ONE (⅟ ) is mapped to `*` representing the blank denominator. Custom vulgar fractions can be composed by superscript numbers, the fraction slash (provided as default case of this dead key), and subscript numbers (e.g. ¹¹³⁄₃₅₅).  This combining diacritical mark (U+0338) is also the standard combining character for "crossing out" other characters in Unicode, for example negating math operators: U+003D (=) + U+0338 ⇔ U+2260 (≠). |
 
 |Category|Ligatures + North European letters|
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>&</kbd>|
 |Root|U+00A6 BROKEN BAR (¦)|
-|Bases|`ao ilnd AO ILND 1234567 tT eE 8* 9( 0) &\|`|
-|Composites|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ ﬀﬁﬂﬃﬄﬅﬆ þÞ ðÐ ȣȢ ƣƢ ŋŊ ⅋¦|
+|Bases|`ao ilnd AO ILND 1234567 s tT eE 8* 9( 0) &\|`|
+|Composites|æœ ĳǉǌǳ ÆŒ ĲǇǊǱ ﬀﬁﬂﬃﬄﬅﬆ ‍ſ þÞ ðÐ ȣȢ ƣƢ ŋŊ ⅋¦|
 |Default|U+200D ZERO WIDTH JOINER (‍)|
-|Notes|The default character U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Includes North European letters thorn and eth, and loosely-related characters U+214B TURNED AMPERSAND (⅋, used in linear logic) and U+00A6 BROKEN BAR (¦, for [legacy](https://en.wikipedia.org/wiki/Vertical_bar#Solid_vertical_bar_vs_broken_bar)). |
+|Notes|The default character U+200D ZERO WIDTH JOINER is a special invisible whitespace (thus mapped to the space bar) that is the standard combining character for composing multiple graphemes, such as adding skin color in emojis. Also includes all typographical ligatures mapped to number keys in sequence; North European letters long s, thorn, eth, ou, gha, and eng (last 3 are mapped to numbers by similar shape); and loosely-related characters U+214B TURNED AMPERSAND (⅋, used in linear logic) and U+00A6 BROKEN BAR (¦, for [legacy](https://en.wikipedia.org/wiki/Vertical_bar#Solid_vertical_bar_vs_broken_bar)). |
 
 ### Mathematical alphanumeric symbols
 |Category|Subscripts|
@@ -521,7 +530,7 @@ For convenience and ease of memory, the 26 dead keys in the US International Sci
 |:------:|---|
 |Dead key|<kbd>AltGr</kbd> + <kbd>></kbd>|
 |Root|U+003E GREATER-THAN SIGN (>)|
-|Bases|`/-+~=>< [{`|
+|Bases|`/-+~=>< ]}`|
 |Composites|≯≥≱≳≧≫≷ ⌋⌉|
 |Default|U+2265 GREATER-THAN OR EQUAL TO (≥)|
 |Notes|Includes right ceiling/floor brackets. |
