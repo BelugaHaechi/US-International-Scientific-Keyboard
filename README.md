@@ -37,9 +37,10 @@ A detailed comparison chart of this keyboard layout with other layouts can be fo
 Setting up this keyboard on your computer is very simple! 
 > **Note:** Be logged in to an Administrator account on your computer. Configuring the keyboard will require Administrator permission. 
 1. Download [the latest release](https://github.com/BelugaHaechi/US-International-Scientific-Keyboard/releases/latest) to any directory on your computer.
-   > **Note:** Releases are named as `KBDUSS` + major version number + minor version letter. We will use `KBDUSS**` to represent this below. This naming system is in conformity with system files in `C:\Windows\System32\KBD*.dll`. From version 1.6.0, you can also view the current version of the installed layout conveniently, just by checking the layout name on the taskbar.
+	> **Note:** Releases are named as `KBDUSS` + major version number + minor version letter. We will use `KBDUSS**` to represent this below. This naming system is in conformity with system files in `C:\Windows\System32\KBD*.dll`. From version 1.6.0, you can also view the current version of the installed layout conveniently, just by checking the layout name on the taskbar.
 2. Open the folder, and run the program `setup.exe` in the folder. Do not alter or delete any other files in the folder. 
 3. Follow the setup instructions that will pop up. At some point, you will be asked for Administrator permission; please allow to continue.
+	>**Note:** Security warnings from Windows Defender should appear, because the executable for this program does not have digital certification yet. The author promises that it is safe to continue excecution for this project (the option will appear when "More Info" is clicked), but in general **do not easily trust uncertified executables** as they could be potentially very harmful. Please make sure the excecutable you have obtained is from this repository. 
 4. Now the keyboard is installed on your computer! The last step is to enable the layout in Settings.
 	- Open Settings on your computer.
 	- Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
@@ -81,7 +82,6 @@ Dead keys are used extensively in many modern keyboard layouts, such as in the G
 Shift states with only <kbd>Alt</kbd> or <kbd>Ctrl</kbd> are mostly unused in keyboard layouts, because these key combinations are reserved for hotkeys (keyboard shortcuts). 
 
 In the US International Scientific keyboard layout, the key mappings in the normal shift states are identical to that in the common English (United States) QWERTY keyboard layout. Thus, without <kbd>AltGr</kbd>, it is just a normal layout; this feature is intended to make the transition to this layout extremely easy. All extra functionalities are carefully designed into the AltGr shift states, along with usage of dead keys.  
-</details>
 
 ## Overview of Key Mappings
 Below is a figure of the US International Scientific keyboard layout, made by [this tool](http://www.keyboard-layout-editor.com/#/) (also [on Github](https://github.com/ijprest/keyboard-layout-editor)). This figure may be greatly helpful as a reference to the functionalities of this keyboard layout. 
@@ -166,7 +166,7 @@ Below is a detailed documentation on the complete set of key mappings for the US
 #### Notes
 1. There exists U+2057 QUADRUPLE PRIME and U+221C FOURTH ROOT as candidates for key <kbd>4</kbd>, but they were not chosen because 1) these characters are rarely used (we live in a 3-dimensional world), and 2) there exists reasonable USX layout options to retain (which were used in this layout).
 2. The superscripts and subscripts provided are limited intentionally by Unicode, in a way that not every letter in the alphabet has one. Most of these mini letters were coded in the first place for IPA phonetics! It is suggested to always use rich text to achieve such styles for normal text, and this keyboard layout provides these choices only to aid in plain text communication. 
-3. For keys <kbd>=</kbd> and <kbd>+</kbd>, for the pair of characters U+00BA MASCULINE ORDINAL INDICATOR and U+00AA FEMININE ORDINAL INDICATOR, the decision to map the former to the shifted shift state was based on the fact that masculinity is usually associated with outgoing character. Here no bias on gender and sex is intended; this was solely based on general social observation, which is subject to change as society progresses. It is thoroughly acknowledged that females could express masculinity and vice versa, and there are other gender identities apart from the binary system.  
+3. For keys <kbd>=</kbd> and <kbd>+</kbd>, for the pair of characters U+00BA MASCULINE ORDINAL INDICATOR and U+00AA FEMININE ORDINAL INDICATOR, the decision to map the former to the shifted shift state was based on the fact that masculinity is usually associated with outgoing character. Here no bias on gender or sex is intended; it is thoroughly acknowledged that females could express masculinity and vice versa, and there are other gender identities apart from the binary system.  
 
 
 ### QWERTY row
