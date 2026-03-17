@@ -46,6 +46,7 @@ Setting up this keyboard on your computer is very simple!
 	- Navigate to `Time & language > Language & region > Keyboards` (this may differ slightly for various Windows versions).
 	- Select `Add a keyboard`, and select `US-International and Scientific keyboard` in the drop-down menu.
 	- (_Optional_) You can now disable the original `US keyboard (QWERTY)`, since its functions could be completely replaced by the new keyboard.
+	- Restart your computer. This often helps to finalize the installation (#25).
 5. Congratulations! You are now all set to use the US International Scientific keyboard on your computer.
 
 > **Tip:** You may wish to retain the `KBDUSS**` folder, because it could be used to repair/uninstall the keyboard layout on your computer.
